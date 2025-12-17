@@ -21,7 +21,7 @@ export default function NavBar() {
     ];
 
     return (
-        <div className="flex justify-center items-center w-screen h-[80px] text-[#1a2690] bg-[#f2efdf] font-bold border-b">
+        <div className="flex justify-center items-center w-screen h-[80px] text-[#1a2690] bg-[#f2efdf] font-bold border-b sticky top-0 z-50">
             <div className="flex w-[90%] justify-between items-center">
 
                 <a href="/" className="md:w-[30%]"><div className="flex justify-start text-[18px]">J. C.</div></a>

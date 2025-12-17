@@ -7,13 +7,13 @@ export default function About() {
 
         <div className="flex flex-col w-[90%] justify-between">
 
-          <div className="w-full mb-18 md:w-[65%]">
+          <div className="w-full mb-10 md:w-[65%] pb-4 border-b border-[#1a2690] md:border-0">
             {/* name intro */}
-            <div className="font-bold text-[20px] mb-4">
+            <div className="font-bold text-[20px] mb-6">
               楊若絹
             </div>
 
-            <div className="w-full font-medium text-[14px] leading-6 text-justify">
+            <div className="w-full font-medium text-[14px] leading-6 text-justify mb-6">
               畢業於國立政治大學傳播碩士學位學程，具有數位設計與媒體心理研究的跨領域背景。善於規劃視覺設計與流暢的腳本來製作數位敘事；了解基礎前端語言，曾經參與網頁和遊戲開發；亦知道如何定義問題，並完成虛擬實境觀看效果之學術研究。
             </div>
           </div>
@@ -21,12 +21,12 @@ export default function About() {
           <div className="flex flex-col md:flex-row md:justify-between">
 
             {/* edu */}
-            <div className="mb-8 w-full md:w-[30%]">
+            <div className="mb-10 w-full md:w-[30%] pb-4 border-b border-[#1a2690] md:border-0">
               <div className="font-bold text-[20px] mb-6">
                 ▌EDUCATION
               </div>
 
-              <div className="mb-8">
+              <div className="mb-6">
                 <div className="w-full font-bold text-[16px] leading-8 text-justify">
                   傳播碩士學位學程（M.A.）
                 </div>
@@ -40,7 +40,7 @@ export default function About() {
                 </ul>
               </div>
 
-              <div className="mb-8">
+              <div className="mb-6">
                 <div className="w-full font-bold text-[16px] leading-8 text-justify">
                   廣告學系 傳播設計組（B.A.）<br />
                   數位內容與科技學士學位學程（B.S.）
@@ -59,12 +59,12 @@ export default function About() {
 
 
             {/* exp */}
-            <div className="mb-8 w-full md:w-[30%]">
+            <div className="mb-10 w-full md:w-[30%] pb-4 border-b border-[#1a2690] md:border-0">
               <div className="font-bold text-[20px] mb-6">
                 ▌EXPERIENCE
               </div>
 
-              <div className="mb-8">
+              <div className="mb-6">
                 <div className="w-full font-bold text-[16px] leading-8 text-justify">
                   研究助理
                 </div>
@@ -79,7 +79,7 @@ export default function About() {
                 </ul>
               </div>
 
-              <div className="mb-8">
+              <div className="mb-6">
                 <div className="w-full font-bold text-[16px] leading-8 text-justify">
                   實習助理
                 </div>
@@ -98,12 +98,12 @@ export default function About() {
 
 
             {/* awd */}
-            <div className="mb-8 w-full md:w-[30%]">
+            <div className="mb-10 w-full md:w-[30%] pb-4 border-b border-[#1a2690] md:border-0">
               <div className="font-bold text-[20px] mb-6">
                 ▌AWARD
               </div>
 
-              <div className="mb-8">
+              <div className="mb-6">
                 <div className="w-full font-bold text-[16px] leading-8 text-justify">
                   學生論文發表
                 </div>
@@ -116,7 +116,7 @@ export default function About() {
                 </ul>
               </div>
 
-              <div className="mb-8">
+              <div className="mb-6">
                 <div className="w-full font-bold text-[16px] leading-8 text-justify">
                   最佳教育文化節目獎 入圍
                 </div>
