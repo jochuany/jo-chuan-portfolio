@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Period() {
+export default function Tennis() {
   return (
     <>
       <div className="flex w-screen h-auto pt-10 pb-10 justify-center items-start text-[#1a2690] bg-[#f2efdf]">
@@ -10,7 +10,7 @@ export default function Period() {
 
 
           <div className="text-[24px] font-bold mb-6 md:text-[26px]">
-            月來悅貼心
+            球后的崛起
           </div>
 
           <div className="flex flex-col w-full mb-6 md:flex-row md:justify-between text-[14px] md:text-[16px]">
@@ -20,7 +20,7 @@ export default function Period() {
                 TYPE
               </div>
               <div className="font-bold">
-                網頁前端
+                資訊動畫
               </div>
             </div>
 
@@ -29,7 +29,7 @@ export default function Period() {
                 YEAR
               </div>
               <div className="font-bold">
-                2024
+                2022
               </div>
             </div>
 
@@ -38,7 +38,7 @@ export default function Period() {
                 TOOL
               </div>
               <div className="font-bold">
-                HTML / CSS / JavaScript
+                Adobe Illustrator / Adobe After Effects
               </div>
             </div>
 
@@ -46,17 +46,22 @@ export default function Period() {
 
           <div className="w-full flex flex-col">
             <div className="md:w-[65%] text-justify text-[12px] md:text-[14px] mb-6 leading-6">
-              團體專案。內含整合月經知識問答、經期情緒安撫的機器人，以及政大周邊月經地圖的手機網頁。主要負責網頁前端串聯，將介面設計轉化為可用的手機網頁，亦協助將機器人與地圖串進網頁中。
+              個人專案，以自己喜歡的職業球員為題材，製作約一分半的資訊動畫，介紹其球風、成就等。由個人獨立完成腳本、繪製素材、動態化、配音配樂、剪輯，在企劃階段即著重場景間的轉換，電視、網球、快門、報紙，皆為搭配敘事轉場的關鍵物件，使整體畫面銜接更流暢。
             </div>
-            <a href="https://youtu.be/ts6eESkYaKE?si=Gyy9lJ73vd44rRV_" target="_blank"
+            <a href="https://youtu.be/y2TkF0Tm3JY?si=bADOPmTrxx7FX2uD" target="_blank"
               className="text-[12px] text-[#f2efdf] text-center mb-6 py-2 md:text-[14px] md:w-[30%]
               bg-[#1a2690] border hover:bg-[#f2efdf] hover:text-[#1a2690] hover:border-[#1a2690] transition-all duration-300 ease">
               點此看作品
             </a>
           </div>
 
-          <div className="w-full grid grid-cols-1 gap-6">
-            <img src="/images/period/period-01.png" className="w-full" />
+          <div className="w-full grid grid-cols-1 gap-6 md:grid-cols-2">
+            <img src="/images/tennis/tennis-01.png" className="w-full" />
+            <img src="/images/tennis/tennis-02.png" className="w-full" />
+            <img src="/images/tennis/tennis-03.png" className="w-full" />
+            <img src="/images/tennis/tennis-04.png" className="w-full" />
+            <img src="/images/tennis/tennis-05.png" className="w-full" />
+            <img src="/images/tennis/tennis-06.png" className="w-full" />
           </div>
 
         </div>

@@ -48,7 +48,7 @@ export default function Mirror() {
             <div className="md:w-[65%] text-justify text-[12px] md:text-[14px] mb-6 leading-6">
               團隊合作專案。數位內容第 14 屆畢業製作專案（於華山展覽），透過 Kinect 動作捕捉裝置、鏡中反射自我的設計，描述數位世界與現實世界之間的落差。主要負責程式協作、體驗佈置，以及體驗中的酒吧場景建模。
             </div>
-            <a href="https://www.youtube.com/watch?si=7YZ_NoHmYuRg8sfS&v=wE1DucIL8D8&feature=youtu.be" target="_blank"
+            <a href="https://youtu.be/wE1DucIL8D8?si=ghNpbITCJTGbBKuE" target="_blank"
               className="text-[12px] text-[#f2efdf] text-center mb-6 py-2 md:text-[14px] md:w-[30%]
               bg-[#1a2690] border hover:bg-[#f2efdf] hover:text-[#1a2690] hover:border-[#1a2690] transition-all duration-300 ease">
               點此看作品
