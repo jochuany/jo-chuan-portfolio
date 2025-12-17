@@ -13,7 +13,7 @@ export default function Chance() {
             CHANCE!!
           </div>
 
-          <div className="flex flex-col w-full mb-6 md:flex-row md:justify-between text-[14px] md:text-[16px]">
+          <div className="flex flex-col w-full mb-6 md:flex-row md:justify-between text-[16px] md:text-[18px]">
 
             <div className="mb-4 md:w-[30%]">
               <div className="font-medium">
@@ -45,11 +45,11 @@ export default function Chance() {
           </div>
 
           <div className="w-full flex flex-col">
-            <div className="md:w-[65%] text-justify text-[14px] mb-6 leading-6">
+            <div className="md:w-[65%] text-justify text-[16px] mb-6 leading-8">
               個人專案，獨立完成產品規劃與 UI 設計。以身為排球球友的日常經驗出發，設計一款整合臨打與季打報名、比賽與課程資訊、新聞與場館訊息的排球 APP。
             </div>
             <a href="https://www.figma.com/design/o1C7w9sgoiAI7chbrAgcRF/Chance--?node-id=163-2&t=8p5JB3rs4YGvMrdl-1" target="_blank"
-              className="text-[14px] text-[#f2efdf] text-center mb-6 py-2 md:w-[30%]
+              className="text-[16px] text-[#f2efdf] text-center mb-6 py-2 md:w-[30%]
               bg-[#1a2690] border hover:bg-[#f2efdf] hover:text-[#1a2690] hover:border-[#1a2690] transition-all duration-300 ease">
               點此看作品
             </a>

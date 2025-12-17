@@ -13,7 +13,7 @@ export default function Mirror() {
             鏡像之境
           </div>
 
-          <div className="flex flex-col w-full mb-6 md:flex-row md:justify-between text-[14px] md:text-[16px]">
+          <div className="flex flex-col w-full mb-6 md:flex-row md:justify-between text-[16px] md:text-[18px]">
 
             <div className="mb-4 md:w-[30%]">
               <div className="font-medium">
@@ -45,12 +45,12 @@ export default function Mirror() {
           </div>
 
           <div className="w-full flex flex-col">
-            <div className="md:w-[65%] text-justify text-[14px] mb-6 leading-6">
+            <div className="md:w-[65%] text-justify text-[16px] mb-6 leading-8">
               團隊合作專案。數位內容第 14 屆畢業製作專案。透過 Kinect 動作捕捉裝置、單面鏡中反射自我的設計，描述數位世界與現實世界之間的落差。主要負責程式協作、體驗佈置，以及體驗中的酒吧場景建模。<br /><br />
               作品完成後在華山文創園區烏梅劇院進行為期五天的展覽，有許多校內校外人士前來觀展，我們亦設計體驗流程，包括介紹、講解、輔助教學等，帶領觀展者體驗我們的作品。
             </div>
             <a href="https://youtu.be/wE1DucIL8D8?si=ghNpbITCJTGbBKuE" target="_blank"
-              className="text-[14px] text-[#f2efdf] text-center mb-6 py-2 md:w-[30%]
+              className="text-[16px] text-[#f2efdf] text-center mb-6 py-2 md:w-[30%]
               bg-[#1a2690] border hover:bg-[#f2efdf] hover:text-[#1a2690] hover:border-[#1a2690] transition-all duration-300 ease">
               點此看作品
             </a>

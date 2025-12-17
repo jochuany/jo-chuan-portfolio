@@ -13,7 +13,7 @@ export default function Fruit() {
             水果指南
           </div>
 
-          <div className="flex flex-col w-full mb-6 md:flex-row md:justify-between text-[14px] md:text-[16px]">
+          <div className="flex flex-col w-full mb-6 md:flex-row md:justify-between text-[16px] md:text-[18px]">
 
             <div className="mb-4 md:w-[30%]">
               <div className="font-medium">
@@ -45,11 +45,11 @@ export default function Fruit() {
           </div>
 
           <div className="w-full flex flex-col">
-            <div className="md:w-[65%] text-justify text-[14px] mb-6 leading-6">
+            <div className="md:w-[65%] text-justify text-[16px] mb-6 leading-8">
               團體專案。以水果為題策劃一社群品牌，主要受眾為政大學生，品牌名「指南」為學校路名、介紹意義雙關，分享與生活相關的水果小知識。主要參與品牌規劃，並負責 Logo 設計，結合「水果」與「指南」之意象，以橘黃色為主色調，營造活潑的形象。
             </div>
             <a href="https://www.instagram.com/zhinanfruit.co/" target="_blank"
-              className="text-[14px] text-[#f2efdf] text-center mb-6 py-2 md:w-[30%]
+              className="text-[16px] text-[#f2efdf] text-center mb-6 py-2 md:w-[30%]
               bg-[#1a2690] border hover:bg-[#f2efdf] hover:text-[#1a2690] hover:border-[#1a2690] transition-all duration-300 ease">
               點此看作品
             </a>

@@ -13,7 +13,7 @@ export default function Typhoon() {
             颱風假到底怎麼放？
           </div>
 
-          <div className="flex flex-col w-full mb-6 md:flex-row md:justify-between text-[14px] md:text-[16px]">
+          <div className="flex flex-col w-full mb-6 md:flex-row md:justify-between text-[16px] md:text-[18px]">
 
             <div className="mb-4 md:w-[30%]">
               <div className="font-medium">
@@ -45,11 +45,11 @@ export default function Typhoon() {
           </div>
 
           <div className="w-full flex flex-col">
-            <div className="md:w-[65%] text-justify text-[14px] mb-6 leading-6">
+            <div className="md:w-[65%] text-justify text-[16px] mb-6 leading-8">
               個人專案，綜合有關颱風假標準、實施方式解釋、過往案例、以及政治影響的資訊視覺化動畫。主要負責腳本協作、圖表美化與資訊動畫製作，將抽象的數據、難懂的法案以簡單直覺的形式呈現。
             </div>
             <a href="https://youtu.be/8sklFG5qRm0?si=DLpqVpQBirhhybVk" target="_blank"
-              className="text-[14px] text-[#f2efdf] text-center mb-6 py-2 md:w-[30%]
+              className="text-[16px] text-[#f2efdf] text-center mb-6 py-2 md:w-[30%]
               bg-[#1a2690] border hover:bg-[#f2efdf] hover:text-[#1a2690] hover:border-[#1a2690] transition-all duration-300 ease">
               點此看作品
             </a>
