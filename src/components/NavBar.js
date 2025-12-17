@@ -24,7 +24,7 @@ export default function NavBar() {
         <div className="flex justify-center items-center w-screen h-[80px] text-[#1a2690] bg-[#f2efdf] font-bold border-b sticky top-0 z-50">
             <div className="flex w-[90%] justify-between items-center">
 
-                <a href="/" className="md:w-[30%]"><div className="flex justify-start text-[18px]">J. C.</div></a>
+                <a href="/" className="md:w-[30%]"><div className="flex justify-start text-[18px] transition-all duration-300 cursor-pointer hover:translate-y-1">J. C.</div></a>
 
                 {/* ham menu */}
                 <div onClick={toggleMenu} className="md:hidden z-50 relative cursor-pointer">
@@ -40,7 +40,7 @@ export default function NavBar() {
                             <a
                                 key={link.href}
                                 href={link.href}
-                                className={`transition-all duration-300 text-[#1a2690] cursor-pointer hover:translate-y-1
+                                className={`transition-all duration-300 cursor-pointer hover:translate-y-1
                                 ${isActive ? "font-black" : "font-light"}`}
                             >
                                 {link.name}
