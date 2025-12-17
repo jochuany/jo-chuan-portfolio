@@ -71,18 +71,18 @@ export default function Projects() {
             </div>
           </a>
 
-          <a href="/projects/typhoon" className="border-b md:border-none hover:bg-[#1a2690] hover:text-[#f2efdf] group transition-all duration-300 ease">
-            <div className="w-full pt-4 pb-4 flex flex-col md:flex-row justify-between items-start md:items-center group-hover:pl-6 transition-all duration-300 ease">
-              <div className="md:w-[30%] text-[20px] font-bold mb-2 md:mb-0">颱風假到底怎麼放？</div>
-              <div className="md:w-[30%] text-[16px] font-medium">資訊圖表／資訊動畫</div>
-              <div className="md:w-[30%] text-[16px] font-medium">2022</div>
-            </div>
-          </a>
-
           <a href="/projects/zhinan" className="border-b md:border-none hover:bg-[#1a2690] hover:text-[#f2efdf] group transition-all duration-300 ease">
             <div className="w-full pt-4 pb-4 flex flex-col md:flex-row justify-between items-start md:items-center group-hover:pl-6 transition-all duration-300 ease">
               <div className="md:w-[30%] text-[20px] font-bold mb-2 md:mb-0">水果指南</div>
               <div className="md:w-[30%] text-[16px] font-medium">Logo 設計</div>
+              <div className="md:w-[30%] text-[16px] font-medium">2022</div>
+            </div>
+          </a>
+
+          <a href="/projects/typhoon" className="border-b md:border-none hover:bg-[#1a2690] hover:text-[#f2efdf] group transition-all duration-300 ease">
+            <div className="w-full pt-4 pb-4 flex flex-col md:flex-row justify-between items-start md:items-center group-hover:pl-6 transition-all duration-300 ease">
+              <div className="md:w-[30%] text-[20px] font-bold mb-2 md:mb-0">颱風假到底怎麼放？</div>
+              <div className="md:w-[30%] text-[16px] font-medium">資訊圖表／資訊動畫</div>
               <div className="md:w-[30%] text-[16px] font-medium">2022</div>
             </div>
           </a>
