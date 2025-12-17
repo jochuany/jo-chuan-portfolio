@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import NavBar from "@/components/NavBar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,25 +19,18 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="bg-[#f2efdf]">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
 
-        <div className="flex justify-center items-center w-screen h-[100px]">
-          <div className="flex w-[90%] justify-between">
-            <a href="/"><div className="flex justify-start text-[20px] font-bold">J. C.</div></a>
-            <div className="flex">
-              <a href="/about"><div className="flex ml-[40px] justify-end text-[20px] font-bold">About</div></a>
-              <a href="/projects"><div className="flex ml-[40px] justify-end text-[20px] font-bold">Projects</div></a>
-              <a href="/contact"><div className="flex ml-[40px] justify-end text-[20px] font-bold">Contact</div></a>
-            </div>
-          </div>
-        </div>
+
+        <NavBar />
+
 
         {children}
 
-        <div className="flex justify-center items-center w-screen h-[50px]">
+        <div className="flex justify-center items-center w-screen h-[50px] text-[#1a2690] bg-[#f2efdf]">
           <div className="flex w-[90%] justify-between text-[12px] font-bold">
             <div>DESIGN BY JOCHUAN.</div>
             <div>2025</div>
