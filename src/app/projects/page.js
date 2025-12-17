@@ -26,7 +26,7 @@ export default function Projects() {
           <a href="/projects/period" className="border-b md:border-none hover:bg-[#1a2690] hover:text-[#f2efdf] group transition-all duration-300 ease">
             <div className="w-full pt-4 pb-4 flex flex-col md:flex-row justify-between items-start md:items-center group-hover:pl-6 transition-all duration-300 ease">
               <div className="md:w-[30%] text-[20px] font-bold mb-2 md:mb-0">月來悅貼心</div>
-              <div className="md:w-[30%] text-[16px] font-medium">前端架設</div>
+              <div className="md:w-[30%] text-[16px] font-medium">網頁前端</div>
               <div className="md:w-[30%] text-[16px] font-medium">2024</div>
             </div>
           </a>
