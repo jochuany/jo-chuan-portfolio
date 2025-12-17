@@ -58,8 +58,8 @@ export default function NavBar() {
             <div className={`fixed inset-0 bg-[#f2efdf] z-40 flex flex-col justify-center items-center
             transition-transform duration-300 ease ${isOpen ? "translate-x-0" : "translate-x-full"} md:hidden`}>
                 <div className="text-[20px] font-bold flex flex-col gap-8 items-center">
-                    <a href="/about"><div onClick={toggleMenu}>About</div></a>
                     <a href="/projects"><div onClick={toggleMenu}>Projects</div></a>
+                    <a href="/about"><div onClick={toggleMenu}>About</div></a>
                     <a href="/contact"><div onClick={toggleMenu}>Contact</div></a>
                 </div>
             </div>
