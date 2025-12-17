@@ -3,17 +3,17 @@ import Image from "next/image";
 export default function About() {
   return (
     <>
-      <div className="flex w-screen h-auto justify-center items-start text-[#1a2690] bg-[#f2efdf]">
+      <div className="flex w-screen h-auto pt-10 justify-center items-start text-[#1a2690] bg-[#f2efdf]">
 
         <div className="flex flex-col w-[90%] justify-between">
 
-          <div className="w-full mb-10 md:w-[65%]">
+          <div className="w-full mb-18 md:w-[65%]">
             {/* name intro */}
             <div className="font-bold text-[20px] mb-4">
               楊若絹
             </div>
 
-            <div className="w-full font-medium text-[12px] leading-6 text-justify">
+            <div className="w-full font-medium text-[14px] leading-6 text-justify">
               畢業於國立政治大學傳播碩士學位學程，具有數位設計與媒體心理研究的跨領域背景。善於規劃視覺設計與流暢的腳本來製作數位敘事；了解基礎前端語言，曾經參與網頁和遊戲開發；亦知道如何定義問題，並完成虛擬實境觀看效果之學術研究。
             </div>
           </div>
@@ -21,8 +21,8 @@ export default function About() {
           <div className="flex flex-col md:flex-row md:justify-between">
 
             {/* edu */}
-            <div className="mb-10 w-full md:w-[30%]">
-              <div className="font-bold text-[20px] mb-4">
+            <div className="mb-8 w-full md:w-[30%]">
+              <div className="font-bold text-[20px] mb-6">
                 ▌EDUCATION
               </div>
 
@@ -59,8 +59,8 @@ export default function About() {
 
 
             {/* exp */}
-            <div className="mb-10 w-full md:w-[30%]">
-              <div className="font-bold text-[20px] mb-4">
+            <div className="mb-8 w-full md:w-[30%]">
+              <div className="font-bold text-[20px] mb-6">
                 ▌EXPERIENCE
               </div>
 
@@ -98,8 +98,8 @@ export default function About() {
 
 
             {/* awd */}
-            <div className="mb-10 w-full md:w-[30%]">
-              <div className="font-bold text-[20px] mb-4">
+            <div className="mb-8 w-full md:w-[30%]">
+              <div className="font-bold text-[20px] mb-6">
                 ▌AWARD
               </div>
 

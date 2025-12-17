@@ -11,21 +11,21 @@ export default function NavBar() {
     };
 
     return (
-        <div className="flex justify-center items-center w-screen h-[100px] text-[#1a2690] bg-[#f2efdf] font-bold">
+        <div className="flex justify-center items-center w-screen h-[80px] text-[#1a2690] bg-[#f2efdf] font-bold border-b">
             <div className="flex w-[90%] justify-between items-center">
 
-                <a href="/"><div className="flex justify-start text-[20px]">J. C.</div></a>
+                <a href="/" className="md:w-[30%]"><div className="flex justify-start text-[18px]">J. C.</div></a>
 
                 {/* ham menu */}
                 <div onClick={toggleMenu} className="md:hidden z-50 relative cursor-pointer">
-                    <img src={`${isOpen ? "/images/nav-close.png" : "/images/nav-open.png"}`} className="w-[24px]" />
+                    <img src={`${isOpen ? "/images/nav-close.png" : "/images/nav-open.png"}`} className="w-[24px] transition-all duration-300 ease" />
                 </div>
 
                 {/* pc menu */}
-                <div className="hidden md:flex md:text-[20px]">
-                    <a href="/about"><div className="ml-6">About</div></a>
-                    <a href="/projects"><div className="ml-6">Projects</div></a>
-                    <a href="/contact"><div className="ml-6">Contact</div></a>
+                <div className="hidden md:flex md:text-[18px] md:justify-between md:w-[30%]">
+                    <a href="/about"><div className="">About</div></a>
+                    <a href="/projects"><div className="">Projects</div></a>
+                    <a href="/contact"><div className="">Contact</div></a>
                 </div>
             </div>
 

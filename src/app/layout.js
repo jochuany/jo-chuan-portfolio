@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
 
         {children}
 
-        <div className="flex justify-center items-center w-screen h-[50px] text-[#1a2690] bg-[#f2efdf]">
+        <div className="flex justify-center items-center w-screen h-[50px] text-[#1a2690] bg-[#f2efdf] border-t">
           <div className="flex w-[90%] justify-between text-[12px] font-bold">
             <div>DESIGN BY JOCHUAN.</div>
             <div>2025</div>
