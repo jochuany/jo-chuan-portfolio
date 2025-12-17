@@ -7,6 +7,12 @@ export default function Projects() {
 
         <div className="flex flex-col w-[90%]">
 
+          <div className="hidden md:flex w-full pb-1 justify-between items-start border-b">
+            <div className="md:w-[30%] text-[14px] font-medium">PROJECT NAME</div>
+            <div className="md:w-[30%] text-[14px] font-medium">TYPE</div>
+            <div className="md:w-[30%] text-[14px] font-medium">YEAR</div>
+          </div>
+
           <a href="/projects/chance" className="border-b md:border-none hover:bg-[#1a2690] hover:text-[#f2efdf] group transition-all duration-300 ease">
             <div className="w-full pt-4 pb-4 flex flex-col md:flex-row justify-between items-start md:items-center group-hover:pl-6 transition-all duration-300 ease">
               <div className="md:w-[30%] text-[20px] font-bold mb-2 md:mb-0">CHANCE!!</div>
