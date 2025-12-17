@@ -45,11 +45,11 @@ export default function Boat() {
           </div>
 
           <div className="w-full flex flex-col">
-            <div className="md:w-[65%] text-justify text-[12px] md:text-[14px] mb-6 leading-6">
+            <div className="md:w-[65%] text-justify text-[14px] mb-6 leading-6">
               個人專案。此作品為自製歌詞動畫，將抽象的歌詞以動畫方式呈現，在腳本階段花費較多時間構思如何視覺化。考量歌曲較抒情，因此動畫節奏較緩慢，視覺設計也配合歌詞的浪漫氛圍，加入蒲公英、海邊、夕陽等元素。背景使用漸層效果，讓畫面更有層次和立體感。
             </div>
             <a href="https://youtu.be/mht2IoXIQp0?si=8IQKSslJAI8XXNi5" target="_blank"
-              className="text-[12px] text-[#f2efdf] text-center mb-6 py-2 md:text-[14px] md:w-[30%]
+              className="text-[14px] text-[#f2efdf] text-center mb-6 py-2 md:w-[30%]
               bg-[#1a2690] border hover:bg-[#f2efdf] hover:text-[#1a2690] hover:border-[#1a2690] transition-all duration-300 ease">
               點此看作品
             </a>

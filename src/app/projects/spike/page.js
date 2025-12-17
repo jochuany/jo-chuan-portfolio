@@ -45,11 +45,11 @@ export default function Spike() {
           </div>
 
           <div className="w-full flex flex-col">
-            <div className="md:w-[65%] text-justify text-[12px] md:text-[14px] mb-6 leading-6">
+            <div className="md:w-[65%] text-justify text-[14px] mb-6 leading-6">
               個人專案，獨自完成遊戲機制設計、介面與流程規劃、程式撰寫，視覺素材由 AI 協助發想後自行製作。Next.js 為課堂中學習，React Hook 則從專案過程中自學應用。
             </div>
             <a href="https://volleyball-spiking-game.vercel.app/" target="_blank"
-              className="text-[12px] text-[#f2efdf] text-center mb-6 py-2 md:text-[14px] md:w-[30%]
+              className="text-[14px] text-[#f2efdf] text-center mb-6 py-2 md:w-[30%]
               bg-[#1a2690] border hover:bg-[#f2efdf] hover:text-[#1a2690] hover:border-[#1a2690] transition-all duration-300 ease">
               點此看作品
             </a>

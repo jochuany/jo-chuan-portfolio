@@ -45,11 +45,11 @@ export default function Report() {
           </div>
 
           <div className="w-full flex flex-col">
-            <div className="md:w-[65%] text-justify text-[12px] md:text-[14px] mb-6 leading-6">
+            <div className="md:w-[65%] text-justify text-[14px] mb-6 leading-6">
               團隊合作專案，參與部分資料分析、內容撰寫，另負責網頁切版與架設。此專案是我自學網頁前端的第一個切版實作，雖只使用純 HTML 與 CSS，但為後續學習框架打下基礎。
             </div>
             <a href="https://jochuany.github.io/112.nccucomm.big-data-analysis.4/html/index.html" target="_blank"
-              className="text-[12px] text-[#f2efdf] text-center mb-6 py-2 md:text-[14px] md:w-[30%]
+              className="text-[14px] text-[#f2efdf] text-center mb-6 py-2 md:w-[30%]
               bg-[#1a2690] border hover:bg-[#f2efdf] hover:text-[#1a2690] hover:border-[#1a2690] transition-all duration-300 ease">
               點此看作品
             </a>
