@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 
 export default function NavBar() {
 
@@ -9,6 +10,15 @@ export default function NavBar() {
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
+
+
+    const pathname = usePathname();
+
+    const navLinks = [
+        { name: "About", href: "/about" },
+        { name: "Projects", href: "/projects" },
+        { name: "Contact", href: "/contact" },
+    ];
 
     return (
         <div className="flex justify-center items-center w-screen h-[80px] text-[#1a2690] bg-[#f2efdf] font-bold border-b">
@@ -22,11 +32,26 @@ export default function NavBar() {
                 </div>
 
                 {/* pc menu */}
-                <div className="hidden md:flex md:text-[18px] md:justify-between md:w-[30%]">
-                    <a href="/about"><div className="">About</div></a>
-                    <a href="/projects"><div className="">Projects</div></a>
-                    <a href="/contact"><div className="">Contact</div></a>
+                <div className="w-[30%] flex justify-between">
+
+                    {navLinks.map((link) => {
+                        const isActive = pathname === link.href;
+                        return (
+                            <a
+                                key={link.href}
+                                href={link.href}
+                                className={`transition-all duration-300 text-[#1a2690] cursor-pointer hover:translate-y-1
+                                ${isActive ? "font-black" : "font-light"}`}
+                            >
+                                {link.name}
+                            </a>
+                        )
+                    })}
+
                 </div>
+
+
+
             </div>
 
             {/* ham menu content */}
