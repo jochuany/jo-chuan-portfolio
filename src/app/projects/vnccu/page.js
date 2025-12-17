@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Vnccu() {
   return (
     <>
-      <div className="flex w-screen h-auto pt-10 pb-10 justify-center items-start text-[#1a2690] bg-[#f2efdf]">
+      <div className="flex w-screen h-auto pt-10 pb-10 justify-center items-start text-brand-text bg-brand-bg">
 
         <div className="flex flex-col w-[90%] justify-between">
 
@@ -49,8 +49,8 @@ export default function Vnccu() {
               大學時期於政大之聲實習電台為活動設計的主視覺，以繽紛、明亮風格呈現，象徵電台節目的多元性。由個人獨立完成所有圖像的繪製與設計，包括 Facebook 大頭貼、宣傳 Banner、以及實體海報。
             </div>
             <a href="https://www.facebook.com/share/p/1L6hnGVNay/" target="_blank"
-              className="text-[16px] text-[#f2efdf] text-center mb-6 py-2 md:w-[30%]
-              bg-[#1a2690] border hover:bg-[#f2efdf] hover:text-[#1a2690] hover:border-[#1a2690] transition-all duration-300 ease">
+              className="text-[16px] text-brand-bg text-center mb-6 py-2 md:w-[30%]
+              bg-brand-text border hover:bg-brand-bg hover:text-brand-text hover:border-brand-text transition-all duration-300 ease">
               點此看作品
             </a>
           </div>

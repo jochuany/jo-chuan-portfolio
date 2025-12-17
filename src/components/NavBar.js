@@ -21,7 +21,7 @@ export default function NavBar() {
     ];
 
     return (
-        <div className="flex justify-center items-center w-screen h-[80px] text-[#1a2690] bg-[#f2efdf] font-bold border-b sticky top-0 z-50">
+        <div className="flex justify-center items-center w-screen h-[80px] text-brand-text bg-brand-bg font-bold border-b sticky top-0 z-50">
             <div className="flex w-[90%] justify-between items-center">
 
                 <a href="/" className="md:w-[30%]"><div className="flex justify-start text-[18px] transition-all duration-300 cursor-pointer hover:translate-y-1">J. C.</div></a>
@@ -55,7 +55,7 @@ export default function NavBar() {
             </div>
 
             {/* ham menu content */}
-            <div className={`fixed inset-0 bg-[#f2efdf] z-40 flex flex-col justify-center items-center
+            <div className={`fixed inset-0 bg-brand-bg z-40 flex flex-col justify-center items-center
             transition-transform duration-300 ease ${isOpen ? "translate-x-0" : "translate-x-full"} md:hidden`}>
                 <div className="text-[20px] font-bold flex flex-col gap-8 items-center">
                     <a href="/projects"><div onClick={toggleMenu}>Projects</div></a>

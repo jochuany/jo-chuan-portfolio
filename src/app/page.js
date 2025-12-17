@@ -1,9 +1,10 @@
 import Image from "next/image";
 
+
 export default function Home() {
   return (
     <>
-      <div className="flex w-screen h-[calc(100vh-130px)] justify-center items-center text-[#1a2690] bg-[#f2efdf]">
+      <div className="flex w-screen h-[calc(100vh-130px)] justify-center items-center text-brand-text bg-brand-bg">
 
         <div className="flex w-[90%] justify-between">
 

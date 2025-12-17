@@ -3,11 +3,11 @@ import Image from "next/image";
 export default function About() {
   return (
     <>
-      <div className="flex w-screen h-auto pt-10 pb-10 justify-center items-start text-[#1a2690] bg-[#f2efdf]">
+      <div className="flex w-screen h-auto pt-10 pb-10 justify-center items-start text-brand-text bg-brand-bg">
 
         <div className="flex flex-col w-[90%] justify-between">
 
-          <div className="w-full mb-10 md:w-[65%] pb-4 border-b border-[#1a2690] md:border-0">
+          <div className="w-full mb-10 md:w-[65%] pb-4 border-b border-brand-text md:border-0">
             {/* name intro */}
             <div className="font-bold text-[20px] mb-6">
               楊若絹
@@ -22,7 +22,7 @@ export default function About() {
           <div className="flex flex-col md:flex-row md:justify-between">
 
             {/* edu */}
-            <div className="mb-10 w-full md:w-[30%] pb-4 border-b border-[#1a2690] md:border-0">
+            <div className="mb-10 w-full md:w-[30%] pb-4 border-b border-brand-text md:border-0">
               <div className="font-bold text-[20px] mb-6">
                 ▌EDUCATION
               </div>
@@ -60,7 +60,7 @@ export default function About() {
 
 
             {/* exp */}
-            <div className="mb-10 w-full md:w-[30%] pb-4 border-b border-[#1a2690] md:border-0">
+            <div className="mb-10 w-full md:w-[30%] pb-4 border-b border-brand-text md:border-0">
               <div className="font-bold text-[20px] mb-6">
                 ▌EXPERIENCE
               </div>
@@ -99,7 +99,7 @@ export default function About() {
 
 
             {/* awd */}
-            <div className="mb-10 w-full md:w-[30%] pb-4 border-b border-[#1a2690] md:border-0">
+            <div className="mb-10 w-full md:w-[30%] pb-4 border-b border-brand-text md:border-0">
               <div className="font-bold text-[20px] mb-6">
                 ▌AWARD
               </div>

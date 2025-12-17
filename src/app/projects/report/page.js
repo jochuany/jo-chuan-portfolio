@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Report() {
   return (
     <>
-      <div className="flex w-screen h-auto pt-10 pb-10 justify-center items-start text-[#1a2690] bg-[#f2efdf]">
+      <div className="flex w-screen h-auto pt-10 pb-10 justify-center items-start text-brand-text bg-brand-bg">
 
         <div className="flex flex-col w-[90%] justify-between">
 
@@ -49,8 +49,8 @@ export default function Report() {
               團隊合作專案，參與部分資料分析、內容撰寫，另負責網頁切版與架設。此專案是我自學網頁前端的第一個切版實作，雖只使用純 HTML 與 CSS，但為後續學習框架打下基礎。
             </div>
             <a href="https://jochuany.github.io/112.nccucomm.big-data-analysis.4/html/index.html" target="_blank"
-              className="text-[16px] text-[#f2efdf] text-center mb-6 py-2 md:w-[30%]
-              bg-[#1a2690] border hover:bg-[#f2efdf] hover:text-[#1a2690] hover:border-[#1a2690] transition-all duration-300 ease">
+              className="text-[16px] text-brand-bg text-center mb-6 py-2 md:w-[30%]
+              bg-brand-text border hover:bg-brand-bg hover:text-brand-text hover:border-brand-text transition-all duration-300 ease">
               點此看作品
             </a>
           </div>

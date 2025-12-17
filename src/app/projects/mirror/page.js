@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Mirror() {
   return (
     <>
-      <div className="flex w-screen h-auto pt-10 pb-10 justify-center items-start text-[#1a2690] bg-[#f2efdf]">
+      <div className="flex w-screen h-auto pt-10 pb-10 justify-center items-start text-brand-text bg-brand-bg">
 
         <div className="flex flex-col w-[90%] justify-between">
 
@@ -50,8 +50,8 @@ export default function Mirror() {
               作品完成後在華山文創園區烏梅劇院進行為期五天的展覽，有許多校內校外人士前來觀展，我們亦設計體驗流程，包括介紹、講解、輔助教學等，帶領觀展者體驗我們的作品。
             </div>
             <a href="https://youtu.be/wE1DucIL8D8?si=ghNpbITCJTGbBKuE" target="_blank"
-              className="text-[16px] text-[#f2efdf] text-center mb-6 py-2 md:w-[30%]
-              bg-[#1a2690] border hover:bg-[#f2efdf] hover:text-[#1a2690] hover:border-[#1a2690] transition-all duration-300 ease">
+              className="text-[16px] text-brand-bg text-center mb-6 py-2 md:w-[30%]
+              bg-brand-text border hover:bg-brand-bg hover:text-brand-text hover:border-brand-text transition-all duration-300 ease">
               點此看作品
             </a>
           </div>

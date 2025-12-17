@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Spike() {
   return (
     <>
-      <div className="flex w-screen h-auto pt-10 pb-10 justify-center items-start text-[#1a2690] bg-[#f2efdf]">
+      <div className="flex w-screen h-auto pt-10 pb-10 justify-center items-start text-brand-text bg-brand-bg">
 
         <div className="flex flex-col w-[90%] justify-between">
 
@@ -49,8 +49,8 @@ export default function Spike() {
               個人專案，獨自完成遊戲機制設計、介面與流程規劃、程式撰寫，視覺素材由 AI 協助發想後自行製作。Next.js 為課堂中學習，React Hook 則從專案過程中自學應用。
             </div>
             <a href="https://volleyball-spiking-game.vercel.app/" target="_blank"
-              className="text-[16px] text-[#f2efdf] text-center mb-6 py-2 md:w-[30%]
-              bg-[#1a2690] border hover:bg-[#f2efdf] hover:text-[#1a2690] hover:border-[#1a2690] transition-all duration-300 ease">
+              className="text-[16px] text-brand-bg text-center mb-6 py-2 md:w-[30%]
+              bg-brand-text border hover:bg-brand-bg hover:text-brand-text hover:border-brand-text transition-all duration-300 ease">
               點此看作品
             </a>
           </div>

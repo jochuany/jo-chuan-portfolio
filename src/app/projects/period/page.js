@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Period() {
   return (
     <>
-      <div className="flex w-screen h-auto pt-10 pb-10 justify-center items-start text-[#1a2690] bg-[#f2efdf]">
+      <div className="flex w-screen h-auto pt-10 pb-10 justify-center items-start text-brand-text bg-brand-bg">
 
         <div className="flex flex-col w-[90%] justify-between">
 
@@ -49,8 +49,8 @@ export default function Period() {
               團體專案。內含整合月經知識問答、經期情緒安撫的機器人，以及政大周邊月經地圖的手機網頁。主要負責網頁前端串聯，將介面設計轉化為可用的手機網頁，亦協助將機器人與地圖串進網頁中。
             </div>
             <a href="https://youtu.be/ts6eESkYaKE?si=Gyy9lJ73vd44rRV_" target="_blank"
-              className="text-[16px] text-[#f2efdf] text-center mb-6 py-2 md:w-[30%]
-              bg-[#1a2690] border hover:bg-[#f2efdf] hover:text-[#1a2690] hover:border-[#1a2690] transition-all duration-300 ease">
+              className="text-[16px] text-brand-bg text-center mb-6 py-2 md:w-[30%]
+              bg-brand-text border hover:bg-brand-bg hover:text-brand-text hover:border-brand-text transition-all duration-300 ease">
               點此看作品
             </a>
           </div>

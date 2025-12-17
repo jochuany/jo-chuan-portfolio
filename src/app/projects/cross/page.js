@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Cross() {
   return (
     <>
-      <div className="flex w-screen h-auto pt-10 pb-10 justify-center items-start text-[#1a2690] bg-[#f2efdf]">
+      <div className="flex w-screen h-auto pt-10 pb-10 justify-center items-start text-brand-text bg-brand-bg">
 
         <div className="flex flex-col w-[90%] justify-between">
 
@@ -50,8 +50,8 @@ export default function Cross() {
               負責主要程式撰寫（人物操作 + 關卡串聯）與場景特效（下雨、冒煙、光線等）。在此專案中我亦擔任組長，協助整合美術組與程式組、掌握專案進度。另於 2025 年更新遊玩時的指引介面。
             </div>
             <a href="https://rjyang.itch.io/cross-the-zhinan-road-v2" target="_blank"
-              className="text-[16px] text-[#f2efdf] text-center mb-6 py-2 md:w-[30%]
-              bg-[#1a2690] border hover:bg-[#f2efdf] hover:text-[#1a2690] hover:border-[#1a2690] transition-all duration-300 ease">
+              className="text-[16px] text-brand-bg text-center mb-6 py-2 md:w-[30%]
+              bg-brand-text border hover:bg-brand-bg hover:text-brand-text hover:border-brand-text transition-all duration-300 ease">
               點此看作品
             </a>
           </div>

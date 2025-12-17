@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Tennis() {
   return (
     <>
-      <div className="flex w-screen h-auto pt-10 pb-10 justify-center items-start text-[#1a2690] bg-[#f2efdf]">
+      <div className="flex w-screen h-auto pt-10 pb-10 justify-center items-start text-brand-text bg-brand-bg">
 
         <div className="flex flex-col w-[90%] justify-between">
 
@@ -49,8 +49,8 @@ export default function Tennis() {
               個人專案，以自己喜歡的職業球員為題材，製作約一分半的資訊動畫，介紹其球風、成就等。由個人獨立完成腳本、繪製素材、動態化、配音配樂、剪輯，在企劃階段即著重場景間的轉換，電視、網球、快門、報紙，皆為搭配敘事轉場的關鍵物件，使整體畫面銜接更流暢。
             </div>
             <a href="https://youtu.be/y2TkF0Tm3JY?si=bADOPmTrxx7FX2uD" target="_blank"
-              className="text-[16px] text-[#f2efdf] text-center mb-6 py-2 md:w-[30%]
-              bg-[#1a2690] border hover:bg-[#f2efdf] hover:text-[#1a2690] hover:border-[#1a2690] transition-all duration-300 ease">
+              className="text-[16px] text-brand-bg text-center mb-6 py-2 md:w-[30%]
+              bg-brand-text border hover:bg-brand-bg hover:text-brand-text hover:border-brand-text transition-all duration-300 ease">
               點此看作品
             </a>
           </div>
