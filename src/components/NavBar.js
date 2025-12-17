@@ -15,8 +15,8 @@ export default function NavBar() {
     const pathname = usePathname();
 
     const navLinks = [
-        { name: "About", href: "/about" },
         { name: "Projects", href: "/projects" },
+        { name: "About", href: "/about" },
         { name: "Contact", href: "/contact" },
     ];
 
@@ -32,7 +32,7 @@ export default function NavBar() {
                 </div>
 
                 {/* pc menu */}
-                <div className="w-[30%] flex justify-between">
+                <div className="hidden w-[30%] md:flex justify-between">
 
                     {navLinks.map((link) => {
                         const isActive = pathname === link.href;
