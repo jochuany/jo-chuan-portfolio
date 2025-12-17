@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function About() {
   return (
     <>
-      <div className="flex w-screen h-auto pt-10 justify-center items-start text-[#1a2690] bg-[#f2efdf]">
+      <div className="flex w-screen h-auto pt-10 pb-10 justify-center items-start text-[#1a2690] bg-[#f2efdf]">
 
         <div className="flex flex-col w-[90%] justify-between">
 
