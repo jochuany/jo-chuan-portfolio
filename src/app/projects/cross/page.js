@@ -46,7 +46,8 @@ export default function Cross() {
 
           <div className="w-full flex flex-col">
             <div className="md:w-[65%] text-justify text-[12px] md:text-[14px] mb-6 leading-6">
-              團隊合作專案，負責主要程式撰寫（人物操作 + 關卡串聯）與場景特效（下雨、冒煙、光線等）。在此專案中我亦擔任組長，協助整合美術組與程式組、掌握專案進度。於 2025 年更新遊玩時的指引介面。
+              團隊合作專案，此遊戲以「天天過馬路」作為原型，將場景改為政大周邊，並且以劇情呈現，融入政大學生的生活。我們希望遊戲帶來娛樂的同時，也能喚起政大學生及附近居民對此地交通安全的重視。<br /><br />
+              負責主要程式撰寫（人物操作 + 關卡串聯）與場景特效（下雨、冒煙、光線等）。在此專案中我亦擔任組長，協助整合美術組與程式組、掌握專案進度。另於 2025 年更新遊玩時的指引介面。
             </div>
             <a href="https://rjyang.itch.io/cross-the-zhinan-road-v2" target="_blank"
               className="text-[12px] text-[#f2efdf] text-center mb-6 py-2 md:text-[14px] md:w-[30%]
