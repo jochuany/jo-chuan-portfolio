@@ -35,7 +35,7 @@ export default function NavBar() {
                 <div className="hidden w-[30%] md:flex justify-between">
 
                     {navLinks.map((link) => {
-                        const isActive = pathname === link.href;
+                        const isActive = link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
                         return (
                             <a
                                 key={link.href}
