@@ -46,7 +46,8 @@ export default function Report() {
 
           <div className="w-full flex flex-col">
             <div className="md:w-[65%] text-justify text-[16px] mb-6 leading-8">
-              團隊合作專案，參與部分資料分析、內容撰寫，另負責網頁切版與架設。此專案是我自學網頁前端的第一個切版實作，雖只使用純 HTML 與 CSS，但為後續學習框架打下基礎。
+              團隊合作專案，參與部分資料分析、內容撰寫，另負責網頁切版與架設。此專案是我自學網頁前端的第一個切版實作，雖只使用純 HTML 與 CSS，但為後續學習框架打下基礎。<br /><br />
+              內容部分負責薪資篇的數據搜集與分析，我使用 Web Scraper 爬 104 人力銀行網站上的職缺與薪資資訊，並進行分析、製作圖表，最後撰寫成稿件。
             </div>
             <a href="https://jochuany.github.io/112.nccucomm.big-data-analysis.4/html/index.html" target="_blank"
               className="text-[16px] text-brand-bg text-center mb-6 py-2 md:w-[30%]

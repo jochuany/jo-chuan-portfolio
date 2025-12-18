@@ -46,7 +46,7 @@ export default function Fruit() {
 
           <div className="w-full flex flex-col">
             <div className="md:w-[65%] text-justify text-[16px] mb-6 leading-8">
-              團體專案。以水果為題策劃一社群品牌，主要受眾為政大學生，品牌名「指南」為學校路名、介紹意義雙關，分享與生活相關的水果小知識。主要參與品牌規劃，並負責 Logo 設計，結合「水果」與「指南」之意象，以橘黃色為主色調，營造活潑的形象。
+              團體專案。以水果為題策劃一社群品牌，主要受眾為政大學生，品牌名「指南」為學校路名、介紹意義雙關，分享與生活相關的水果小知識。主要參與品牌規劃，並負責 Logo 設計，結合「水果」與「指南」之意象，以橘黃色為主色調，營造活潑、親民、生活感的形象。
             </div>
             <a href="https://www.instagram.com/zhinanfruit.co/" target="_blank"
               className="text-[16px] text-brand-bg text-center mb-6 py-2 md:w-[30%]
