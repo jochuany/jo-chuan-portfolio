@@ -7,6 +7,10 @@ export default function About() {
 
         <div className="flex flex-col w-[90%] justify-between">
 
+          <div className="flex md:hidden font-bold mb-6 text-[16px]">
+            ▌ABOUT ME
+          </div>
+
           <div className="w-full mb-10 md:w-[65%] pb-4 border-b border-brand-text md:border-0">
             {/* name intro */}
             <div className="font-bold text-[20px] mb-6">
@@ -23,7 +27,7 @@ export default function About() {
 
             {/* edu */}
             <div className="mb-10 w-full md:w-[30%] pb-4 border-b border-brand-text md:border-0">
-              <div className="font-bold text-[20px] mb-6">
+              <div className="font-bold text-[16px] mb-6">
                 ▌EDUCATION
               </div>
 
@@ -61,7 +65,7 @@ export default function About() {
 
             {/* exp */}
             <div className="mb-10 w-full md:w-[30%] pb-4 border-b border-brand-text md:border-0">
-              <div className="font-bold text-[20px] mb-6">
+              <div className="font-bold text-[16px] mb-6">
                 ▌EXPERIENCE
               </div>
 
@@ -100,7 +104,7 @@ export default function About() {
 
             {/* awd */}
             <div className="mb-10 w-full md:w-[30%] pb-4 border-b border-brand-text md:border-0">
-              <div className="font-bold text-[20px] mb-6">
+              <div className="font-bold text-[16px] mb-6">
                 ▌AWARD
               </div>
 

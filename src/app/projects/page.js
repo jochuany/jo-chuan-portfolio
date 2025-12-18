@@ -84,6 +84,10 @@ export default function Projects() {
             <div className="md:w-[30%] text-[14px] font-medium">YEAR</div>
           </div>
 
+          <div className="flex md:hidden font-bold mb-6 text-[16px]">
+            ▌ALL PROJECTS
+          </div>
+
           <div className="flex flex-col">
             {projects.map((project, index) => (
               <ProjectItem
