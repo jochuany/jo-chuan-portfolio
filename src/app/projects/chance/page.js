@@ -51,7 +51,7 @@ export default function Chance() {
             <a href="https://www.figma.com/design/o1C7w9sgoiAI7chbrAgcRF/Chance--?node-id=163-2&t=8p5JB3rs4YGvMrdl-1" target="_blank"
               className="text-[16px] text-brand-bg text-center mb-6 py-2 md:w-[30%]
               bg-brand-text border hover:bg-brand-bg hover:text-brand-text hover:border-brand-text transition-all duration-300 ease">
-              點此看作品
+              View on Figma &#x2197;
             </a>
           </div>
 

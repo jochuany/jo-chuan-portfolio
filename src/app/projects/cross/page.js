@@ -52,7 +52,7 @@ export default function Cross() {
             <a href="https://rjyang.itch.io/cross-the-zhinan-road-v2" target="_blank"
               className="text-[16px] text-brand-bg text-center mb-6 py-2 md:w-[30%]
               bg-brand-text border hover:bg-brand-bg hover:text-brand-text hover:border-brand-text transition-all duration-300 ease">
-              點此看作品
+              Play in Browser (Chrome) &#x2197;
             </a>
           </div>
 

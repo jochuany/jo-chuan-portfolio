@@ -52,7 +52,7 @@ export default function Mirror() {
             <a href="https://youtu.be/wE1DucIL8D8?si=ghNpbITCJTGbBKuE" target="_blank"
               className="text-[16px] text-brand-bg text-center mb-6 py-2 md:w-[30%]
               bg-brand-text border hover:bg-brand-bg hover:text-brand-text hover:border-brand-text transition-all duration-300 ease">
-              點此看作品
+              Demo on YouTube &#x2197;
             </a>
           </div>
 

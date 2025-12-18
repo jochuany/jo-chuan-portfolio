@@ -51,7 +51,7 @@ export default function Report() {
             <a href="https://jochuany.github.io/112.nccucomm.big-data-analysis.4/html/index.html" target="_blank"
               className="text-[16px] text-brand-bg text-center mb-6 py-2 md:w-[30%]
               bg-brand-text border hover:bg-brand-bg hover:text-brand-text hover:border-brand-text transition-all duration-300 ease">
-              點此看作品
+              Visit Website &#x2197;
             </a>
           </div>
 
