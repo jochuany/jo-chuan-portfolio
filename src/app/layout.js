@@ -29,7 +29,7 @@ export const metadata = {
     siteName: "Jo-Chuan's Portfolio",
     images: [
       {
-        url: "/og-preview",
+        url: "/og-preview.png",
         width: 1200,
         height: 630,
       },
