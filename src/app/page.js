@@ -1,5 +1,5 @@
 import Image from "next/image";
-import RotatingText from "@/components/RotatingText";
+import TextType from "@/components/TextType";
 
 
 export default function Home() {
@@ -18,17 +18,14 @@ export default function Home() {
               I have experience in
             </div>
 
-            <RotatingText
-              texts={['Digital Storytelling', 'UI/UX Design', 'Frontend Development', 'Media Psychology']}
-              mainClassName="md:ml-4 px-6 py-1 text-[28px] md:text-[40px] bg-brand-text text-brand-bg font-black overflow-hidden justify-center"
-              staggerFrom={"first"}
-              initial={{ y: "100%" }}
-              animate={{ y: 0 }}
-              exit={{ y: "-120%" }}
-              staggerDuration={0.025}
-              splitLevelClassName="overflow-hidden pb-1"
-              transition={{ type: "spring", damping: 50, stiffness: 800 }}
-              rotationInterval={3000}
+            <TextType
+              text={["Digital Storytelling", "UI/UX Design", "Frontend Development", "Media Psychology"]}
+              typingSpeed={75}
+              pauseDuration={1500}
+              showCursor={true}
+              cursorCharacter="_"
+              cursorBlinkDuration={0.5}
+              className="md:ml-4 px-4 pt-1 pb-2 text-[28px] md:text-[40px] bg-brand-text text-brand-bg font-black overflow-hidden justify-center"
             />
 
           </div>
