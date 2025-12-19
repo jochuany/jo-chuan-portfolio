@@ -21,7 +21,21 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Jo-Chuan's Portfolio",
-  description: "Jo-Chuan's Portfolio Website.",
+  description: "Jo-Chuan's Portfolio Website",
+  openGraph: {
+    title: "Jo-Chuan's Portfolio",
+    description: "Jo-Chuan's Portfolio Website",
+    url: "https://jo-chuan-portfolio.vercel.app/",
+    siteName: "Jo-Chuan's Portfolio",
+    images: [
+      {
+        url: "/og-preview",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }) {
