@@ -1,14 +1,25 @@
 import Image from "next/image";
+import DecryptedText from "@/components/DecryptedText";
 
 export default function Contact() {
   return (
     <>
-      <div className="flex w-screen h-[calc(100vh-130px)] justify-center items-center text-[#1a2690] bg-[#f2efdf]">
+      <div className="flex w-screen h-[calc(100vh-130px)] justify-center items-center text-brand-text bg-brand-bg">
 
         <div className="flex w-[90%] justify-between">
 
           <div className="w-full md:w-[65%]">
-            <div className="text-[40px] md:text-[64px] font-black mb-10">Contact me!</div>
+
+            <DecryptedText
+              speed={150}
+              text="Contact me!"
+              animateOn="view"
+              revealDirection="start"
+              className="text-[40px] md:text-[64px] font-black mb-10"
+              parentClassName="all-letters text-[40px] md:text-[64px] mb-10"
+              encryptedClassName="encrypted text-[40px] md:text-[64px] font-medium mb-10"
+              sequential="true"
+            />
 
             <div className="text-[16px]">
 
