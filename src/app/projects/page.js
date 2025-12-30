@@ -15,6 +15,12 @@ const projects = [
     year: "2025"
   },
   {
+    href: "/projects/aha",
+    title: "A HA~",
+    category: "產品規劃",
+    year: "2024"
+  },
+  {
     href: "/projects/period",
     title: "月來悅貼心",
     category: "網頁前端",
