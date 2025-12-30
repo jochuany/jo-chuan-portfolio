@@ -61,6 +61,8 @@ export default function Chance() {
             <img src="/images/chance/chance-02.png" className="w-full" />
             <img src="/images/chance/chance-03.png" className="w-full" />
             <img src="/images/chance/chance-04.png" className="w-full" />
+            <img src="/images/chance/chance-05.png" className="w-full" />
+            <img src="/images/chance/chance-06.png" className="w-full" />
           </div>
 
         </div>
