@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { EduItem } from "@/components/EduItem";
 import { ExpItem } from "@/components/ExpItem";
-import { AwdItem } from "@/components/AwdItem";
 
 const edu = [
   {
@@ -92,7 +91,7 @@ export default function About() {
           <div className="flex flex-col md:flex-row md:justify-between">
 
             {/* edu */}
-            <div className="mb-10 w-full md:w-[30%] pb-4 border-b border-brand-text md:border-0">
+            <div className="mb-10 w-full md:w-[45%] pb-4 border-b border-brand-text md:border-0">
               <div className="font-bold text-[16px] mb-6">
                 ▌EDUCATION
               </div>
@@ -111,7 +110,7 @@ export default function About() {
 
 
             {/* exp */}
-            <div className="mb-10 w-full md:w-[30%] pb-4 border-b border-brand-text md:border-0">
+            <div className="mb-10 w-full md:w-[45%] pb-4">
               <div className="font-bold text-[16px] mb-6">
                 ▌EXPERIENCE
               </div>
@@ -121,24 +120,6 @@ export default function About() {
                   key={index}
                   title={item.title}
                   place={item.place}
-                  description={item.description}
-                />
-              ))}
-
-            </div>
-
-
-            {/* awd */}
-            <div className="mb-10 w-full md:w-[30%] pb-4 md:border-0">
-              <div className="font-bold text-[16px] mb-6">
-                ▌AWARD
-              </div>
-
-              {awd.map((item, index) => (
-                <AwdItem
-                  key={index}
-                  title={item.title}
-                  award={item.award}
                   description={item.description}
                 />
               ))}
