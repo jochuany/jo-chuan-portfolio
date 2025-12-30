@@ -45,6 +45,12 @@ const projects = [
     year: "2023"
   },
   {
+    href: "/projects/nccu3m",
+    title: "NCCU in Under 3 Minutes",
+    category: "資訊動畫",
+    year: "2023"
+  },
+  {
     href: "/projects/tennis",
     title: "球后的崛起",
     category: "資訊動畫",
