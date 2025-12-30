@@ -38,7 +38,7 @@ export default function Nccu3m() {
                 TOOL
               </div>
               <div className="font-bold">
-                After Effects
+                Adobe After Effects
               </div>
             </div>
 
