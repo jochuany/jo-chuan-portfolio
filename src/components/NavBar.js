@@ -26,10 +26,10 @@ export default function NavBar() {
         <div className="flex justify-center items-center w-screen h-[60px] text-brand-text bg-brand-bg/50 font-bold backdrop-blur-sm sticky top-0 z-50">
             <div className="flex w-[70%] justify-between items-center">
 
-                <a href="/" className="md:w-[30%]">
+                <a href="/" className="pt-0.5 md:w-[30%] flex justify-start items-center text-[16px] text-brand-primary">
                     <Shuffle
-                        className="flex justify-start text-[16px] transition-all duration-300 cursor-pointer font-black"
-                        text="JO CHUAN"
+                        className="text-[16px] transition-all duration-300 cursor-pointer font-black"
+                        text="JO CHUAN."
                         shuffleDirection="right"
                         duration={0.5}
                         animationMode="evenodd"
@@ -45,8 +45,6 @@ export default function NavBar() {
                     />
                 </a>
 
-                {/* <a href="/" className="md:w-[30%]"><div className="flex justify-start text-[18px] transition-all duration-300 cursor-pointer hover:translate-y-1">J. C.</div></a> */}
-
                 {/* ham menu */}
                 <div onClick={toggleMenu} className="md:hidden z-50 relative cursor-pointer">
                     <img src={`${isOpen ? "/images/nav-close.png" : "/images/nav-open.png"}`} className="w-[24px] transition-all duration-300 ease" />
@@ -61,7 +59,8 @@ export default function NavBar() {
                             <a
                                 key={link.href}
                                 href={link.href}
-                                className={`text-[16px] transition-all duration-300 cursor-pointer ${isActive ? "border-b-2 border-brand-text" : ""}`}
+                                className={`text-[16px] transition-all duration-300 cursor-pointer hover:underline hover:underline-offset-2
+                                    ${isActive ? "underline underline-offset-2 text-brand-primary" : ""}`}
                             >
                                 {link.name}
                             </a>
@@ -75,9 +74,10 @@ export default function NavBar() {
             </div>
 
             {/* ham menu content */}
-            <div className={`fixed inset-0 bg-brand-bg z-40 flex flex-col justify-center items-center
+            <div className={`fixed inset-0 bg-brand-bg z-40 flex w-full h-screen justify-center items-center
             transition-transform duration-300 ease ${isOpen ? "translate-x-0" : "translate-x-full"} md:hidden`}>
                 <div className="text-[20px] font-bold flex flex-col gap-8 items-center">
+                    <a href="/"><div onClick={toggleMenu}>Home</div></a>
                     <a href="/projects"><div onClick={toggleMenu}>Projects</div></a>
                     <a href="/about"><div onClick={toggleMenu}>About</div></a>
                     <a href="/contact"><div onClick={toggleMenu}>Contact</div></a>

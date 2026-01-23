@@ -10,7 +10,7 @@ export default function Home() {
         <div className="flex flex-col w-[70%] mb-12">
 
           <div className="w-full text-[32px] md:text-[48px] font-medium">
-            Hello, I'm <span className="text-brand-secondary font-bold">Jo-Chuan</span>.
+            Hello, I'm <span className="text-brand-primary font-bold">Jo-Chuan</span>.
           </div>
 
           <div className="flex flex-col mt-4 justify-start items-start">
