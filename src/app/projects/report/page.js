@@ -46,14 +46,22 @@ export default function Report() {
 
           <div className="w-full flex flex-col">
             <div className="md:w-[65%] text-justify text-[16px] mb-6 leading-8">
-              團隊合作專案，參與部分資料分析、內容撰寫，另負責網頁切版與架設。此專案是我自學網頁前端的第一個切版實作，雖只使用純 HTML 與 CSS，但為後續學習框架打下基礎。<br /><br />
-              內容部分負責薪資篇的數據搜集與分析，我使用 Web Scraper 爬 104 人力銀行網站上的職缺與薪資資訊，並進行分析、製作圖表，最後撰寫成稿件。
+              此專案是為傳播科系新鮮人打造的專題網站，內容整合臺灣人口最多的臺北市、新北市、臺中市與高雄市之傳播產業薪資、房屋租金與各類消費資料，
+              旨在透過數據分析釐清生活各面向的概況並做比較，供社會新鮮人獲取所需資訊，降低對未來﻿的迷惘。
             </div>
             <a href="https://jochuany.github.io/112.nccucomm.big-data-analysis.4/html/index.html" target="_blank"
               className="text-[16px] text-brand-bg text-center mb-6 py-2 md:w-[30%]
               bg-brand-text border hover:bg-brand-bg hover:text-brand-text hover:border-brand-text transition-all duration-300 ease">
               Visit Website &#x2197;
             </a>
+            <div className="md:w-[65%] text-justify text-[16px] mb-6 leading-8">
+              在此團隊合作專案中，我完成了<br />
+              <ul className="list-disc pl-4">
+                <li><strong>「薪資篇」資料蒐集、數據分析與內容撰寫：</strong>使用 Web Scraper 插件工具爬下薪資資料，將數據分析結果製作成圖表，最後撰寫成一篇完整的報導。</li>
+                <li><strong>介面設計與技術實作之間的溝通：</strong>團隊中只有我了解網頁技術，因此負責網站架設的同時，我也以開發邏輯的角度，與團隊成員討論想呈現的介面或效果是否能達成。</li>
+                <li><strong>整個專題網站的切版與上線：</strong>整合所有文章、圖片與圖表，根據團隊成員規劃的介面，使用 HTML 與 CSS 撰寫成靜態網頁（含電腦版、手機版 RWD），並上線於 Github Pages。</li>
+              </ul>
+            </div>
           </div>
 
           <div className="w-full grid grid-cols-1 gap-6 md:grid-cols-2">
