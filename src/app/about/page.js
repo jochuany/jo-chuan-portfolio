@@ -1,6 +1,8 @@
+"use client";
 import Image from "next/image";
 import { EduItem } from "@/components/EduItem";
 import { ExpItem } from "@/components/ExpItem";
+import { useState } from "react";
 
 const edu = [
   {
@@ -45,26 +47,18 @@ const exp = [
   },
 ];
 
-const awd = [
-  {
-    title: "學生論文發表",
-    award: "台灣資訊社會研究學會年會暨論文研討會｜2024",
-    description: [
-      "通過雙匿名審查之研討會，進行論文發表。",
-      "研究主題：不同虛擬化身參與新聞遊戲之效果研究。"
-    ]
-  },
-  {
-    title: "最佳教育文化節目獎 入圍",
-    award: "第 46 屆藝美獎｜2021",
-    description: [
-      "第一次製作節目即入圍有大學生小金鐘之稱的全國大專院校競賽。",
-      "入圍節目：九米九的世界（排球知識、採訪節目）。"
-    ]
-  },
-];
 
 export default function About() {
+
+  const [activeTab, setActiveTab] = useState("about");
+
+  const tabContents = {
+    about: "1999 年生，畢業於國立政治大學廣告系／數位內容學程／傳播研究所。\n擁有設計、程式、研究的跨領域背景，對科技有興趣，懂得利用網路資源與 AI 科技自學新技術。\n\n個性認真、負責、在乎細節，能將作品反覆調整到最好。\n樂於學習和挑戰新事物，擅長獨立作業、也喜歡團隊合作，能快速適應新環境與不同節奏的工作方式。",
+    skills: "我擁有資訊動畫與視覺設計的專案經驗，善於設計流暢的腳本來說好一個故事。曾參與遊戲製作專案，並從自學 HTML / CSS 到掌握 Tailwind CSS / Next.js 等前端技術，能進行網頁切版與開發。碩士期間對 XR 科技產生興趣，專注於媒體心理學研究，撰寫碩士論文的過程中訓練了定義與驗證問題的能力、清晰有邏輯的寫作能力，亦擁有操作 XR 設備、拍攝與剪輯 360 影片的經驗。\n\n此外，修習網路內容產品規劃的課程，讓我培養從 0 開始定義數位產品的思維：從專案描述、目標設定開始，實際進行使用者調查與訪談，訂定受眾、產品需求與 Flowchart，並進一步製作 Wireframe 與 Prototype。",
+    future: "回顧過去做設計、寫程式到做研究的經歷，其實都指向同一目標——「創造更好的數位體驗」。製作數位敘事能更有效地向受眾傳達議題、學習前端語言讓我能從開發的角度去思考數位設計的可行性、研讀媒體心理學理論與設計的心理學也幫助我更了解使用者的心理歷程。\n\n我希望成為一名 UI 設計師／使用者體驗設計師，相較於純設計或純工程背景的工作者，我的優勢在於能擔任設計與開發之間的橋樑，我熟悉前端語言與設計規範，能在設計時考量技術實作的可行性，減少溝通落差。期待未來能發揮所長，與不同領域的夥伴合作，共同優化大眾與數位世界的互動體驗。"
+  };
+
+
   return (
     <>
       <div className="flex w-screen h-auto pt-10 pb-10 justify-center items-start text-brand-text bg-brand-bg">
@@ -78,14 +72,35 @@ export default function About() {
           <div className="w-full mb-10 md:w-[65%] pb-4 border-b border-brand-text md:border-0">
             {/* name intro */}
             <div className="font-bold text-[20px] mb-6">
-              楊若絹
+              楊若絹（Yang, Jo-Chuan）
             </div>
 
-            <div className="w-full font-medium text-[16px] leading-8 text-justify mb-6">
-              1999 年生，畢業於國立政治大學傳播碩士學位學程。個性認真、負責、在乎細節，樂於學習和挑戰新事物。擁有設計、程式、研究的跨領域的背景，擅長利用網路資源自學各種知識與技術是我的優勢。<br /><br />
-              大學時累積許多數位敘事、資訊動畫與視覺設計的專案經驗，能設計流暢的腳本與轉場來說好一個故事。雙主修數位內容後開始接觸程式語言，曾參與遊戲製作專案，並從自學 HTML / CSS 到掌握 Tailwind CSS / Next.js 前端技術，期望成為一名了解開發邏輯的設計師。碩士期間則專注於媒體心理學的研究領域，培養了定義、論述與驗證問題的能力，並在實驗室的工作經驗中對沉浸科技產生興趣，擁有操作 VR 設備、拍攝與剪輯 360 影片的經驗。<br /><br />
-              回顧過去做設計、寫程式到做研究的經歷，其實都指向同一目標——「創造更好的數位體驗」。製作數位敘事能更有效地向受眾傳達議題、學習前端語言讓我能從開發的角度去思考設計的可行性、研讀媒體心理學理論也幫助我更了解媒介使用者的心理歷程。期待未來能發揮所長，與不同領域的夥伴合作，共同優化大眾與數位世界的互動體驗。
+            <div className="grid grid-cols-3">
+              <div
+                className={`px-4 py-2 text-center transition-all duration-400 cursor-pointer border border-brand-text ${activeTab === 'about' ? "bg-brand-text text-brand-bg" : "bg-brand-bg text-brand-text"}`}
+                onClick={() => setActiveTab('about')}
+              >
+                關於我
+              </div>
+              <div
+                className={`px-4 py-2 text-center transition-all duration-400 cursor-pointer border-y border-brand-text ${activeTab === 'skills' ? "bg-brand-text text-brand-bg" : "bg-brand-bg text-brand-text"}`}
+                onClick={() => setActiveTab('skills')}
+              >
+                技能與專長
+              </div>
+              <div
+                className={`px-4 py-2 text-center transition-all duration-400 cursor-pointer border border-brand-text ${activeTab === 'future' ? "bg-brand-text text-brand-bg" : "bg-brand-bg text-brand-text"}`}
+                onClick={() => setActiveTab('future')}
+              >
+                未來期許
+              </div>
             </div>
+
+            <div className="w-full font-medium text-[16px] leading-8 text-justify mb-6 border-x border-b border-brand-text px-8 py-7 min-h-[320px] whitespace-pre-line">
+              {tabContents[activeTab]}
+            </div>
+
+
           </div>
 
           <div className="flex flex-col md:flex-row md:justify-between">
