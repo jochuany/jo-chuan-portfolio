@@ -63,7 +63,7 @@ export default function About() {
     <>
       <div className="flex w-screen h-auto pt-10 pb-10 justify-center items-start text-brand-text bg-brand-bg">
 
-        <div className="flex flex-col w-[90%] justify-between">
+        <div className="flex flex-col w-[70%] justify-between">
 
           <div className="flex md:hidden font-bold mb-6 text-[16px]">
             ▌ABOUT ME

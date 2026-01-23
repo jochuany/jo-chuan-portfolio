@@ -23,8 +23,8 @@ export default function NavBar() {
     ];
 
     return (
-        <div className="flex justify-center items-center w-screen h-[80px] text-brand-text bg-brand-bg font-bold border-b sticky top-0 z-50">
-            <div className="flex w-[90%] justify-between items-center">
+        <div className="flex justify-center items-center w-screen h-[60px] text-brand-text bg-brand-bg/50 font-bold backdrop-blur-sm sticky top-0 z-50">
+            <div className="flex w-[70%] justify-between items-center">
 
                 <a href="/" className="md:w-[30%]">
                     <Shuffle
@@ -53,7 +53,7 @@ export default function NavBar() {
                 </div>
 
                 {/* pc menu */}
-                <div className="hidden w-[30%] md:flex justify-between">
+                <div className="hidden md:w-[40%] lg:w-[30%] md:flex justify-between">
 
                     {navLinks.map((link) => {
                         const isActive = link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
@@ -61,8 +61,7 @@ export default function NavBar() {
                             <a
                                 key={link.href}
                                 href={link.href}
-                                className={`text-[16px] transition-all duration-300 cursor-pointer hover:translate-y-1
-                                ${isActive ? "font-black" : "font-light"}`}
+                                className={`text-[16px] transition-all duration-300 cursor-pointer ${isActive ? "border-b-2 border-brand-text" : ""}`}
                             >
                                 {link.name}
                             </a>

@@ -6,7 +6,7 @@ export default function Contact() {
     <>
       <div className="flex w-screen h-[calc(100vh-130px)] justify-center items-center text-brand-text bg-brand-bg">
 
-        <div className="flex w-[90%] justify-between">
+        <div className="flex w-[70%] justify-between">
 
           <div className="w-full md:w-[65%]">
 
