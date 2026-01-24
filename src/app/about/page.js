@@ -61,7 +61,7 @@ export default function About() {
 
   return (
     <>
-      <div className="flex w-screen h-auto pt-10 pb-10 justify-center items-start text-brand-text bg-brand-bg">
+      <div className="flex w-screen h-auto pt-10 pb-10 justify-center items-start text-brand-text bg-brand-bg mt-[60px]">
 
         <div className="flex flex-col w-[70%] justify-between">
 
