@@ -114,7 +114,7 @@ export default function Projects() {
     <>
       <div className="flex w-screen h-auto pt-10 pb-10 justify-center items-start text-brand-text bg-brand-bg">
 
-        <div className="flex flex-col w-[70%] mt-[60px]">
+        <div className="flex flex-col w-[90%] md:w-[80%] lg:w-[70%] mt-[60px]">
 
           <div className="flex font-bold mb-6 text-[16px]">
             ▌ALL PROJECTS

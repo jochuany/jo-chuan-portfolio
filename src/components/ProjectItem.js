@@ -4,7 +4,7 @@ export const ProjectItem = ({ href, title, category, year, photo, tool }) => {
 
         <a href={href} className="md:border-none transition-all duration-300 ease group">
             <div className="flex flex-col justify-between items-start transition-all duration-300 ease">
-                <div className="h-[140px] md:h-[160px] lg:h-[200px] w-full mb-2 overflow-hidden relative group">
+                <div className="h-[160px] md:h-[180px] lg:h-[200px] w-full mb-2 overflow-hidden relative group">
                     <div style={{ backgroundImage: `url(${photo})` }} className="h-full w-full
                 bg-cover bg-center bg-no-repeat transition-all duration-500 ease md:group-hover:scale-110"></div>
                 </div>

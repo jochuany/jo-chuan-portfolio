@@ -35,7 +35,7 @@ export default function Home() {
     <>
       <div className="flex flex-col w-screen mt-[60px] justify-center items-center bg-brand-bg">
 
-        <div className="flex flex-col w-[90%] md:w-[70%] h-[calc(100vh-60px)] justify-center items-center">
+        <div className="flex flex-col w-[90%] md:w-[80%] lg:w-[70%] h-[calc(100vh-60px)] justify-center items-center">
 
           <div className="flex flex-col w-full mb-[100px]">
 
@@ -69,7 +69,7 @@ export default function Home() {
         </div>
 
 
-        <div className="flex flex-col w-[90%] md:w-[70%] md:h-[calc(100vh-110px)] items-start py-[50px]">
+        <div className="flex flex-col w-[90%] md:w-[80%] lg:w-[70%] md:h-[calc(100vh-110px)] items-start py-[50px]">
 
           <div className="w-full text-brand-text font-bold text-[16px] pb-6"> ▌Selected Projects</div>
 

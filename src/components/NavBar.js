@@ -25,7 +25,7 @@ export default function NavBar() {
     return (
         <>
             <div className="flex justify-center items-center w-screen h-[60px] text-brand-text bg-brand-bg/50 font-bold backdrop-blur-sm fixed top-0 left-0 z-50">
-                <div className="flex w-[90%] md:w-[70%] justify-between items-center">
+                <div className="flex w-[90%] md:w-[80%] lg:w-[70%] justify-between items-center">
 
                     <a href="/" className="pt-0.5 md:w-[30%] flex justify-start items-center text-[16px] text-brand-primary">
                         <Shuffle
