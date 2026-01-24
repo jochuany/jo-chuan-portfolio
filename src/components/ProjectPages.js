@@ -55,7 +55,7 @@ export const ProjectPages = ({ title, category, year, tools, introduction, cta, 
                             <p>在此專案中，我完成了</p>
                             <ul className="my-4 list-disc ml-4">
                                 {details.map((item, index) => (
-                                    <li key={index} className="mb-4"><strong>{item.subtitle}</strong>：{item.description}</li>
+                                    <li key={index} className="mb-4"><strong>{item.subtitle}</strong>{item.description}</li>
                                 ))}
                             </ul>
                         </div>

@@ -1,72 +1,44 @@
 import Image from "next/image";
+import { ProjectPages } from "@/components/ProjectPages";
+
+const content =
+{
+  title: "球后的崛起",
+  category: "資訊動畫",
+  year: "2022",
+  tools: "Adobe Illustrator / Adobe After Effects",
+  introduction: "個人專案，以自己喜歡的職業球員為題材，製作約一分半的資訊動畫，介紹其球風、成就等。由個人獨立完成腳本、繪製素材、動態化、配音配樂、剪輯，在企劃階段即著重場景間的轉換，電視、網球、快門、報紙，皆為搭配敘事轉場的關鍵物件，使整體畫面銜接更流暢。",
+  cta: "Watch on YouTube \u2197",
+  link: "https://youtu.be/y2TkF0Tm3JY?si=bADOPmTrxx7FX2uD",
+  details: [
+    {
+      subtitle: "腳本撰寫與分鏡設計：",
+      description: "針對主題蒐集相關資料，抓取重點，設計流暢的腳本、分鏡、旁白與轉場。"
+    },
+    {
+      subtitle: "素材繪製與動態化：",
+      description: "根據設計好的腳本，列出動畫所需要的素材，使用 Illustrator 以電繪版繪製或拉向量圖，再依照旁白或配樂節奏，使用 After Effects 進行動態化、加上特效與轉場。"
+    },
+    {
+      subtitle: "配音與後製剪輯：",
+      description: "因為擁有電台實習的經驗，我能錄製清楚的旁白，並為動畫搜尋合適音效，剪輯成完整的數位敘事影片。"
+    }
+  ],
+  photos: [
+    "/images/tennis/tennis-01.png",
+    "/images/tennis/tennis-02.png",
+    "/images/tennis/tennis-03.png",
+    "/images/tennis/tennis-04.png",
+    "/images/tennis/tennis-05.png",
+    "/images/tennis/tennis-06.png"
+  ]
+}
 
 export default function Tennis() {
   return (
     <>
-      <div className="flex w-screen h-auto pt-10 pb-10 justify-center items-start text-brand-text bg-brand-bg">
+      <ProjectPages {...content} />
 
-        <div className="flex flex-col w-[90%] justify-between">
-
-
-
-          <div className="text-[24px] font-bold mb-6 md:text-[26px]">
-            球后的崛起
-          </div>
-
-          <div className="flex flex-col w-full mb-6 md:flex-row md:justify-between text-[16px] md:text-[18px]">
-
-            <div className="mb-4 md:w-[30%]">
-              <div className="font-medium">
-                TYPE
-              </div>
-              <div className="font-bold">
-                資訊動畫
-              </div>
-            </div>
-
-            <div className="mb-4 md:w-[30%]">
-              <div className="font-medium">
-                YEAR
-              </div>
-              <div className="font-bold">
-                2022
-              </div>
-            </div>
-
-            <div className="mb-4 md:w-[30%]">
-              <div className="font-medium">
-                TOOL
-              </div>
-              <div className="font-bold">
-                Adobe Illustrator / Adobe After Effects
-              </div>
-            </div>
-
-          </div>
-
-          <div className="w-full flex flex-col">
-            <div className="md:w-[65%] text-justify text-[16px] mb-6 leading-8">
-              個人專案，以自己喜歡的職業球員為題材，製作約一分半的資訊動畫，介紹其球風、成就等。由個人獨立完成腳本、繪製素材、動態化、配音配樂、剪輯，在企劃階段即著重場景間的轉換，電視、網球、快門、報紙，皆為搭配敘事轉場的關鍵物件，使整體畫面銜接更流暢。
-            </div>
-            <a href="https://youtu.be/y2TkF0Tm3JY?si=bADOPmTrxx7FX2uD" target="_blank"
-              className="text-[16px] text-brand-bg text-center mb-6 py-2 md:w-[30%]
-              bg-brand-text border hover:bg-brand-bg hover:text-brand-text hover:border-brand-text transition-all duration-300 ease">
-              Watch on YouTube &#x2197;
-            </a>
-          </div>
-
-          <div className="w-full grid grid-cols-1 gap-6 md:grid-cols-2">
-            <img src="/images/tennis/tennis-01.png" className="w-full" />
-            <img src="/images/tennis/tennis-02.png" className="w-full" />
-            <img src="/images/tennis/tennis-03.png" className="w-full" />
-            <img src="/images/tennis/tennis-04.png" className="w-full" />
-            <img src="/images/tennis/tennis-05.png" className="w-full" />
-            <img src="/images/tennis/tennis-06.png" className="w-full" />
-          </div>
-
-        </div>
-
-      </div>
     </>
   );
 }

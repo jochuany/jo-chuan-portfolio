@@ -13,19 +13,19 @@ const content =
   link: "https://www.figma.com/design/hrJbWzRWhuwEiSAa2Qg7jn/AHA?node-id=305-233&t=3N23Bhb5J4ErT9Ib-1",
   details: [
     {
-      subtitle: "使用者調查與訪談，確認痛點與解方",
+      subtitle: "使用者調查與訪談，確認痛點與解方：",
       description: "發布調查問卷，初步了解使用產品時面臨的問題；根據調查資料設計訪談方向，訪談 2 名行銷企劃從業者、並觀察他們的操作過程，確立「搜尋過程繁瑣耗時」的痛點，以此發現來規劃新功能。"
     },
     {
-      subtitle: "訂定產品需求與商業模式",
+      subtitle: "訂定產品需求與商業模式：",
       description: "根據使用者訪談結果分析產品需求的重要程度，決定納入 AI 指令搜尋、多圖整合搜尋、進階篩選的新功能；並針對原有功能、新功能與不同類型的使用者，初步訂定產品的商業模式。"
     },
     {
-      subtitle: "Flowchart 規劃與 Prototype",
+      subtitle: "Flowchart 規劃與 Prototype：",
       description: "規劃產品新功能的流程圖，並進一步製作 Prototype。"
     },
     {
-      subtitle: "LOGO 設計、UI 介面設計",
+      subtitle: "LOGO 設計、UI 介面設計：",
       description: "以「A HA~」感嘆詞作為產品 slogan，代表新功能幫助使用者成功找到參考圖的瞬間；使用「燈泡」作為 LOGO 形象，並在燈絲中融入 slogan 英文字。"
     }
   ],
@@ -49,8 +49,8 @@ const content =
 export default function Aha() {
 
   return (
-    <div>
+    <>
       <ProjectPages {...content} />
-    </div>
+    </>
   );
 }

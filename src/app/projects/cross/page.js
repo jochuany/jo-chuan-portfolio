@@ -1,81 +1,51 @@
 import Image from "next/image";
+import { ProjectPages } from "@/components/ProjectPages";
+
+const content =
+{
+  title: "麥側過馬路",
+  category: "3D 遊戲",
+  year: "2023 (2025 v2)",
+  tools: "Unity",
+  introduction: "團隊合作專案，此遊戲以「天天過馬路」作為原型，將場景改為政大周邊，並且以劇情呈現，融入政大學生的生活。我們希望遊戲帶來娛樂的同時，也能喚起政大學生及附近居民對此地交通安全的重視。",
+  cta: "Play in Browser (Chrome) \u2197",
+  link: "https://rjyang.itch.io/cross-the-zhinan-road-v2",
+  details: [
+    {
+      subtitle: "主要程式撰寫：",
+      description: "人物操作、關卡串聯、道具呈現"
+    },
+    {
+      subtitle: "場景特效：",
+      description: "下雨、冒煙、光線等"
+    },
+    {
+      subtitle: "擔任組長：",
+      description: "在此專案中我亦擔任組長，協助整合美術組與程式組、掌握專案進度。"
+    }
+  ],
+  photos: [
+    "/images/cross/cross-01.png",
+    "/images/cross/cross-02.png",
+    "/images/cross/cross-03.png",
+    "/images/cross/cross-04.png",
+    "/images/cross/cross-05.png",
+    "/images/cross/cross-06.png",
+    "/images/cross/cross-07.png",
+    "/images/cross/cross-08.png",
+    "/images/cross/cross-09.png",
+    "/images/cross/cross-10.png",
+    "/images/cross/cross-11.png",
+    "/images/cross/cross-12.png",
+    "/images/cross/cross-13.png",
+    "/images/cross/cross-14.png"
+  ]
+}
 
 export default function Cross() {
   return (
     <>
-      <div className="flex w-screen h-auto pt-10 pb-10 justify-center items-start text-brand-text bg-brand-bg">
-
-        <div className="flex flex-col w-[90%] justify-between">
-
-
-
-          <div className="text-[24px] font-bold mb-6 md:text-[26px]">
-            麥側過馬路
-          </div>
-
-          <div className="flex flex-col w-full mb-6 md:flex-row md:justify-between text-[16px] md:text-[18px]">
-
-            <div className="mb-4 md:w-[30%]">
-              <div className="font-medium">
-                TYPE
-              </div>
-              <div className="font-bold">
-                3D 遊戲
-              </div>
-            </div>
-
-            <div className="mb-4 md:w-[30%]">
-              <div className="font-medium">
-                YEAR
-              </div>
-              <div className="font-bold">
-                2023 (2025 v2)
-              </div>
-            </div>
-
-            <div className="mb-4 md:w-[30%]">
-              <div className="font-medium">
-                TOOL
-              </div>
-              <div className="font-bold">
-                Unity C#
-              </div>
-            </div>
-
-          </div>
-
-          <div className="w-full flex flex-col">
-            <div className="md:w-[65%] text-justify text-[16px] mb-6 leading-8">
-              團隊合作專案，此遊戲以「天天過馬路」作為原型，將場景改為政大周邊，並且以劇情呈現，融入政大學生的生活。我們希望遊戲帶來娛樂的同時，也能喚起政大學生及附近居民對此地交通安全的重視。<br /><br />
-              負責主要程式撰寫（人物操作 + 關卡串聯）與場景特效（下雨、冒煙、光線等）。在此專案中我亦擔任組長，協助整合美術組與程式組、掌握專案進度。另於 2025 年更新遊玩時的指引介面。
-            </div>
-            <a href="https://rjyang.itch.io/cross-the-zhinan-road-v2" target="_blank"
-              className="text-[16px] text-brand-bg text-center mb-6 py-2 md:w-[30%]
-              bg-brand-text border hover:bg-brand-bg hover:text-brand-text hover:border-brand-text transition-all duration-300 ease">
-              Play in Browser (Chrome) &#x2197;
-            </a>
-          </div>
-
-          <div className="w-full grid grid-cols-1 gap-6 md:grid-cols-2">
-            <img src="/images/cross/cross-01.png" className="w-full" />
-            <img src="/images/cross/cross-02.png" className="w-full" />
-            <img src="/images/cross/cross-03.png" className="w-full" />
-            <img src="/images/cross/cross-04.png" className="w-full" />
-            <img src="/images/cross/cross-05.png" className="w-full" />
-            <img src="/images/cross/cross-06.png" className="w-full" />
-            <img src="/images/cross/cross-07.png" className="w-full" />
-            <img src="/images/cross/cross-09.png" className="w-full" />
-            <img src="/images/cross/cross-08.png" className="w-full" />
-            <img src="/images/cross/cross-10.png" className="w-full" />
-            <img src="/images/cross/cross-11.png" className="w-full" />
-            <img src="/images/cross/cross-12.png" className="w-full" />
-            <img src="/images/cross/cross-13.png" className="w-full" />
-            <img src="/images/cross/cross-14.png" className="w-full" />
-          </div>
-
-        </div>
-
-      </div>
+      <ProjectPages {...content} />
     </>
   );
 }
