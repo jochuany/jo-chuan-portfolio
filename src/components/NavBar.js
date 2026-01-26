@@ -29,7 +29,7 @@ export default function NavBar() {
 
                     <a href="/" className="pt-0.5 md:w-[30%] flex justify-start items-center text-[16px] text-brand-primary">
                         <Shuffle
-                            className="text-[16px] transition-all duration-300 cursor-pointer font-black"
+                            className="text-[16px] transition-all duration-300 cursor-pointer font-black hover:opacity-60"
                             text="JO CHUAN."
                             shuffleDirection="right"
                             duration={0.5}
@@ -48,11 +48,8 @@ export default function NavBar() {
 
                     {/* ham menu */}
                     <div onClick={toggleMenu} className="md:hidden z-50 relative cursor-pointer h-[20px] w-[20px] flex flex-col justify-center gap-[8px]">
-                        {/* <img src={`${isOpen ? "/images/nav-close.png" : "/images/nav-open.png"}`} className="w-[24px] transition-all duration-300 ease" /> */}
                         <span className={`h-0.5 w-full bg-brand-text transition-all duration-300 ease ${isOpen ? "rotate-45 translate-y-[5px]" : ""}`} />
-                        {/* <span className={`h-0.5 w-full bg-brand-text transition-all duration-300 ease ${isOpen ? "opacity-0" : ""}`} /> */}
                         <span className={`h-0.5 w-full bg-brand-text transition-all duration-300 ease ${isOpen ? "-rotate-45 -translate-y-[5px]" : ""}`} />
-                        {/* <div>{isOpen ? "Close" : "Menu"}</div> */}
                     </div>
 
                     {/* pc menu */}
@@ -64,8 +61,8 @@ export default function NavBar() {
                                 <a
                                     key={link.href}
                                     href={link.href}
-                                    className={`text-[16px] transition-all duration-300 cursor-pointer hover:underline hover:underline-offset-2
-                                    ${isActive ? "underline underline-offset-2 text-brand-primary" : ""}`}
+                                    className={`text-[16px] transition-all duration-300 cursor-pointer hover:underline hover:underline-offset-2 hover:text-brand-text
+                                    ${isActive ? "underline underline-offset-2 text-brand-primary" : "text-brand-graytext"}`}
                                 >
                                     {link.name}
                                 </a>

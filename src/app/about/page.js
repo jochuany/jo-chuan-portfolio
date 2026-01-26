@@ -22,8 +22,11 @@ export default function About() {
           {/* photo & about */}
           <div className="w-full lg:w-[30%] mb-10 lg:mb-0 lg:sticky lg:top-[100px]">
 
-            <img src="images/myphoto.png" className="max-w-[140px] md:max-w-[200px]" />
-            <div className="mt-4 font-medium mb-6">楊若絹<span className="text-[12px]">（ㄐㄩㄢˋ）</span></div>
+            <div style={{ backgroundImage: `url(images/myphoto.png)` }} className={`h-[200px] max-w-[200px] md:grayscale-50
+                bg-contain bg-center bg-no-repeat transition-all duration-500 ease md:hover:grayscale-0`}></div>
+
+
+            <div className="mt-4 font-semibold mb-6 text-[18px]">楊 若絹<span className="text-[12px]">（ㄐㄩㄢˋ）</span></div>
 
             <div className="text-[14px] text-brand-text font-normal leading-7 text-justify">
               我是一位具備設計、程式與研究背景的跨領域實踐者，擁有製作資訊動畫的經驗，也能進行前端實作；碩士期間的 XR 媒體心理學研究，則賦予我嚴謹的數據分析、邏輯論述與寫作能力。<br /><br />
@@ -47,7 +50,7 @@ export default function About() {
 
                 <div className="text-[16px] text-brand-text font-normal leading-8 flex flex-col">
 
-                  <div className="mb-6">
+                  <div className="mb-6 md:hover:text-brand-primary transition-all duration-300 ease">
                     <div className="font-medium">傳播碩士學位學程（M.A.）</div>
                     <div className="flex justify-between font-normal">
                       <div>國立政治大學</div>
@@ -55,7 +58,7 @@ export default function About() {
                     </div>
                   </div>
 
-                  <div className="mb-6">
+                  <div className="mb-6 md:hover:text-brand-primary transition-all duration-300 ease">
                     <div className="font-medium">廣告學系 傳播設計組（B.A.）<br />數位內容與科技學士學位學程（B.S.）</div>
                     <div className="flex justify-between font-normal">
                       <div>國立政治大學</div>
@@ -82,7 +85,7 @@ export default function About() {
 
                 <div className="text-[16px] text-brand-text font-normal leading-8 flex flex-col">
 
-                  <div className="mb-6">
+                  <div className="mb-6 md:hover:text-brand-primary transition-all duration-300 ease">
                     <div className="font-medium">研究助理</div>
                     <div className="flex justify-between font-normal">
                       <div>TLab 媒體心理實驗室</div>
@@ -96,7 +99,7 @@ export default function About() {
                     </ul>
                   </div>
 
-                  <div className="mb-6">
+                  <div className="mb-6 md:hover:text-brand-primary transition-all duration-300 ease">
                     <div className="font-medium">實習助理（記者、資訊編輯、節目製作）</div>
                     <div className="flex justify-between font-normal">
                       <div>政大之聲廣播電台</div>
@@ -222,7 +225,7 @@ export default function About() {
           </div>
 
         </div>
-      </div>
+      </div >
     </>
   );
 }
