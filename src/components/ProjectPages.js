@@ -88,7 +88,9 @@ export const ProjectPages = ({ title, category, year, tools, introduction, cta, 
                             </div>
 
                             <div className="text-justify mb-10">
-                                <div className="text-brand-graytext font-bold text-[14px]">{"// "}What I do</div>
+                                <div className="text-brand-graytext font-bold text-[14px]">
+                                    {"// "}Scope of Work
+                                </div>
                                 <ul className="my-4 list-disc ml-4 leading-8 text-[16px] font-normal">
                                     {details.map((item, index) => (
                                         <li key={index} className={`mb-4`}><span className={`font-semibold`}>{item.subtitle}</span>{item.description}</li>
