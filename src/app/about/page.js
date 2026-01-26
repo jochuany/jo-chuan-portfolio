@@ -17,7 +17,7 @@ export default function About() {
     <>
       <div className="flex w-screen h-auto mt-[60px] py-10 justify-center items-start text-brand-text bg-brand-bg">
 
-        <div className="w-[90%] md:w-[80%] lg:w-[70%] flex flex-col justify-between lg:flex-row items-start">
+        <div className="w-[90%] md:w-[85%] lg:w-[80%] flex flex-col justify-between lg:flex-row items-start">
 
           {/* photo & about */}
           <div className="w-full lg:w-[30%] mb-10 lg:mb-0 lg:sticky lg:top-[100px]">
@@ -42,22 +42,22 @@ export default function About() {
               <div className="">
 
                 <div className="flex font-bold mb-6 text-[16px] text-brand-graytext">
-                  ▌EDUCATION
+                  {"// "}Education
                 </div>
 
                 <div className="text-[16px] text-brand-text font-normal leading-8 flex flex-col">
 
-                  <div className="mb-4">
-                    <div className="text-brand-primary font-medium">傳播碩士學位學程（M.A.）</div>
-                    <div className="flex justify-between font-medium">
+                  <div className="mb-6">
+                    <div className="font-medium">傳播碩士學位學程（M.A.）</div>
+                    <div className="flex justify-between font-normal">
                       <div>國立政治大學</div>
                       <div>2023/09 - 2025/12</div>
                     </div>
                   </div>
 
-                  <div className="mb-4">
-                    <div className="text-brand-primary font-medium">廣告學系 傳播設計組（B.A.）<br />數位內容與科技學士學位學程（B.S.）</div>
-                    <div className="flex justify-between font-medium">
+                  <div className="mb-6">
+                    <div className="font-medium">廣告學系 傳播設計組（B.A.）<br />數位內容與科技學士學位學程（B.S.）</div>
+                    <div className="flex justify-between font-normal">
                       <div>國立政治大學</div>
                       <div>2018/09 - 2023/06</div>
                     </div>
@@ -77,18 +77,18 @@ export default function About() {
               <div className="">
 
                 <div className="flex font-bold mb-6 text-[16px] text-brand-graytext">
-                  ▌EXPERIENCE
+                  {"// "}Experience
                 </div>
 
                 <div className="text-[16px] text-brand-text font-normal leading-8 flex flex-col">
 
-                  <div className="mb-4">
-                    <div className="text-brand-primary font-medium">研究助理</div>
-                    <div className="flex justify-between font-medium">
+                  <div className="mb-6">
+                    <div className="font-medium">研究助理</div>
+                    <div className="flex justify-between font-normal">
                       <div>TLab 媒體心理實驗室</div>
                       <div>2024/02 - 2025/10</div>
                     </div>
-                    <ul className="list-disc pl-4 text-[14px]">
+                    <ul className="list-disc pl-4 text-[14px] mt-2">
                       <li>協助社會科學、媒體心理實驗法之研究進行，與助理群合作接待超過百位受試者，擁有 VR 頭顯操作經驗。</li>
                       <li>協助沉浸科技、虛擬實境社交等主題之文獻搜集整理。</li>
                       <li>文化科技計畫：協助搜集國內外沉浸文化科技案例，整合為臺灣文化科技產業地圖。</li>
@@ -96,13 +96,13 @@ export default function About() {
                     </ul>
                   </div>
 
-                  <div className="mb-4">
-                    <div className="text-brand-primary font-medium">實習助理（記者、資訊編輯、節目製作）</div>
-                    <div className="flex justify-between font-medium">
+                  <div className="mb-6">
+                    <div className="font-medium">實習助理（記者、資訊編輯、節目製作）</div>
+                    <div className="flex justify-between font-normal">
                       <div>政大之聲廣播電台</div>
                       <div>2019/09 - 2022/06</div>
                     </div>
-                    <ul className="list-disc pl-4 text-[14px]">
+                    <ul className="list-disc pl-4 text-[14px] mt-2">
                       <li>廣播節目製作：合作完成節目企劃、採訪、主持、剪輯、現場播出。</li>
                       <li>新聞資訊編輯：編輯國內外重要新聞稿，並於整點 Live 播報；帶領助理檢討專題稿件。</li>
                       <li>深度專題產製：合作擬訂專題企劃、採訪、撰寫、過音，完成 2000 字以上之深度專題報導。</li>
@@ -123,12 +123,12 @@ export default function About() {
               <div className="">
 
                 <div className="flex font-bold mb-6 text-[16px] text-brand-graytext">
-                  ▌SKILLS
+                  {"// "}Skills
                 </div>
 
                 <div className="text-[16px] text-brand-text font-normal flex flex-col">
 
-                  <div className="mb-4">
+                  <div className="mb-6">
                     <div className="text-brand-text font-medium leading-8">視覺設計與資訊動畫</div>
                     <div className="flex flex-wrap gap-2">
                       {design.map((item, index) => (
@@ -142,7 +142,7 @@ export default function About() {
                     </div>
                   </div>
 
-                  <div className="mb-4">
+                  <div className="mb-6">
                     <div className="text-brand-text font-medium leading-8">使用者研究與介面設計</div>
                     <div className="flex flex-wrap gap-2">
                       {uiux.map((item, index) => (
@@ -156,7 +156,7 @@ export default function About() {
                     </div>
                   </div>
 
-                  <div className="mb-4">
+                  <div className="mb-6">
                     <div className="text-brand-text font-medium leading-8">網頁前端</div>
                     <div className="flex flex-wrap gap-2">
                       {frontend.map((item, index) => (
@@ -170,7 +170,7 @@ export default function About() {
                     </div>
                   </div>
 
-                  <div className="mb-4">
+                  <div className="mb-6">
                     <div className="text-brand-text font-medium leading-8">攝影與影像後製</div>
                     <div className="flex flex-wrap gap-2">
                       {photo.map((item, index) => (
@@ -184,7 +184,7 @@ export default function About() {
                     </div>
                   </div>
 
-                  <div className="mb-4">
+                  <div className="mb-6">
                     <div className="text-brand-text font-medium leading-8">問卷設計與統計分析</div>
                     <div className="flex flex-wrap gap-2">
                       {stats.map((item, index) => (
@@ -198,7 +198,7 @@ export default function About() {
                     </div>
                   </div>
 
-                  <div className="mb-4">
+                  <div className="mb-6">
                     <div className="text-brand-text font-medium leading-8">遊戲開發</div>
                     <div className="flex flex-wrap gap-2">
                       {game.map((item, index) => (

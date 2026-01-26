@@ -4,7 +4,7 @@ export const ProjectPages = ({ title, category, year, tools, introduction, cta, 
         <>
             <div className="w-full bg-brand-bg py-10 mt-[60px] flex justify-center">
 
-                <div className="flex flex-col w-[90%] md:w-[80%] lg:w-[70%]">
+                <div className="flex flex-col w-[90%] md:w-[85%] lg:w-[80%]">
 
 
                     <div className="text-[24px] font-bold mb-6 md:text-[26px]">
