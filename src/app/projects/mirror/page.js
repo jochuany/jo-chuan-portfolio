@@ -6,7 +6,7 @@ const content =
   title: "鏡像之境",
   category: "互動體驗",
   year: "2023",
-  tools: "Unity C# / Blender",
+  tools: ["Unity", "Blender"],
   introduction: "團隊合作專案。數位內容第 14 屆畢業製作專案。透過 Kinect 動作捕捉裝置、單面鏡中反射自我的設計，描述數位世界與現實世界之間的落差。作品完成後在華山文創園區烏梅劇院進行為期五天的展覽，有許多校內校外人士前來觀展，我們亦設計體驗流程，包括介紹、講解、輔助教學等，帶領觀展者體驗我們的作品。",
   cta: "Demo on YouTube \u2197",
   link: "https://youtu.be/wE1DucIL8D8?si=ghNpbITCJTGbBKuE",

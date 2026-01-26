@@ -6,7 +6,7 @@ const content =
   title: "麥側過馬路",
   category: "3D 遊戲",
   year: "2023 (2025 v2)",
-  tools: "Unity",
+  tools: ["Unity", "C#"],
   introduction: "團隊合作專案，此遊戲以「天天過馬路」作為原型，將場景改為政大周邊，並且以劇情呈現，融入政大學生的生活。我們希望遊戲帶來娛樂的同時，也能喚起政大學生及附近居民對此地交通安全的重視。",
   cta: "Play in Browser (Chrome) \u2197",
   link: "https://rjyang.itch.io/cross-the-zhinan-road-v2",

@@ -6,7 +6,7 @@ const content =
   title: "NCCU in Under 3 Minutes",
   category: "資訊動畫",
   year: "2023",
-  tools: "Adobe After Effects",
+  tools: ["Adobe After Effects", "Adobe Premiere"],
   introduction: "合作專案，為政大製作的英文簡介資訊動畫。視覺以簡潔的文字、icon 為主，讓觀眾能在聆聽聲音旁白的同時掌握關鍵資訊。",
   cta: "Watch on YouTube \u2197",
   link: "https://youtu.be/nZVRC3BNZkk?si=-q0SE2d1uTnZu0sS",

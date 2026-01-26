@@ -6,7 +6,7 @@ const content =
   title: "SPIKE IT UP!!",
   category: "網頁遊戲",
   year: "2025",
-  tools: "Next.js / TailwindCSS / React Hooks",
+  tools: ["HTML", "TailwindCSS", "Next.js", "React Hooks"],
   introduction: "個人專案，獨自完成遊戲機制設計、介面與流程規劃、程式撰寫，視覺素材由 AI 協助發想後自行製作。Next.js 為課堂中學習，擁有基礎知識後，React Hook 使用 Vibe coding 自學應用。",
   cta: "Play in Browser \u2197",
   link: "https://volleyball-spiking-game.vercel.app/",

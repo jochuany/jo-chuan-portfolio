@@ -6,7 +6,7 @@ const content =
   title: "颱風假到底怎麼放？",
   category: "資訊圖表、資訊動畫",
   year: "2022",
-  tools: "PowerPoint / Excel",
+  tools: ["PowerPoint", "Excel"],
   introduction: "團體專案，綜合有關颱風假標準、實施方式解釋、過往案例、以及政治影響的資訊視覺化動畫。主要負責腳本協作、圖表美化與資訊動畫製作，將抽象的數據、難懂的法案以簡單直覺的形式呈現。",
   cta: "Watch on YouTube \u2197",
   link: "https://youtu.be/8sklFG5qRm0?si=DLpqVpQBirhhybVk",
