@@ -55,8 +55,24 @@ export const ProjectPages = ({ title, category, year, tools, introduction, cta, 
                                     {"// "}Link
                                 </div>
                                 <a href={link} target="_blank"
-                                    className={`text-[16px] text-brand-primary font-semibold underline underline-offset-2
-                                    hover:no-underline transition-all duration-300 ease`}>
+                                    className={`text-[16px] text-brand-primary font-semibold transition-all duration-300 ease
+                                    relative inline-block
+
+                                    after:content-['']
+                                    after:absolute
+                                    after:left-0
+                                    after:bottom-0
+                                    after:h-[2px]
+                                    after:w-full
+                                    after:bg-brand-primary
+                
+                                    after:scale-x-100
+                                    after:origin-right
+
+                                    after:transition-transform
+                                    after:duration-300
+                                    after:ease-out
+                                    md:hover:after:scale-x-0`}>
                                     {cta}
                                 </a>
                             </div>

@@ -83,8 +83,25 @@ export default function Home() {
           </div>
 
           <div className="w-full mt-20 flex justify-end">
-            <a href="/projects" className="text-[16px] text-brand-primary font-bold
-            hover:underline hover:underline-offset-2 transition-all duration-300 ease">
+            <a href="/projects" className="text-[16px] text-brand-primary font-bold transition-all duration-300 ease
+            relative inline-block
+
+                after:content-[''] 
+                after:absolute
+                after:left-0
+                after:bottom-0
+                after:h-[2px]
+                after:w-full
+                after:bg-brand-primary
+                
+                after:scale-x-100
+                after:origin-right
+
+                after:transition-transform
+                after:duration-300
+                after:ease-out
+
+                md:hover:after:scale-x-0">
               View All Projects &#8594;
             </a>
           </div>

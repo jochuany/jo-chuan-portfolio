@@ -61,8 +61,27 @@ export default function NavBar() {
                                 <a
                                     key={link.href}
                                     href={link.href}
-                                    className={`text-[16px] transition-all duration-300 cursor-pointer hover:underline hover:underline-offset-2 hover:text-brand-text
-                                    ${isActive ? "underline underline-offset-2 text-brand-primary" : "text-brand-graytext"}`}
+                                    className={`text-[16px] transition-all duration-300 cursor-pointer hover:text-brand-text
+                                        relative inline-block
+                                        
+                                        after:content-['']
+                                        after:absolute
+                                        after:left-0
+                                        after:bottom-0
+                                        after:h-[2px]
+                                        after:w-full
+                                        after:bg-brand-text
+                
+                                        after:scale-x-0
+                                        after:origin-left
+                
+                                        after:transition-transform
+                                        after:duration-300
+                                        after:ease-out
+
+                                        md:hover:after:scale-x-100
+
+                                    ${isActive ? "text-brand-primary" : "text-brand-graytext"}`}
                                 >
                                     {link.name}
                                 </a>

@@ -4,7 +4,7 @@ import { ProjectItem } from "@/components/ProjectItem";
 const projects = [
   {
     href: "/projects/chance",
-    title: "CHANCE!!",
+    title: "Chance!!",
     category: "產品規劃",
     year: "2025",
     photo: "/images/chance/chance-01.png",

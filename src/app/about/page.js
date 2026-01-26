@@ -133,11 +133,11 @@ export default function About() {
 
                   <div className="mb-6">
                     <div className="text-brand-text font-medium leading-8">視覺設計與資訊動畫</div>
-                    <div className="flex flex-wrap gap-2">
+                    <div className="flex flex-wrap gap-2 mt-2">
                       {design.map((item, index) => (
                         <div
                           key={index}
-                          className={`text-[12px] px-2 py-0.5 bg-brand-graybg inset-shadow-sm rounded-full transition-all duration-300 ease
+                          className={`text-[14px] px-2 py-0.5 bg-brand-graybg inset-shadow-sm rounded-full transition-all duration-300 ease
                             md:hover:bg-brand-primaryLight md:hover:text-brand-bg`}
                         >
                           {item}
@@ -147,11 +147,11 @@ export default function About() {
 
                   <div className="mb-6">
                     <div className="text-brand-text font-medium leading-8">使用者研究與介面設計</div>
-                    <div className="flex flex-wrap gap-2">
+                    <div className="flex flex-wrap gap-2 mt-2">
                       {uiux.map((item, index) => (
                         <div
                           key={index}
-                          className={`text-[12px] px-2 py-0.5 bg-brand-graybg inset-shadow-sm rounded-full transition-all duration-300 ease
+                          className={`text-[14px] px-2 py-0.5 bg-brand-graybg inset-shadow-sm rounded-full transition-all duration-300 ease
                             md:hover:bg-brand-primaryLight md:hover:text-brand-bg`}
                         >
                           {item}
@@ -161,11 +161,11 @@ export default function About() {
 
                   <div className="mb-6">
                     <div className="text-brand-text font-medium leading-8">網頁前端</div>
-                    <div className="flex flex-wrap gap-2">
+                    <div className="flex flex-wrap gap-2 mt-2">
                       {frontend.map((item, index) => (
                         <div
                           key={index}
-                          className={`text-[12px] px-2 py-0.5 bg-brand-graybg inset-shadow-sm rounded-full transition-all duration-300 ease
+                          className={`text-[14px] px-2 py-0.5 bg-brand-graybg inset-shadow-sm rounded-full transition-all duration-300 ease
                             md:hover:bg-brand-primaryLight md:hover:text-brand-bg`}
                         >
                           {item}
@@ -175,11 +175,11 @@ export default function About() {
 
                   <div className="mb-6">
                     <div className="text-brand-text font-medium leading-8">攝影與影像後製</div>
-                    <div className="flex flex-wrap gap-2">
+                    <div className="flex flex-wrap gap-2 mt-2">
                       {photo.map((item, index) => (
                         <div
                           key={index}
-                          className={`text-[12px] px-2 py-0.5 bg-brand-graybg inset-shadow-sm rounded-full transition-all duration-300 ease
+                          className={`text-[14px] px-2 py-0.5 bg-brand-graybg inset-shadow-sm rounded-full transition-all duration-300 ease
                             md:hover:bg-brand-primaryLight md:hover:text-brand-bg`}
                         >
                           {item}
@@ -189,11 +189,11 @@ export default function About() {
 
                   <div className="mb-6">
                     <div className="text-brand-text font-medium leading-8">問卷設計與統計分析</div>
-                    <div className="flex flex-wrap gap-2">
+                    <div className="flex flex-wrap gap-2 mt-2">
                       {stats.map((item, index) => (
                         <div
                           key={index}
-                          className={`text-[12px] px-2 py-0.5 bg-brand-graybg inset-shadow-sm rounded-full transition-all duration-300 ease
+                          className={`text-[14px] px-2 py-0.5 bg-brand-graybg inset-shadow-sm rounded-full transition-all duration-300 ease
                             md:hover:bg-brand-primaryLight md:hover:text-brand-bg`}
                         >
                           {item}
@@ -203,11 +203,11 @@ export default function About() {
 
                   <div className="mb-6">
                     <div className="text-brand-text font-medium leading-8">遊戲開發</div>
-                    <div className="flex flex-wrap gap-2">
+                    <div className="flex flex-wrap gap-2 mt-2">
                       {game.map((item, index) => (
                         <div
                           key={index}
-                          className={`text-[12px] px-2 py-0.5 bg-brand-graybg inset-shadow-sm rounded-full transition-all duration-300 ease
+                          className={`text-[14px] px-2 py-0.5 bg-brand-graybg inset-shadow-sm rounded-full transition-all duration-300 ease
                             md:hover:bg-brand-primaryLight md:hover:text-brand-bg`}
                         >
                           {item}
