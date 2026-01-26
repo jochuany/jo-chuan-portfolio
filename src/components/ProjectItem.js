@@ -15,7 +15,7 @@ export const ProjectItem = ({ href, title, category, year, photo, tool }) => {
                     {tool && tool.length > 0 && tool.map((item, index) => (
                         <div
                             key={index}
-                            className="text-[12px] px-2 py-0.5 bg-[#ECEEEE] inset-shadow-sm rounded-full transition-all duration-300 ease
+                            className="text-[12px] px-2 py-0.5 bg-brand-graybg inset-shadow-sm rounded-full transition-all duration-300 ease
                             md:group-hover:bg-brand-primaryLight md:group-hover:text-brand-bg"
                         >
                             {item}
