@@ -93,7 +93,7 @@ const projects = [
   {
     href: "/projects/typhoon",
     title: "颱風假到底怎麼放？",
-    category: "資訊圖表／資訊動畫",
+    category: "資訊圖表、動畫",
     year: "2022",
     photo: "/images/typhoon/typhoon-01.png",
     tool: ["PPT"]
@@ -117,7 +117,7 @@ export default function Projects() {
         <div className="flex flex-col w-[90%] md:w-[85%] lg:w-[80%]">
 
           <div className="flex font-bold mb-6 text-[16px] text-brand-graytext">
-            {"//"}All projects
+            {"// "}All projects
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-8">

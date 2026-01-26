@@ -17,9 +17,8 @@ export default function NavBar() {
     const pathname = usePathname();
 
     const navLinks = [
-        { name: "Projects", href: "/projects" },
-        { name: "About", href: "/about" },
-        { name: "Contact", href: "/contact" },
+        { name: "PROJECT", href: "/projects" },
+        { name: "ABOUT", href: "/about" },
     ];
 
     return (
@@ -27,7 +26,7 @@ export default function NavBar() {
             <div className="flex justify-center items-center w-screen h-[60px] text-brand-text bg-brand-bg/50 font-bold backdrop-blur-sm fixed top-0 left-0 z-50">
                 <div className="flex w-[90%] md:w-[85%] lg:w-[80%] justify-between items-center">
 
-                    <a href="/" className="pt-0.5 md:w-[30%] flex justify-start items-center text-[16px] text-brand-primary">
+                    <a href="/" className="pt-0.5 flex justify-start items-center text-[16px] text-brand-primary">
                         <Shuffle
                             className="text-[16px] transition-all duration-300 cursor-pointer font-black hover:opacity-60"
                             text="JO CHUAN."
@@ -53,7 +52,7 @@ export default function NavBar() {
                     </div>
 
                     {/* pc menu */}
-                    <div className="hidden md:w-[40%] lg:w-[30%] md:flex justify-between">
+                    <div className="hidden md:flex justify-between">
 
                         {navLinks.map((link) => {
                             const isActive = link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
@@ -61,8 +60,8 @@ export default function NavBar() {
                                 <a
                                     key={link.href}
                                     href={link.href}
-                                    className={`text-[16px] transition-all duration-300 cursor-pointer hover:text-brand-text
-                                        relative inline-block
+                                    className={`text-[16px] transition-all duration-300 ml-4
+                                        hover:text-brand-text relative inline-block
                                         
                                         after:content-['']
                                         after:absolute
@@ -81,7 +80,7 @@ export default function NavBar() {
 
                                         md:hover:after:scale-x-100
 
-                                    ${isActive ? "text-brand-primary" : "text-brand-graytext"}`}
+                                    ${isActive ? "before:content-['•'] before:mr-1 text-brand-primary" : "text-brand-graytext"}`}
                                 >
                                     {link.name}
                                 </a>
