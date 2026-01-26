@@ -2,7 +2,7 @@
 export const ProjectPages = ({ title, category, year, tools, introduction, cta, link, details, photos }) => {
     return (
         <>
-            <div className="w-full bg-brand-bg my-[60px] flex justify-center">
+            <div className="w-full bg-brand-bg py-10 mt-[60px] flex justify-center">
 
                 <div className="flex flex-col w-[90%] md:w-[80%] lg:w-[70%]">
 

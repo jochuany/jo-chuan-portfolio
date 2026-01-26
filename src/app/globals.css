@@ -9,8 +9,8 @@
   --color-brand-primaryLight: #85ADB3;
   --color-brand-secondary: #DD8954;
   --color-brand-secondaryLight: #EDC7AF;
-  --color-brand-graybg: #ECEEEE;
-  --color-brand-graytext: #6B6B6B;
+  --color-brand-graybg: #E8ECEC;
+  --color-brand-graytext: #A6A6A6;
 }
 
 @theme inline {
@@ -50,8 +50,8 @@
     --color-brand-primaryLight: #85ADB3;
     --color-brand-secondary: #F2A36F;
     --color-brand-secondaryLight: #EDC7AF;
-    --color-brand-graybg: #6B6B6B;
-    --color-brand-graytext: #ECEEEE;
+    --color-brand-graybg: #5A5A5A;
+    --color-brand-graytext: #B6B6B6;
 
   }
 }

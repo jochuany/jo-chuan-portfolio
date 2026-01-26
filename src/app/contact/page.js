@@ -4,7 +4,7 @@ import DecryptedText from "@/components/DecryptedText";
 export default function Contact() {
   return (
     <>
-      <div className="flex w-screen h-[calc(100vh-130px)] justify-center items-center text-brand-text bg-brand-bg">
+      <div className="flex w-screen h-[calc(100vh-110px)] mt-[60px] justify-center items-center text-brand-text bg-brand-bg">
 
         <div className="flex w-[70%] justify-between">
 
