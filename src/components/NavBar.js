@@ -100,7 +100,6 @@ export default function NavBar() {
                         <a href="/"><div onClick={toggleMenu}>Home</div></a>
                         <a href="/projects"><div onClick={toggleMenu}>Projects</div></a>
                         <a href="/about"><div onClick={toggleMenu}>About</div></a>
-                        <a href="/contact"><div onClick={toggleMenu}>Contact</div></a>
                     </div>
                 </div>
 

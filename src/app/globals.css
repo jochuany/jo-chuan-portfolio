@@ -5,12 +5,12 @@
   --foreground: #262626;
   --color-brand-bg: #F7F7F5;
   --color-brand-text: #262626;
-  --color-brand-primary: #137885;
-  --color-brand-primaryLight: #85ADB3;
+  --color-brand-primary: #147095;
+  --color-brand-primaryLight: #97C1D2;
   --color-brand-secondary: #DD8954;
   --color-brand-secondaryLight: #EDC7AF;
   --color-brand-graybg: #E8ECEC;
-  --color-brand-graytext: #A6A6A6;
+  --color-brand-graytext: #AAAAAA;
 }
 
 @theme inline {
@@ -46,12 +46,12 @@
     --foreground: #F7F7F5;
     --color-brand-bg: #262626;
     --color-brand-text: #F7F7F5;
-    --color-brand-primary: #4FB3BD;
-    --color-brand-primaryLight: #85ADB3;
+    --color-brand-primary: #59A3BC;
+    --color-brand-primaryLight: #8AB1BE;
     --color-brand-secondary: #F2A36F;
     --color-brand-secondaryLight: #EDC7AF;
     --color-brand-graybg: #414141;
-    --color-brand-graytext: #9C9C9C;
+    --color-brand-graytext: #808080;
 
   }
 }

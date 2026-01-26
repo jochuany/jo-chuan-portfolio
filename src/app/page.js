@@ -55,7 +55,7 @@ export default function Home() {
                 showCursor={true}
                 cursorCharacter="_"
                 cursorBlinkDuration={0.5}
-                className="mt-2 px-4 pt-1 pb-2 text-[28px] md:text-[40px] bg-brand-primary text-brand-bg font-bold overflow-hidden justify-center"
+                className="mt-2 px-4 pt-1 pb-2 rounded-md text-[28px] md:text-[40px] bg-brand-primary text-brand-bg font-bold overflow-hidden justify-center"
               />
 
             </div>
