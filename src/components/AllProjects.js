@@ -8,7 +8,8 @@ export const projects = [
         year: "2025",
         photo: "/images/thesis/thesis-01.png",
         tools: ["Meta Quest 3", "Insta360 X5", "Insta360 Studio", "SPSS"],
-        filter: "Thesis"
+        filter: "Thesis",
+        selected: true
     },
     {
         href: "/projects/chance",
@@ -37,7 +38,6 @@ export const projects = [
         photo: "/images/aha/aha-01.png",
         tools: ["Figma", "Flowchart", "Wireframing", "Prototyping"],
         filter: "UI/UX",
-        selected: true
     },
     {
         href: "/projects/period",
