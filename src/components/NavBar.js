@@ -56,7 +56,7 @@ export default function NavBar() {
                     </div>
 
                     {/* pc menu */}
-                    <div className="hidden md:flex">
+                    <div className="hidden md:flex md:items-center">
 
                         {navLinks.map((link) => {
                             const isActive = link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
@@ -91,8 +91,9 @@ export default function NavBar() {
                             )
                         })}
 
-                        <div onClick={copyEmail} className="cursor-pointer ml-4 hover:opacity-70 transition-opacity">
-                            ✉️
+                        <div onClick={copyEmail} className="cursor-pointer ml-4 hover:opacity-70 transition-opacity text-brand-primary"
+                            aria-label="Contact">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /><rect x="2" y="4" width="20" height="16" rx="2" /></svg>
                         </div>
 
                     </div>
@@ -103,11 +104,15 @@ export default function NavBar() {
 
                 {/* ham menu content */}
                 <div className={`fixed inset-0 bg-brand-bg z-40 flex w-full h-screen justify-center items-center
-            transition-transform duration-300 ease ${isHamOpen ? "translate-x-0" : "translate-x-full"} md:hidden`}>
+                transition-transform duration-300 ease ${isHamOpen ? "translate-x-0" : "translate-x-full"} md:hidden`}>
                     <div className="text-[20px] font-bold flex flex-col gap-8 items-center">
                         <a href="/"><div onClick={toggleMenu}>Home</div></a>
                         <a href="/projects"><div onClick={toggleMenu}>Projects</div></a>
                         <a href="/about"><div onClick={toggleMenu}>About</div></a>
+                        <div onClick={copyEmail} className="text-brand-primary"
+                            aria-label="Contact">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /><rect x="2" y="4" width="20" height="16" rx="2" /></svg>
+                        </div>
                     </div>
                 </div>
 

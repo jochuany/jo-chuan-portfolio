@@ -1,34 +1,9 @@
 import Image from "next/image";
 import TextType from "@/components/TextType";
 import { ProjectItem } from "@/components/ProjectItem";
+import { projects } from "@/components/AllProjects";
 
-const projects = [
-  {
-    href: "/projects/chance",
-    title: "Chance!!",
-    category: "產品規劃",
-    year: "2025",
-    photo: "/images/chance/chance-01.png",
-    tool: ["Figma", "Adobe Illustrator"]
-  },
-  {
-    href: "/projects/aha",
-    title: "A HA~",
-    category: "產品功能優化",
-    year: "2024",
-    photo: "/images/aha/aha-01.png",
-    tool: ["Figma", "Adobe Illustrator"]
-  },
-  {
-    href: "/projects/report",
-    title: "薪租翹翹板",
-    category: "專題網站",
-    year: "2023",
-    photo: "/images/report/report-01.png",
-    tool: ["HTML", "CSS", "JavaScript", "Web Scraper"]
-  },
-]
-
+const selectedProjects = projects.filter(project => project.selected);
 
 export default function Home() {
   return (
@@ -76,7 +51,7 @@ export default function Home() {
             </div>
 
             <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-10">
-              {projects.map((project, index) => (
+              {selectedProjects.map((project, index) => (
                 <ProjectItem
                   key={index}
                   {...project} // 解構賦值 自動對應 props

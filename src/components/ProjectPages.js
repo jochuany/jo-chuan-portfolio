@@ -1,3 +1,4 @@
+// 每個專案個別頁面的版型 包含基本資訊 scope of work 詳細照片
 
 export const ProjectPages = ({ title, category, year, tools, introduction, cta, link, details, photos }) => {
     return (

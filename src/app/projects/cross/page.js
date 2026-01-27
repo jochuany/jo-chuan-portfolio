@@ -1,27 +1,29 @@
 import Image from "next/image";
 import { ProjectPages } from "@/components/ProjectPages";
+import { useProject } from "@/hooks/useProject";
+
+const projectInfo = useProject("/projects/cross");
+
+if (!projectInfo) return null;
 
 const content =
 {
-  title: "麥側過馬路",
-  category: "3D 遊戲",
-  year: "2023 (2025 v2)",
-  tools: ["Unity", "C#"],
-  introduction: "團隊合作專案，此遊戲以「天天過馬路」作為原型，將場景改為政大周邊，並且以劇情呈現，融入政大學生的生活。我們希望遊戲帶來娛樂的同時，也能喚起政大學生及附近居民對此地交通安全的重視。",
+  ...projectInfo,
+  introduction: "政大指南路二段周邊道路擁擠、無交通號誌（註：該馬路已於 2025 年底裝設交通號誌），長期以來行人過馬路時，需要非常謹慎確認有無汽機車、公車通過。此遊戲以「天天過馬路」作為原型參考，將場景改為政大周邊，搭配劇情的方式、融入政大學生的生活來呈現。我們希望遊戲帶來娛樂的同時，也能喚起政大學生及附近居民對此地交通安全的重視。",
   cta: "Play in Browser (Chrome) \u2197",
   link: "https://rjyang.itch.io/cross-the-zhinan-road-v2",
   details: [
     {
       subtitle: "主要程式撰寫：",
-      description: "人物操作、關卡串聯、道具呈現"
+      description: "此專案中我擔任工程的角色，負責撰寫玩家的人物操作、場景與車子生成、特殊道具生成與效果、以及各關卡串聯的程式碼。"
     },
     {
       subtitle: "場景特效：",
-      description: "下雨、冒煙、光線等"
+      description: "基本遊戲邏輯完成後，在各關卡環境加上下雨、調整光線等特效，為遊戲增添變化。"
     },
     {
       subtitle: "擔任組長：",
-      description: "在此專案中我亦擔任組長，協助整合美術組與程式組、掌握專案進度。"
+      description: "在此專案中我亦擔任組長，除了協助整合美術組與程式組的工作內容，亦掌握專案進度，確保專案於實現前完成。"
     }
   ],
   photos: [

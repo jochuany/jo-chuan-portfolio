@@ -1,19 +1,21 @@
 import Image from "next/image";
 import { ProjectPages } from "@/components/ProjectPages";
+import { useProject } from "@/hooks/useProject";
+
+const projectInfo = useProject("/projects/nccu3m");
+
+if (!projectInfo) return null;
 
 const content =
 {
-  title: "NCCU in Under 3 Minutes",
-  category: "資訊動畫",
-  year: "2023",
-  tools: ["Adobe After Effects", "Adobe Premiere"],
-  introduction: "合作專案，為政大製作的英文簡介資訊動畫。視覺以簡潔的文字、icon 為主，讓觀眾能在聆聽聲音旁白的同時掌握關鍵資訊。",
+  ...projectInfo,
+  introduction: "為政大製作的英文簡介資訊動畫。視覺以簡潔的文字、icon 為主，讓觀眾能在聆聽聲音旁白的同時掌握關鍵資訊。",
   cta: "Watch on YouTube \u2197",
   link: "https://youtu.be/nZVRC3BNZkk?si=-q0SE2d1uTnZu0sS",
   details: [
     {
-      subtitle: "",
-      description: ""
+      subtitle: "畫面設計與動態化：",
+      description: "負責 0:00 ~ 1:20 的動態化與最後的 CTA 製作。由於畫面中僅有數字、文字、icon，因此搭配較為豐富的色彩，也為 icon 加上微動畫。"
     },
   ],
   photos: [

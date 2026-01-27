@@ -1,19 +1,21 @@
 import Image from "next/image";
 import { ProjectPages } from "@/components/ProjectPages";
+import { useProject } from "@/hooks/useProject";
+
+const projectInfo = useProject("/projects/fruit");
+
+if (!projectInfo) return null;
 
 const content =
 {
-  title: "水果指南",
-  category: "LOGO 設計",
-  year: "2022",
-  tools: ["Adobe Illustrator"],
-  introduction: "團體專案。以水果為題策劃一社群品牌，主要受眾為政大學生，品牌名「指南」為學校路名、介紹意義雙關，分享與生活相關的水果小知識。主要參與品牌規劃，並負責 Logo 設計，結合「水果」與「指南」之意象，以橘黃色為主色調，營造活潑、親民、生活感的形象。",
+  ...projectInfo,
+  introduction: "以水果為題策劃一社群品牌，主要受眾為政大學生，分享與生活相關的水果小知識。品牌名「指南」為「學校路名」與「介紹」的意義雙關詞。",
   cta: "View on Instagram \u2197",
   link: "https://www.instagram.com/zhinanfruit.co/",
   details: [
     {
-      subtitle: "",
-      description: ""
+      subtitle: "Logo 設計：",
+      description: "結合「水果」與「指南」之意象，將水果的剖面設計為指南針。採用橘黃色為主色調，為品牌營造活潑、親民、生活感的形象。"
     },
   ],
   photos: [

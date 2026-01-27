@@ -1,27 +1,29 @@
 import Image from "next/image";
 import { ProjectPages } from "@/components/ProjectPages";
+import { useProject } from "@/hooks/useProject";
+
+const projectInfo = useProject("/projects/spike");
+
+if (!projectInfo) return null;
 
 const content =
 {
-  title: "SPIKE IT UP!!",
-  category: "網頁遊戲",
-  year: "2025",
-  tools: ["HTML", "TailwindCSS", "Next.js", "React Hooks"],
-  introduction: "個人專案，獨自完成遊戲機制設計、介面與流程規劃、程式撰寫，視覺素材由 AI 協助發想後自行製作。Next.js 為課堂中學習，擁有基礎知識後，React Hook 使用 Vibe coding 自學應用。",
+  ...projectInfo,
+  introduction: "此專案為排球網頁小遊戲。起初想製作一個有別於「皮卡丘打排球」對打形式的小遊戲，且目標在於釋放研究生的學術壓力，因而定位成敲打鍵盤的舒壓遊戲。遊戲中加入排球技術的細節，能引起喜愛排球運動者的共鳴與樂趣。",
   cta: "Play in Browser \u2197",
   link: "https://volleyball-spiking-game.vercel.app/",
   details: [
     {
-      subtitle: "遊戲機制設計與規劃：",
-      description: ""
+      subtitle: "遊戲機制設計：",
+      description: "規劃遊戲機制，將過程劃分為三個階段：起跳時機、落點定位、扣球力道，並設計分數計算方式，以及列出遊戲所需素材。"
     },
     {
       subtitle: "視覺素材製作：",
-      description: ""
+      description: "先由 AI 協助生成初步 pixel 風格的素材，再根據遊戲所需與視覺風格進行修改。"
     },
     {
       subtitle: "程式撰寫：",
-      description: ""
+      description: "以 Next.js 開發遊戲，過程中與 AI 進行協作、再修改成符合遊戲要求。"
     },
   ],
   photos: [

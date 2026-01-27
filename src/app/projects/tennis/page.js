@@ -1,19 +1,21 @@
 import Image from "next/image";
 import { ProjectPages } from "@/components/ProjectPages";
+import { useProject } from "@/hooks/useProject";
+
+const projectInfo = useProject("/projects/tennis");
+
+if (!projectInfo) return null;
 
 const content =
 {
-  title: "球后的崛起",
-  category: "資訊動畫",
-  year: "2022",
-  tools: ["Adobe Illustrator", "Adobe After Effects", "Adobe Audition"],
-  introduction: "個人專案，以自己喜歡的職業球員為題材，製作約一分半的資訊動畫，介紹其球風、成就等。由個人獨立完成腳本、繪製素材、動態化、配音配樂、剪輯，在企劃階段即著重場景間的轉換，電視、網球、快門、報紙，皆為搭配敘事轉場的關鍵物件，使整體畫面銜接更流暢。",
+  ...projectInfo,
+  introduction: "以自己喜歡的職業球員為主題，製作約一分半的資訊動畫，介紹其球風、成就等。在腳本階段即著重場景間的轉換，電視、網球、快門、膠卷、報紙，皆為搭配敘事轉場的關鍵物件，使整體畫面銜接更流暢。",
   cta: "Watch on YouTube \u2197",
   link: "https://youtu.be/y2TkF0Tm3JY?si=bADOPmTrxx7FX2uD",
   details: [
     {
       subtitle: "腳本撰寫與分鏡設計：",
-      description: "針對主題蒐集相關資料，抓取重點，設計流暢的腳本、分鏡、旁白與轉場。"
+      description: "針對主題蒐集相關球員資料，抓取重要、合適的段落，設計成流暢的腳本、分鏡、旁白與轉場。"
     },
     {
       subtitle: "素材繪製與動態化：",

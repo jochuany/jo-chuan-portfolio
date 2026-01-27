@@ -1,19 +1,21 @@
 import Image from "next/image";
 import { ProjectPages } from "@/components/ProjectPages";
+import { useProject } from "@/hooks/useProject";
+
+const projectInfo = useProject("/projects/vnccu");
+
+if (!projectInfo) return null;
 
 const content =
 {
-  title: "政大之聲開播週活動",
-  category: "主視覺設計",
-  year: "2021",
-  tools: ["Adobe Illustrator", "電繪"],
-  introduction: "大學時期於政大之聲實習電台為活動設計的主視覺，以繽紛、明亮風格呈現，象徵電台節目的多元性。由個人獨立完成所有圖像的繪製與設計，包括 Facebook 大頭貼、宣傳 Banner、以及實體海報。",
+  ...projectInfo,
+  introduction: "為政大之聲實習電台開播週活動設計的主視覺。以繽紛、明亮風格呈現，象徵電台的活潑、開放與多元；亦針對不同帶狀的性質，設計不同樣式的頭貼。",
   cta: "View on Facebook \u2197",
   link: "https://www.facebook.com/share/p/1L6hnGVNay/",
   details: [
     {
-      subtitle: "",
-      description: ""
+      subtitle: "圖像繪製與設計：",
+      description: "使用電繪版與 Adobe Illustrator 繪製活動主視覺所需之 Facebook 大頭貼、宣傳 Banner，供官方帳號及電台成員使用；另設計實體海報張貼於校園中。"
     }
   ],
   photos: [

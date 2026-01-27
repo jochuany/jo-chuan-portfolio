@@ -1,5 +1,6 @@
+// 每個專案的預覽版型 photo title category year tools
 
-export const ProjectItem = ({ href, title, category, year, photo, tool }) => {
+export const ProjectItem = ({ href, title, category, year, photo, tools }) => {
     return (
 
         <a href={href} className="md:border-none transition-all duration-300 ease group">
@@ -13,10 +14,10 @@ export const ProjectItem = ({ href, title, category, year, photo, tool }) => {
                     {title}
                 </div>
                 <div className="text-[16px] transition-all duration-300 ease font-normal mb-2 md:group-hover:text-brand-primary">
-                    {category}／{year}
+                    {category}{"／"}{year}
                 </div>
                 <div className="flex flex-wrap gap-2 mb-3">
-                    {tool && tool.length > 0 && tool.map((item, index) => (
+                    {tools && tools.length > 0 && tools.map((item, index) => (
                         <div
                             key={index}
                             className="text-[14px] px-2 py-0.5 bg-brand-graybg inset-shadow-sm rounded-full transition-all duration-300 ease
