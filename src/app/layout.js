@@ -44,11 +44,41 @@ export default function RootLayout({ children }) {
 
         {children}
 
-        <div className="flex justify-center items-center w-screen h-[50px] text-brand-text bg-brand-bg border-t">
-          <div className="flex w-[90%] md:w-[85%] lg:w-[80%] justify-between text-[12px] font-bold">
-            <div>DESIGN BY JOCHUAN.</div>
-            <div>2025</div>
+        <div className="flex justify-center items-center w-screen h-[60px] text-brand-graytext bg-brand-bg">
+
+          <div className="flex w-[90%] md:w-[85%] lg:w-[80%] justify-center text-[14px] font-medium">
+
+            <a
+              href="mailto:ruochuanyang@email.com"
+              className="font-bold md:hover:text-brand-primary transition-all duration-300 tracking-wide
+                relative inline-block
+
+                after:content-['']
+                after:absolute
+                after:left-0
+                after:bottom-0
+                after:h-[1.5px]
+                after:w-full
+                after:bg-brand-primary
+                
+                after:scale-x-0
+                after:origin-left
+                
+                after:transition-transform
+                after:duration-300
+                after:ease-out
+
+                md:hover:after:scale-x-100"
+            >
+              ruochuanyang@gmail.com
+            </a>
+
+            <div>
+              <span className="mx-2">{" // "}</span>© {new Date().getFullYear()} Jo-Chuan Yang. Built with Next.js
+            </div>
+
           </div>
+
         </div>
 
       </body>
