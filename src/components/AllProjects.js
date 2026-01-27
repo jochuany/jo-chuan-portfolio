@@ -7,7 +7,8 @@ export const projects = [
         category: "碩士論文",
         year: "2025",
         photo: "/images/thesis/thesis-01.png",
-        tools: ["Meta Quest 3", "Insta360 X5", "Insta360 Studio", "SPSS"]
+        tools: ["Meta Quest 3", "Insta360 X5", "Insta360 Studio", "SPSS"],
+        filter: "Thesis"
     },
     {
         href: "/projects/chance",
@@ -16,6 +17,7 @@ export const projects = [
         year: "2025",
         photo: "/images/chance/chance-01.png",
         tools: ["Figma", "Flowchart", "Wireframing", "Prototyping"],
+        filter: "UI/UX",
         selected: true
     },
     {
@@ -24,7 +26,8 @@ export const projects = [
         category: "網頁遊戲",
         year: "2025",
         photo: "/images/spike/spike-01.png",
-        tools: ["HTML", "TailwindCSS", "Next.js", "React Hooks"]
+        tools: ["HTML", "TailwindCSS", "Next.js", "React Hooks"],
+        filter: "Games"
     },
     {
         href: "/projects/aha",
@@ -33,7 +36,8 @@ export const projects = [
         year: "2024",
         photo: "/images/aha/aha-01.png",
         tools: ["Figma", "Flowchart", "Wireframing", "Prototyping"],
-        selected: true
+        filter: "UI/UX",
+        elected: true
     },
     {
         href: "/projects/period",
@@ -41,7 +45,8 @@ export const projects = [
         category: "網頁前端",
         year: "2024",
         photo: "/images/period/period-01.png",
-        tools: ["HTML", "CSS", "JavaScript", "Empathy Map", "Persona", "User Journey Map"]
+        tools: ["HTML", "CSS", "JavaScript", "Empathy Map", "Persona", "User Journey Map"],
+        filter: "Frontend"
     },
     {
         href: "/projects/report",
@@ -50,7 +55,8 @@ export const projects = [
         year: "2023",
         photo: "/images/report/report-01.png",
         tools: ["Web Scraper", "Flourish", "HTML", "CSS", "Empathy Map", "Persona", "User Journey Map"],
-        selected: true
+        filter: "Frontend",
+        elected: true
     },
     {
         href: "/projects/mirror",
@@ -58,7 +64,8 @@ export const projects = [
         category: "互動體驗",
         year: "2023",
         photo: "/images/mirror/mirror-01.png",
-        tools: ["Unity", "Blender"]
+        tools: ["Unity", "Blender"],
+        filter: "Games"
     },
     {
         href: "/projects/cross",
@@ -66,7 +73,8 @@ export const projects = [
         category: "3D 遊戲",
         year: "2023",
         photo: "/images/cross/cross-01.png",
-        tools: ["Unity"]
+        tools: ["Unity"],
+        filter: "Games"
     },
     {
         href: "/projects/nccu3m",
@@ -74,7 +82,8 @@ export const projects = [
         category: "資訊動畫",
         year: "2023",
         photo: "/images/nccu3m/nccu3m-01.png",
-        tools: ["Adobe After Effects"]
+        tools: ["Adobe After Effects"],
+        filter: "Motion Graphics"
     },
     {
         href: "/projects/tennis",
@@ -82,7 +91,8 @@ export const projects = [
         category: "資訊動畫",
         year: "2022",
         photo: "/images/tennis/tennis-05.png",
-        tools: ["Adobe Illustrator", "Adobe After Effects", "Adobe Audition"]
+        tools: ["Adobe Illustrator", "Adobe After Effects", "Adobe Audition"],
+        filter: "Motion Graphics"
     },
     {
         href: "/projects/boat",
@@ -90,7 +100,8 @@ export const projects = [
         category: "動畫",
         year: "2022",
         photo: "/images/boat/boat-01.png",
-        tools: ["Adobe Illustrator", "Adobe After Effects"]
+        tools: ["Adobe Illustrator", "Adobe After Effects"],
+        filter: "Motion Graphics"
     },
     {
         href: "/projects/fruit",
@@ -98,7 +109,8 @@ export const projects = [
         category: "Logo 設計",
         year: "2022",
         photo: "/images/fruit/fruit-03.png",
-        tools: ["Adobe Illustrator"]
+        tools: ["Adobe Illustrator"],
+        filter: "Visual Design"
     },
     {
         href: "/projects/typhoon",
@@ -106,7 +118,8 @@ export const projects = [
         category: "資訊圖表、動畫",
         year: "2022",
         photo: "/images/typhoon/typhoon-01.png",
-        tools: ["PowerPoint", "Excel"]
+        tools: ["PowerPoint", "Excel"],
+        filter: "Motion Graphics"
     },
     {
         href: "/projects/vnccu",
@@ -114,7 +127,8 @@ export const projects = [
         category: "主視覺設計",
         year: "2021",
         photo: "/images/vnccu/vnccu-01.jpg",
-        tools: ["Adobe Illustrator"]
+        tools: ["Adobe Illustrator"],
+        filter: "Visual Design"
     },
 
 ];

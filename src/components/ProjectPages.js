@@ -18,7 +18,7 @@ export const ProjectPages = ({ title, category, year, tools, introduction, cta, 
 
                             <div className="mb-6">
                                 <div className="font-bold text-brand-graytext mb-2 text-[14px]">
-                                    {"// "}Type
+                                    {"// "}Category
                                 </div>
                                 <div className="font-medium text-[16px]">
                                     {category}
