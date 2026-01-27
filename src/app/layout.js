@@ -46,7 +46,7 @@ export default function RootLayout({ children }) {
 
         <div className="flex justify-center items-center w-screen h-[60px] text-brand-graytext bg-brand-bg">
 
-          <div className="flex w-[90%] md:w-[85%] lg:w-[80%] justify-center text-[14px] font-medium">
+          <div className="flex flex-col md:flex-row w-[90%] md:w-[85%] lg:w-[80%] justify-center items-center text-[12px] md:text-[14px] font-medium">
 
             <a
               href="mailto:ruochuanyang@email.com"
@@ -73,8 +73,8 @@ export default function RootLayout({ children }) {
               ruochuanyang@gmail.com
             </a>
 
-            <div>
-              <span className="mx-2">{" // "}</span>© {new Date().getFullYear()} Jo-Chuan Yang. Built with Next.js
+            <div className="flex">
+              <div className="mx-2 hidden md:flex">{" // "}</div>© {new Date().getFullYear()} Jo-Chuan Yang. Built with Next.js
             </div>
 
           </div>
