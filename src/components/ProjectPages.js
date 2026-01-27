@@ -4,9 +4,9 @@ export const ProjectPages = ({ title, category, year, tools, introduction, cta, 
         <>
             <div className="w-full bg-brand-bg py-10 mt-[60px] flex justify-center items-start">
 
-                <div className="flex flex-col md:flex-row justify-between w-[90%] md:w-[85%] lg:w-[80%] items-start">
+                <div className="flex flex-col lg:flex-row justify-between w-[90%] md:w-[85%] lg:w-[80%] items-start">
 
-                    <div className="md:sticky md:top-[100px] w-full md:w-[20%]">
+                    <div className="lg:sticky lg:top-[100px] w-full lg:w-[20%]">
 
                         <div className="flex flex-col w-full mb-6">
 
@@ -81,7 +81,7 @@ export const ProjectPages = ({ title, category, year, tools, introduction, cta, 
 
                     </div>
 
-                    <div className="w-full md:w-[75%]">
+                    <div className="w-full lg:w-[75%]">
                         <div className="w-full flex flex-col">
                             <div className="text-justify text-[16px] mb-10 leading-8 font-normal">
                                 {introduction}

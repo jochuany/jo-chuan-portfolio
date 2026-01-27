@@ -3,6 +3,14 @@ import { ProjectItem } from "@/components/ProjectItem";
 
 const projects = [
   {
+    href: "/projects/thesis",
+    title: "坐在球場第一排：虛擬實境觀賽體驗如何影響運動觀眾的進場觀賽意圖",
+    category: "碩士論文",
+    year: "2025",
+    photo: "/images/thesis/thesis-01.png",
+    tool: ["Meta Quest 3", "Insta360 X5", "Insta360 Studio", "SPSS"]
+  },
+  {
     href: "/projects/chance",
     title: "Chance!!",
     category: "產品規劃",
