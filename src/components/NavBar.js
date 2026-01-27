@@ -7,12 +7,16 @@ import Shuffle from "@/components/Shuffle"
 
 export default function NavBar() {
 
-    const [isOpen, setIsOpen] = useState(false);
+    const [isHamOpen, setIsHamOpen] = useState(false);
 
     const toggleMenu = () => {
-        setIsOpen(!isOpen);
+        setIsHamOpen(!isHamOpen);
     };
 
+    const copyEmail = () => {
+        navigator.clipboard.writeText("ruochuanyang@gmail.com");
+        alert("ruochuanyang@gmail.com\n\nEmail copied!");
+    };
 
     const pathname = usePathname();
 
@@ -47,12 +51,12 @@ export default function NavBar() {
 
                     {/* ham menu */}
                     <div onClick={toggleMenu} className="md:hidden z-50 relative cursor-pointer h-[20px] w-[20px] flex flex-col justify-center gap-[8px]">
-                        <span className={`h-0.5 w-full bg-brand-text transition-all duration-300 ease ${isOpen ? "rotate-45 translate-y-[5px]" : ""}`} />
-                        <span className={`h-0.5 w-full bg-brand-text transition-all duration-300 ease ${isOpen ? "-rotate-45 -translate-y-[5px]" : ""}`} />
+                        <span className={`h-0.5 w-full bg-brand-text transition-all duration-300 ease ${isHamOpen ? "rotate-45 translate-y-[5px]" : ""}`} />
+                        <span className={`h-0.5 w-full bg-brand-text transition-all duration-300 ease ${isHamOpen ? "-rotate-45 -translate-y-[5px]" : ""}`} />
                     </div>
 
                     {/* pc menu */}
-                    <div className="hidden md:flex justify-between">
+                    <div className="hidden md:flex">
 
                         {navLinks.map((link) => {
                             const isActive = link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
@@ -87,6 +91,10 @@ export default function NavBar() {
                             )
                         })}
 
+                        <div onClick={copyEmail} className="cursor-pointer ml-4 hover:opacity-70 transition-opacity">
+                            ✉️
+                        </div>
+
                     </div>
 
 
@@ -95,7 +103,7 @@ export default function NavBar() {
 
                 {/* ham menu content */}
                 <div className={`fixed inset-0 bg-brand-bg z-40 flex w-full h-screen justify-center items-center
-            transition-transform duration-300 ease ${isOpen ? "translate-x-0" : "translate-x-full"} md:hidden`}>
+            transition-transform duration-300 ease ${isHamOpen ? "translate-x-0" : "translate-x-full"} md:hidden`}>
                     <div className="text-[20px] font-bold flex flex-col gap-8 items-center">
                         <a href="/"><div onClick={toggleMenu}>Home</div></a>
                         <a href="/projects"><div onClick={toggleMenu}>Projects</div></a>

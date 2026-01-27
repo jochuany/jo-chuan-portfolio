@@ -39,12 +39,12 @@ export default function Home() {
 
           <div className="w-full flex flex-col items-center justify-center text-center h-[calc(100vh-60px)] pb-20">
 
-            <div className="text-[32px] md:text-[38px] lg:text-[42px] font-medium">
+            <div className="text-[28px] md:text-[38px] lg:text-[42px] font-medium">
               Hello, I'm <span className="text-brand-primary font-bold">Jo-Chuan</span>.
             </div>
 
             <div className="flex flex-col mt-4 justify-start items-center">
-              <div className="text-[14px] md:text-[20px] lg:text-[24px] font-medium mb-2 md:mb-0">
+              <div className="text-[16px] md:text-[20px] lg:text-[24px] font-medium mb-2 md:mb-0">
                 I have experience in
               </div>
 
@@ -55,10 +55,15 @@ export default function Home() {
                 showCursor={true}
                 cursorCharacter="_"
                 cursorBlinkDuration={0.5}
-                className="mt-2 px-4 pt-1 pb-2 rounded-md text-[22px] md:text-[30px] lg:text-[36px]
+                className="mt-2 px-4 pt-1 pb-2 rounded-md text-[24px] md:text-[30px] lg:text-[36px]
                 bg-brand-primary text-brand-bg font-bold overflow-hidden justify-center"
               />
 
+            </div>
+
+            <div className="translate-y-[220px]">
+              <div className="text-[14px] md:text-[16px]">Explore</div>
+              <div className="text-[26px] md:text-[30px] animate-scrolldown">⭣</div>
             </div>
 
           </div>
