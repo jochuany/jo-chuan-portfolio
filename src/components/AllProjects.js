@@ -37,7 +37,7 @@ export const projects = [
         photo: "/images/aha/aha-01.png",
         tools: ["Figma", "Flowchart", "Wireframing", "Prototyping"],
         filter: "UI/UX",
-        elected: true
+        selected: true
     },
     {
         href: "/projects/period",
@@ -56,7 +56,7 @@ export const projects = [
         photo: "/images/report/report-01.png",
         tools: ["Web Scraper", "Flourish", "HTML", "CSS", "Empathy Map", "Persona", "User Journey Map"],
         filter: "Frontend",
-        elected: true
+        selected: true
     },
     {
         href: "/projects/mirror",
