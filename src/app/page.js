@@ -1,11 +1,11 @@
 import Image from "next/image";
 import TextType from "@/components/TextType";
-import { SelectedProjectItem } from "@/components/SelectedProjectItem";
+import { ProjectItem } from "@/components/ProjectItem";
 
 const projects = [
   {
     href: "/projects/chance",
-    title: "CHANCE!!",
+    title: "Chance!!",
     category: "產品規劃",
     year: "2025",
     photo: "/images/chance/chance-01.png",
@@ -33,18 +33,18 @@ const projects = [
 export default function Home() {
   return (
     <>
-      <div className="flex w-screen h-auto pt-[60px] py-10 justify-center items-start text-brand-text bg-brand-bg">
+      <div className="flex w-screen h-auto pt-[60px] justify-center items-start text-brand-text bg-brand-bg">
 
-        <div className="flex flex-col w-[90%] h-auto md:w-[85%] lg:w-[80%] lg:h-[calc(100vh-160px)] justify-between">
+        <div className="flex flex-col w-[90%] md:w-[85%] lg:w-[80%]">
 
-          <div className="flex flex-col items-start lg:items-center mt-6 mb-20 lg:mt-0 lg:mb-0 lg:justify-center lg:text-center lg:h-[60vh]">
+          <div className="w-full flex flex-col items-center justify-center text-center h-[calc(100vh-60px)] pb-20">
 
-            <div className="text-[32px] md:text-[42px] font-medium">
+            <div className="text-[32px] md:text-[38px] lg:text-[42px] font-medium">
               Hello, I'm <span className="text-brand-primary font-bold">Jo-Chuan</span>.
             </div>
 
-            <div className="flex flex-col mt-4 justify-start lg:items-center">
-              <div className="text-[14px] md:text-[24px] font-medium mb-2 md:mb-0">
+            <div className="flex flex-col mt-4 justify-start items-center">
+              <div className="text-[14px] md:text-[20px] lg:text-[24px] font-medium mb-2 md:mb-0">
                 I have experience in
               </div>
 
@@ -55,7 +55,8 @@ export default function Home() {
                 showCursor={true}
                 cursorCharacter="_"
                 cursorBlinkDuration={0.5}
-                className="mt-2 px-4 pt-1 pb-2 rounded-md text-[22px] md:text-[32px] bg-brand-primary text-brand-bg font-bold overflow-hidden justify-center"
+                className="mt-2 px-4 pt-1 pb-2 rounded-md text-[22px] md:text-[30px] lg:text-[36px]
+                bg-brand-primary text-brand-bg font-bold overflow-hidden justify-center"
               />
 
             </div>
@@ -63,15 +64,15 @@ export default function Home() {
           </div>
 
 
-          <div className="flex flex-col w-full">
+          <div className="flex flex-col w-full h-auto md:h-[calc(100vh-160px)] py-10">
 
-            <div className="w-full text-brand-graytext font-bold text-[16px] pb-6">
+            <div className="w-full text-start text-brand-graytext font-bold text-[16px] pb-6">
               {"// "}Selected Projects
             </div>
 
-            <div className="w-full grid grid-cols-1 lg:grid-cols-3 gap-10">
+            <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-10">
               {projects.map((project, index) => (
-                <SelectedProjectItem
+                <ProjectItem
                   key={index}
                   {...project} // 解構賦值 自動對應 props
                 />
