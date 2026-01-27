@@ -12,12 +12,12 @@ const projects = [
     tool: ["Figma", "Adobe Illustrator"]
   },
   {
-    href: "/projects/spike",
-    title: "SPIKE IT UP!!",
-    category: "網頁遊戲",
-    year: "2025",
-    photo: "/images/spike/spike-01.png",
-    tool: ["HTML", "TailwindCSS", "Next.js", "React Hooks"]
+    href: "/projects/aha",
+    title: "A HA~",
+    category: "產品功能優化",
+    year: "2024",
+    photo: "/images/aha/aha-01.png",
+    tool: ["Figma", "Adobe Illustrator"]
   },
   {
     href: "/projects/report",
