@@ -1,5 +1,7 @@
 "use client";
 import Image from "next/image";
+import { EduExpItem } from "@/components/EduExpItem";
+import { SkillItem } from "@/components/SkillItem";
 
 const design = ["Adobe Illustrator", "Adobe Photoshop", "Adobe After Effects", "Adobe Audition"];
 const uiux = ["Figma", "Miro", "User Research", "Flowchart", "Wireframing", "Prototyping"];
@@ -8,6 +10,73 @@ const layout = ["Adobe InDesign", "PowerPoint", "Keynote", "Canva"];
 const photo = ["Adobe Lightroom", "Adobe Photoshop"];
 const stats = ["Excel", "SPSS", "Web Scraper", "Flourish"];
 const game = ["Unity"];
+
+const skills = [
+  {
+    title: "視覺設計與資訊動畫",
+    tools: ["Adobe Illustrator", "Adobe Photoshop", "Adobe After Effects", "Adobe Audition"]
+  },
+  {
+    title: "使用者體驗與介面設計",
+    tools: ["Figma", "Miro", "User Research", "Flowchart", "Wireframing", "Prototyping"]
+  },
+  {
+    title: "前端網頁開發",
+    tools: ["HTML", "CSS", "JavaScript", "RWD", "Tailwind CSS", "Next.js", "React Hooks", "Vibe Coding"]
+  },
+  {
+    title: "排版編輯與簡報設計",
+    tools: ["Adobe InDesign", "PowerPoint", "Keynote", "Canva"]
+  },
+  {
+    title: "問卷設計與統計分析",
+    tools: ["Excel", "SPSS", "Web Scraper", "Flourish"]
+  },
+  {
+    title: "攝影與影像後製",
+    tools: ["Adobe Lightroom", "Adobe Photoshop"]
+  },
+  {
+    title: "遊戲開發",
+    tools: ["Unity"]
+  },
+];
+
+const edu = [
+  {
+    title: "傳播碩士學位學程（M.A.）",
+    place: "國立政治大學",
+    time: "2023/09 - 2025/12",
+  },
+  {
+    title: "廣告學系 傳播設計組（B.A.）\n數位內容與科技學士學位學程（B.S.）",
+    place: "國立政治大學",
+    time: "2018/09 - 2023/06",
+  },
+];
+
+const exp = [
+  {
+    title: "研究助理",
+    place: "TLab 媒體心理實驗室",
+    time: "2024/02 - 2025/10",
+    description: [
+      "協助社會科學、媒體心理實驗法之研究進行，與助理群合作接待超過百位受試者，擁有 VR 頭顯操作經驗。",
+      "協助沉浸科技、虛擬實境社交等主題之文獻搜集整理。",
+      "文化科技計畫：協助搜集國內外沉浸文化科技案例，整合為臺灣文化科技產業地圖。",
+      "數位信任計畫：協助訪談資料整理、文獻探討、撰寫報告。",]
+  },
+  {
+    title: "實習助理（記者、資訊編輯、節目製作）",
+    place: "政大之聲廣播電台",
+    time: "2019/09 - 2022/06",
+    description: [
+      "廣播節目製作：合作完成節目企劃、採訪、主持、剪輯、現場播出。",
+      "新聞資訊編輯：編輯國內外重要新聞稿，並於整點 Live 播報；帶領助理檢討專題稿件。",
+      "深度專題產製：合作擬訂專題企劃、採訪、撰寫、過音，完成 2000 字以上之深度專題報導。",
+      "視覺設計協助：參與開播活動視覺設計（含實體海報、線上社群）、帶狀節目視覺設計、節目主視覺設計。",]
+  },
+];
 
 
 
@@ -37,203 +106,57 @@ export default function About() {
           </div>
 
 
-
+          {/* edu, exp, skill */}
           <div className="w-full lg:w-[60%]">
 
             {/* edu */}
             <div className="mb-10">
 
-              <div className="">
+              <div className="flex font-bold mb-6 text-[16px] text-brand-graytext">
+                {"// "}Education
+              </div>
 
-                <div className="flex font-bold mb-6 text-[16px] text-brand-graytext">
-                  {"// "}Education
-                </div>
+              <div className="text-[16px] text-brand-text font-normal leading-8 flex flex-col">
 
-                <div className="text-[16px] text-brand-text font-normal leading-8 flex flex-col">
-
-                  <div className="mb-6 md:hover:text-brand-primary transition-all duration-300 ease">
-                    <div className="font-medium">傳播碩士學位學程（M.A.）</div>
-                    <div className="flex justify-between font-normal">
-                      <div>國立政治大學</div>
-                      <div>2023/09 - 2025/12</div>
-                    </div>
-                  </div>
-
-                  <div className="mb-6 md:hover:text-brand-primary transition-all duration-300 ease">
-                    <div className="font-medium">廣告學系 傳播設計組（B.A.）<br />數位內容與科技學士學位學程（B.S.）</div>
-                    <div className="flex justify-between font-normal">
-                      <div>國立政治大學</div>
-                      <div>2018/09 - 2023/06</div>
-                    </div>
-                  </div>
-
-                </div>
+                {edu.map((item, index) => (
+                  <EduExpItem key={index} {...item} />
+                ))}
 
               </div>
 
             </div>
-
-
 
             {/* exp */}
             <div className="mb-10">
 
-              <div className="">
+              <div className="flex font-bold mb-6 text-[16px] text-brand-graytext">
+                {"// "}Experience
+              </div>
 
-                <div className="flex font-bold mb-6 text-[16px] text-brand-graytext">
-                  {"// "}Experience
-                </div>
+              <div className="text-[16px] text-brand-text font-normal leading-8 flex flex-col">
 
-                <div className="text-[16px] text-brand-text font-normal leading-8 flex flex-col">
-
-                  <div className="mb-6 md:hover:text-brand-primary transition-all duration-300 ease">
-                    <div className="font-medium">研究助理</div>
-                    <div className="flex justify-between font-normal">
-                      <div>TLab 媒體心理實驗室</div>
-                      <div>2024/02 - 2025/10</div>
-                    </div>
-                    <ul className="list-disc pl-4 text-[14px] mt-2">
-                      <li>協助社會科學、媒體心理實驗法之研究進行，與助理群合作接待超過百位受試者，擁有 VR 頭顯操作經驗。</li>
-                      <li>協助沉浸科技、虛擬實境社交等主題之文獻搜集整理。</li>
-                      <li>文化科技計畫：協助搜集國內外沉浸文化科技案例，整合為臺灣文化科技產業地圖。</li>
-                      <li>數位信任計畫：協助訪談資料整理、文獻探討、撰寫報告。</li>
-                    </ul>
-                  </div>
-
-                  <div className="mb-6 md:hover:text-brand-primary transition-all duration-300 ease">
-                    <div className="font-medium">實習助理（記者、資訊編輯、節目製作）</div>
-                    <div className="flex justify-between font-normal">
-                      <div>政大之聲廣播電台</div>
-                      <div>2019/09 - 2022/06</div>
-                    </div>
-                    <ul className="list-disc pl-4 text-[14px] mt-2">
-                      <li>廣播節目製作：合作完成節目企劃、採訪、主持、剪輯、現場播出。</li>
-                      <li>新聞資訊編輯：編輯國內外重要新聞稿，並於整點 Live 播報；帶領助理檢討專題稿件。</li>
-                      <li>深度專題產製：合作擬訂專題企劃、採訪、撰寫、過音，完成 2000 字以上之深度專題報導。</li>
-                      <li>視覺設計協助：參與開播活動視覺設計（含實體海報、線上社群）、帶狀節目視覺設計、節目主視覺設計。</li>
-                    </ul>
-                  </div>
-
-                </div>
+                {exp.map((item, index) => (
+                  <EduExpItem key={index} {...item} />
+                ))}
 
               </div>
 
             </div>
 
 
-
             {/* skills */}
             <div className="mb-10">
-              <div className="">
-
-                <div className="flex font-bold mb-6 text-[16px] text-brand-graytext">
-                  {"// "}Skills
-                </div>
-
-                <div className="text-[16px] text-brand-text font-normal flex flex-col">
-
-                  <div className="mb-6">
-                    <div className="text-brand-text font-medium leading-8">視覺設計與資訊動畫</div>
-                    <div className="flex flex-wrap gap-2 mt-2">
-                      {design.map((item, index) => (
-                        <div
-                          key={index}
-                          className={`text-[14px] px-2 py-0.5 bg-brand-graybg inset-shadow-sm rounded-full transition-all duration-300 ease
-                            md:hover:bg-brand-primaryLight md:hover:text-brand-bg`}
-                        >
-                          {item}
-                        </div>))}
-                    </div>
-                  </div>
-
-                  <div className="mb-6">
-                    <div className="text-brand-text font-medium leading-8">使用者體驗與介面設計</div>
-                    <div className="flex flex-wrap gap-2 mt-2">
-                      {uiux.map((item, index) => (
-                        <div
-                          key={index}
-                          className={`text-[14px] px-2 py-0.5 bg-brand-graybg inset-shadow-sm rounded-full transition-all duration-300 ease
-                            md:hover:bg-brand-primaryLight md:hover:text-brand-bg`}
-                        >
-                          {item}
-                        </div>))}
-                    </div>
-                  </div>
-
-                  <div className="mb-6">
-                    <div className="text-brand-text font-medium leading-8">前端網頁開發</div>
-                    <div className="flex flex-wrap gap-2 mt-2">
-                      {frontend.map((item, index) => (
-                        <div
-                          key={index}
-                          className={`text-[14px] px-2 py-0.5 bg-brand-graybg inset-shadow-sm rounded-full transition-all duration-300 ease
-                            md:hover:bg-brand-primaryLight md:hover:text-brand-bg`}
-                        >
-                          {item}
-                        </div>))}
-                    </div>
-                  </div>
-
-                  <div className="mb-6">
-                    <div className="text-brand-text font-medium leading-8">排版編輯與簡報設計</div>
-                    <div className="flex flex-wrap gap-2 mt-2">
-                      {layout.map((item, index) => (
-                        <div
-                          key={index}
-                          className={`text-[14px] px-2 py-0.5 bg-brand-graybg inset-shadow-sm rounded-full transition-all duration-300 ease
-                            md:hover:bg-brand-primaryLight md:hover:text-brand-bg`}
-                        >
-                          {item}
-                        </div>))}
-                    </div>
-                  </div>
-
-                  <div className="mb-6">
-                    <div className="text-brand-text font-medium leading-8">問卷設計與統計分析</div>
-                    <div className="flex flex-wrap gap-2 mt-2">
-                      {stats.map((item, index) => (
-                        <div
-                          key={index}
-                          className={`text-[14px] px-2 py-0.5 bg-brand-graybg inset-shadow-sm rounded-full transition-all duration-300 ease
-                            md:hover:bg-brand-primaryLight md:hover:text-brand-bg`}
-                        >
-                          {item}
-                        </div>))}
-                    </div>
-                  </div>
-
-                  <div className="mb-6">
-                    <div className="text-brand-text font-medium leading-8">攝影與影像後製</div>
-                    <div className="flex flex-wrap gap-2 mt-2">
-                      {photo.map((item, index) => (
-                        <div
-                          key={index}
-                          className={`text-[14px] px-2 py-0.5 bg-brand-graybg inset-shadow-sm rounded-full transition-all duration-300 ease
-                            md:hover:bg-brand-primaryLight md:hover:text-brand-bg`}
-                        >
-                          {item}
-                        </div>))}
-                    </div>
-                  </div>
-
-                  <div className="mb-6">
-                    <div className="text-brand-text font-medium leading-8">遊戲開發</div>
-                    <div className="flex flex-wrap gap-2 mt-2">
-                      {game.map((item, index) => (
-                        <div
-                          key={index}
-                          className={`text-[14px] px-2 py-0.5 bg-brand-graybg inset-shadow-sm rounded-full transition-all duration-300 ease
-                            md:hover:bg-brand-primaryLight md:hover:text-brand-bg`}
-                        >
-                          {item}
-                        </div>))}
-                    </div>
-                  </div>
-
-                </div>
-
+              <div className="flex font-bold mb-6 text-[16px] text-brand-graytext">
+                {"// "}Skills
               </div>
 
+              <div className="text-[16px] text-brand-text font-normal flex flex-col">
+
+                {skills.map((item, index) => (
+                  <SkillItem key={index} {...item} />
+                ))}
+
+              </div>
 
             </div>
 
