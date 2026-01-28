@@ -38,13 +38,13 @@ export default function Projects() {
           <div className="flex flex-wrap gap-4 mb-6 items-center text-[14px]">
             <div className="font-bold text-brand-graytext">Filter:</div>
             {filters.map((item) => (
-              <div
+              <a
                 key={item}
                 onClick={() => setSelectedFilter(item)}
                 className={`transition-all duration-300 ease cursor-pointer hover:opacity-60
                   ${selectedFilter === item ? "text-brand-primary font-bold underline underline-offset-2" : "text-brand-graytext"}`}>
                 {item}
-              </div>
+              </a>
             ))}
           </div>
 

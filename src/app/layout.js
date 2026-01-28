@@ -3,6 +3,8 @@ import "./globals.css";
 import NavBar from "@/components/NavBar";
 import { Noto_Sans_TC } from "next/font/google";
 import { Lato } from "next/font/google";
+import CustomCursor from "@/components/CustomCursor";
+
 
 const notoTC = Noto_Sans_TC({
   subsets: ["latin"],
@@ -35,8 +37,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="bg-brand-bg">
       <body
-        className={`${notoTC.variable} ${lato.variable} font-main antialiased`}
+        className={`${notoTC.variable} ${lato.variable} font-main antialiased selection:bg-brand-secondary selection:text-brand-text`}
       >
+        <CustomCursor />
 
 
         <NavBar />
