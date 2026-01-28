@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="bg-brand-bg">
       <body
-        className={`${notoTC.variable} ${lato.variable} font-main antialiased selection:bg-brand-secondary selection:text-brand-text`}
+        className={`${notoTC.variable} ${lato.variable} font-main antialiased selection:bg-brand-secondary selection:text-brand-bg`}
       >
         <CustomCursor />
 
