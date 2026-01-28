@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import { ProjectPages } from "@/components/ProjectPages";
 import { useProject } from "@/hooks/useProject";
@@ -6,6 +5,13 @@ import { useProject } from "@/hooks/useProject";
 const projectInfo = useProject("/projects/aha");
 
 if (!projectInfo) return null;
+
+export async function generateMetadata() {
+  return {
+    title: `${projectInfo.title} | Jo-Chuan's Protfolio`,
+    description: `${content.introduction}`,
+  };
+}
 
 const content =
 {

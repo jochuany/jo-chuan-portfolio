@@ -6,6 +6,12 @@ const projectInfo = useProject("/projects/boat");
 
 if (!projectInfo) return null;
 
+export async function generateMetadata() {
+  return {
+    title: `${projectInfo.title} | Jo-Chuan's Protfolio`,
+    description: `${content.introduction}`,
+  };
+}
 
 const content =
 {

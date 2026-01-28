@@ -1,15 +1,10 @@
-"use client";
 import Image from "next/image";
 import { EduExpItem } from "@/components/EduExpItem";
 import { SkillItem } from "@/components/SkillItem";
 
-const design = ["Adobe Illustrator", "Adobe Photoshop", "Adobe After Effects", "Adobe Audition"];
-const uiux = ["Figma", "Miro", "User Research", "Flowchart", "Wireframing", "Prototyping"];
-const frontend = ["HTML", "CSS", "JavaScript", "RWD", "Tailwind CSS", "Next.js", "React Hooks", "Vibe Coding"];
-const layout = ["Adobe InDesign", "PowerPoint", "Keynote", "Canva"];
-const photo = ["Adobe Lightroom", "Adobe Photoshop"];
-const stats = ["Excel", "SPSS", "Web Scraper", "Flourish"];
-const game = ["Unity"];
+export const metadata = {
+  title: "About | Jo-Chuan's Portfolio"
+};
 
 const skills = [
   {

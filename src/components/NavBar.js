@@ -21,7 +21,7 @@ export default function NavBar() {
     const pathname = usePathname();
 
     const navLinks = [
-        { name: "PROJECT", href: "/projects" },
+        { name: "PROJECTS", href: "/projects" },
         { name: "ABOUT", href: "/about" },
     ];
 

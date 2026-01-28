@@ -11,6 +11,7 @@ export const useProject = (path) => {
     }
 
     return {
+        label: projectInfo.label,
         explore: projectInfo.explore,
         title: projectInfo.title,
         category: projectInfo.category,

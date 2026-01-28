@@ -6,6 +6,13 @@ const projectInfo = useProject("/projects/mirror");
 
 if (!projectInfo) return null;
 
+export async function generateMetadata() {
+  return {
+    title: `${projectInfo.title} | Jo-Chuan's Protfolio`,
+    description: `${content.introduction}`,
+  };
+}
+
 const content =
 {
   ...projectInfo,
