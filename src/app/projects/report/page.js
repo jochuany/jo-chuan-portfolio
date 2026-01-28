@@ -10,7 +10,7 @@ const content =
 {
   ...projectInfo,
   introduction: "此專案是為傳播科系新鮮人打造的專題網站，內容整合臺灣人口最多的臺北市、新北市、臺中市與高雄市之傳播產業薪資、房屋租金與各類消費資料，旨在透過數據分析釐清生活各面向的概況並做比較，供社會新鮮人獲取所需資訊，降低對未來﻿的迷惘。",
-  cta: "Visit Website \u2197",
+  cta: "Visit Website ",
   link: "https://jochuany.github.io/112.nccucomm.big-data-analysis.4/html/index.html",
   details: [
     {

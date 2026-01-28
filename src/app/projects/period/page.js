@@ -10,7 +10,7 @@ const content =
 {
   ...projectInfo,
   introduction: "此專案為整合「月經知識問答」與「經期情緒安撫」的聊天機器人，亦加入政大周邊月經地圖、生理用品剩餘規格（僅模擬呈現）。在進行設計思考的流程中，我們發現網路上的月經知識氾濫、月經地圖現有問題、以及女性經期間需要心靈上的支撐等問題，因而打造出此網頁作為解決方案。",
-  cta: "Demo on YouTube \u2197",
+  cta: "Demo on YouTube ",
   link: "https://youtu.be/ts6eESkYaKE?si=Gyy9lJ73vd44rRV_",
   details: [
     {

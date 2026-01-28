@@ -10,7 +10,7 @@ const content =
 {
   ...projectInfo,
   introduction: "此為綜合有關颱風假標準、實施方式解釋、過往案例、以及政治影響的資訊動畫，將抽象的數據、難懂的法案以圖表或視覺化呈現，使觀者能更理解颱風假背後的問題與標準。",
-  cta: "Watch on YouTube \u2197",
+  cta: "Watch on YouTube ",
   link: "https://youtu.be/8sklFG5qRm0?si=DLpqVpQBirhhybVk",
   details: [
     {

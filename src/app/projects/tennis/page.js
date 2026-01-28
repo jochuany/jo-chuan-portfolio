@@ -10,7 +10,7 @@ const content =
 {
   ...projectInfo,
   introduction: "以自己喜歡的職業球員為主題，製作約一分半的資訊動畫，介紹其球風、成就等。在腳本階段即著重場景間的轉換，電視、網球、快門、膠卷、報紙，皆為搭配敘事轉場的關鍵物件，使整體畫面銜接更流暢。",
-  cta: "Watch on YouTube \u2197",
+  cta: "Watch on YouTube ",
   link: "https://youtu.be/y2TkF0Tm3JY?si=bADOPmTrxx7FX2uD",
   details: [
     {

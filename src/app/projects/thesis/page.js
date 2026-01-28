@@ -11,7 +11,7 @@ const content =
 {
   ...projectInfo,
   introduction: "碩士期間撰寫的畢業論文。以虛擬實境此一新興媒介為題，關注其「彷彿親臨現場的體驗」對運動觀眾至現場觀賽意圖的影響，並透過實驗法搜集參與者的感受進行數據分析，希望了解——運動觀眾觀看完身歷其境的比賽後，還會想去現場嗎？",
-  cta: "View Summary \u2197",
+  cta: "View Summary ",
   link: "http://thesis.lib.nccu.edu.tw/cgi-bin/gs32/gsweb.cgi?o=dallcdr&s=id=%22G0112464036%22.&searchmode=basic",
   details: [
     {

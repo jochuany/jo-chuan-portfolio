@@ -11,7 +11,7 @@ const content =
 {
   ...projectInfo,
   introduction: "以現有產品 Pinterest 為參考，在實際觀察使用者的操作後，發現其在有明確目標時「搜尋過程繁瑣耗時」的痛點，基於此設計產品新功能與商業模式。在演算法推薦的基礎功能下，規劃導入 AI 搜尋與進階篩選功能，旨在為內容創作、行銷企劃從業者創造更有搜尋效率的視覺靈感發掘平台。",
-  cta: "View on Figma \u2197",
+  cta: "View on Figma ",
   link: "https://www.figma.com/design/hrJbWzRWhuwEiSAa2Qg7jn/AHA?node-id=305-233&t=3N23Bhb5J4ErT9Ib-1",
   details: [
     {

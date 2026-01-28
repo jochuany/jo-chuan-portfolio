@@ -10,7 +10,7 @@ const content =
 {
   ...projectInfo,
   introduction: "此為數位內容第 14 屆畢業製作專案。作品希望傳達數位世界與現實世界之間的落差——先自單面鏡反射自我開始（現實世界）；接著螢幕亮起，將看到光鮮亮麗的社群貼文與場景（數位世界），能透過 Kinect 動作捕捉裝置操縱人物；體驗結束時螢幕也變黑，體驗者所見將再次變回單面鏡反射的自我（回到現實世界的空虛感）。作品完成後在華山文創園區烏梅劇院進行為期五天的展覽，有許多校內校外人士前來觀展，我們亦設計體驗流程，包括介紹、講解、輔助教學等，帶領觀展者體驗我們的作品。",
-  cta: "Demo on YouTube \u2197",
+  cta: "Demo on YouTube ",
   link: "https://youtu.be/wE1DucIL8D8?si=ghNpbITCJTGbBKuE",
   details: [
     {

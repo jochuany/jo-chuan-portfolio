@@ -10,7 +10,7 @@ const content =
 {
   ...projectInfo,
   introduction: "為政大製作的英文簡介資訊動畫。視覺以簡潔的文字、icon 為主，讓觀眾能在聆聽聲音旁白的同時掌握關鍵資訊。",
-  cta: "Watch on YouTube \u2197",
+  cta: "Watch on YouTube ",
   link: "https://youtu.be/nZVRC3BNZkk?si=-q0SE2d1uTnZu0sS",
   details: [
     {

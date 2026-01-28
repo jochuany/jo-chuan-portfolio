@@ -10,7 +10,7 @@ const content =
 {
   ...projectInfo,
   introduction: "政大指南路二段周邊道路擁擠、無交通號誌（註：該馬路已於 2025 年底裝設交通號誌），長期以來行人過馬路時，需要非常謹慎確認有無汽機車、公車通過。此遊戲以「天天過馬路」作為原型參考，將場景改為政大周邊，搭配劇情的方式、融入政大學生的生活來呈現。我們希望遊戲帶來娛樂的同時，也能喚起政大學生及附近居民對此地交通安全的重視。",
-  cta: "Play in Browser (Chrome) \u2197",
+  cta: "Play in Browser (PC & Chrome) ",
   link: "https://rjyang.itch.io/cross-the-zhinan-road-v2",
   details: [
     {

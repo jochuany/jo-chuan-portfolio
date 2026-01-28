@@ -11,7 +11,7 @@ const content =
 {
   ...projectInfo,
   introduction: "此作品為自製的歌詞動畫，將抽象的歌詞以動畫方式呈現。考量歌曲較抒情，因此動畫節奏較緩慢，視覺設計也配合歌詞的浪漫氛圍，加入蒲公英、海邊、夕陽等元素。此外，背景使用漸層效果，讓畫面更柔和、有層次與立體感。",
-  cta: "Watch on YouTube \u2197",
+  cta: "Watch on YouTube ",
   link: "https://youtu.be/mht2IoXIQp0?si=8IQKSslJAI8XXNi5",
   details: [
     {

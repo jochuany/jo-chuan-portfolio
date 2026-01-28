@@ -10,7 +10,7 @@ const content =
 {
   ...projectInfo,
   introduction: "此專案為排球網頁小遊戲。起初想製作一個有別於「皮卡丘打排球」對打形式的小遊戲，且目標在於釋放研究生的學術壓力，因而定位成敲打鍵盤的舒壓遊戲。遊戲中加入排球技術的細節，能引起喜愛排球運動者的共鳴與樂趣。",
-  cta: "Play in Browser \u2197",
+  cta: "Play in Browser ",
   link: "https://volleyball-spiking-game.vercel.app/",
   details: [
     {

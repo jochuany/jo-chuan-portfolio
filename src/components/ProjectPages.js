@@ -7,7 +7,8 @@ export const ProjectPages = ({ title, category, year, tools, introduction, cta, 
 
                 <div className="flex flex-col lg:flex-row justify-between w-[90%] md:w-[85%] lg:w-[80%] items-start">
 
-                    <div className="lg:sticky lg:top-[100px] w-full lg:w-[20%]">
+                    {/* left col */}
+                    <div className="lg:sticky lg:top-[100px] w-full lg:w-[25%]">
 
                         <div className="flex flex-col w-full mb-6">
 
@@ -57,7 +58,7 @@ export const ProjectPages = ({ title, category, year, tools, introduction, cta, 
                                 </div>
                                 <a href={link} target="_blank"
                                     className={`text-[16px] text-brand-primary font-semibold transition-all duration-300 ease
-                                    relative inline-block
+                                    relative inline-block group
 
                                     after:content-['']
                                     after:absolute
@@ -75,6 +76,8 @@ export const ProjectPages = ({ title, category, year, tools, introduction, cta, 
                                     after:ease-out
                                     md:hover:after:scale-x-0`}>
                                     {cta}
+                                    <span className="inline-block group-hover:translate-x-1 group-hover:-translate-y-1
+                                    transition-all duration-300 ease">&#8599;</span>
                                 </a>
                             </div>
 
@@ -82,24 +85,29 @@ export const ProjectPages = ({ title, category, year, tools, introduction, cta, 
 
                     </div>
 
-                    <div className="w-full lg:w-[75%]">
+                    {/* right col */}
+                    <div className="w-full lg:w-[70%]">
+
+                        {/* introduction, details */}
                         <div className="w-full flex flex-col">
                             <div className="text-justify text-[16px] mb-10 leading-8 font-normal">
                                 {introduction}
                             </div>
 
-                            <div className="text-justify mb-10">
-                                <div className="text-brand-graytext font-bold text-[14px]">
+                            <div className="text-justify mb-6">
+                                <div className="text-brand-graytext font-bold text-[14px] mb-4">
                                     {"// "}Scope of Work
                                 </div>
-                                <ul className="my-4 list-disc ml-4 leading-8 text-[16px] font-normal">
+                                <ul className="list-disc ml-4 leading-8 text-[16px] font-normal">
                                     {details.map((item, index) => (
                                         <li key={index} className={`mb-4`}><span className={`font-semibold`}>{item.subtitle}</span>{item.description}</li>
                                     ))}
                                 </ul>
                             </div>
                         </div>
-                        <div className="w-full grid gap-8">
+
+                        {/* photos */}
+                        <div className="w-full grid gap-8 mb-10">
                             {photos.map((src, index) => (
                                 <div key={index} className="w-full">
                                     <img
@@ -109,8 +117,9 @@ export const ProjectPages = ({ title, category, year, tools, introduction, cta, 
                                     />
                                 </div>
                             ))}
-
                         </div>
+
+
 
                     </div>
 
