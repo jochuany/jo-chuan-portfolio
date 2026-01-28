@@ -36,7 +36,7 @@ export default function Home() {
 
             </div>
 
-            <div className="translate-y-[200px] text-brand-graytext">
+            <div className="translate-y-[180px] text-brand-graytext">
               <div className="text-[14px] md:text-[16px]">Explore</div>
               <div className="text-[26px] md:text-[30px] animate-scrolldown">⭣</div>
             </div>

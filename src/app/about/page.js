@@ -2,10 +2,11 @@
 import Image from "next/image";
 
 const design = ["Adobe Illustrator", "Adobe Photoshop", "Adobe After Effects", "Adobe Audition"];
-const uiux = ["Figma", "Miro", "User Research"];
-const frontend = ["HTML", "CSS", "JavaScript", "RWD", "Tailwind CSS", "Next.js", "React Hooks"];
+const uiux = ["Figma", "Miro", "User Research", "Flowchart", "Wireframing", "Prototyping"];
+const frontend = ["HTML", "CSS", "JavaScript", "RWD", "Tailwind CSS", "Next.js", "React Hooks", "Vibe Coding"];
+const layout = ["Adobe InDesign", "PowerPoint", "Keynote", "Canva"];
 const photo = ["Adobe Lightroom", "Adobe Photoshop"];
-const stats = ["Excel", "SPSS", "Web Scraper"];
+const stats = ["Excel", "SPSS", "Web Scraper", "Flourish"];
 const game = ["Unity"];
 
 
@@ -146,7 +147,7 @@ export default function About() {
                   </div>
 
                   <div className="mb-6">
-                    <div className="text-brand-text font-medium leading-8">使用者研究與介面設計</div>
+                    <div className="text-brand-text font-medium leading-8">使用者體驗與介面設計</div>
                     <div className="flex flex-wrap gap-2 mt-2">
                       {uiux.map((item, index) => (
                         <div
@@ -160,7 +161,7 @@ export default function About() {
                   </div>
 
                   <div className="mb-6">
-                    <div className="text-brand-text font-medium leading-8">網頁前端</div>
+                    <div className="text-brand-text font-medium leading-8">前端網頁開發</div>
                     <div className="flex flex-wrap gap-2 mt-2">
                       {frontend.map((item, index) => (
                         <div
@@ -174,9 +175,9 @@ export default function About() {
                   </div>
 
                   <div className="mb-6">
-                    <div className="text-brand-text font-medium leading-8">攝影與影像後製</div>
+                    <div className="text-brand-text font-medium leading-8">排版編輯與簡報設計</div>
                     <div className="flex flex-wrap gap-2 mt-2">
-                      {photo.map((item, index) => (
+                      {layout.map((item, index) => (
                         <div
                           key={index}
                           className={`text-[14px] px-2 py-0.5 bg-brand-graybg inset-shadow-sm rounded-full transition-all duration-300 ease
@@ -191,6 +192,20 @@ export default function About() {
                     <div className="text-brand-text font-medium leading-8">問卷設計與統計分析</div>
                     <div className="flex flex-wrap gap-2 mt-2">
                       {stats.map((item, index) => (
+                        <div
+                          key={index}
+                          className={`text-[14px] px-2 py-0.5 bg-brand-graybg inset-shadow-sm rounded-full transition-all duration-300 ease
+                            md:hover:bg-brand-primaryLight md:hover:text-brand-bg`}
+                        >
+                          {item}
+                        </div>))}
+                    </div>
+                  </div>
+
+                  <div className="mb-6">
+                    <div className="text-brand-text font-medium leading-8">攝影與影像後製</div>
+                    <div className="flex flex-wrap gap-2 mt-2">
+                      {photo.map((item, index) => (
                         <div
                           key={index}
                           className={`text-[14px] px-2 py-0.5 bg-brand-graybg inset-shadow-sm rounded-full transition-all duration-300 ease

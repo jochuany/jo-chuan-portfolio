@@ -28,8 +28,10 @@ export default function NavBar() {
     return (
         <>
             <div className="flex justify-center items-center w-screen h-[60px] text-brand-text bg-brand-bg/50 font-bold backdrop-blur-sm fixed top-0 left-0 z-50">
+
                 <div className="flex w-[90%] md:w-[85%] lg:w-[80%] justify-between items-center">
 
+                    {/* home button */}
                     <a href="/" className="pt-0.5 flex justify-start items-center text-[16px] text-brand-primary">
                         <Shuffle
                             className="text-[16px] transition-all duration-300 cursor-pointer font-black hover:opacity-60"
@@ -49,22 +51,21 @@ export default function NavBar() {
                         />
                     </a>
 
-                    {/* ham menu */}
-                    <div onClick={toggleMenu} className="md:hidden z-50 relative cursor-pointer h-[20px] w-[20px] flex flex-col justify-center gap-[8px]">
-                        <span className={`h-0.5 w-full bg-brand-text transition-all duration-300 ease ${isHamOpen ? "rotate-45 translate-y-[5px]" : ""}`} />
-                        <span className={`h-0.5 w-full bg-brand-text transition-all duration-300 ease ${isHamOpen ? "-rotate-45 -translate-y-[5px]" : ""}`} />
-                    </div>
+                    {/* right buttons */}
+                    <div className="flex">
 
-                    {/* pc menu */}
-                    <div className="hidden md:flex md:items-center">
+                        <div className="flex justify-center items-center">
 
-                        {navLinks.map((link) => {
-                            const isActive = link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
-                            return (
-                                <a
-                                    key={link.href}
-                                    href={link.href}
-                                    className={`text-[16px] transition-all duration-300 ml-4
+                            {/* pc menu buttons */}
+                            <div className="hidden md:flex md:items-center">
+
+                                {navLinks.map((link) => {
+                                    const isActive = link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
+                                    return (
+                                        <a
+                                            key={link.href}
+                                            href={link.href}
+                                            className={`text-[16px] transition-all duration-300 ml-4
                                         hover:text-brand-text relative inline-block
                                         
                                         after:content-['']
@@ -85,19 +86,31 @@ export default function NavBar() {
                                         md:hover:after:scale-x-100
 
                                     ${isActive ? "before:content-['•'] before:mr-1 text-brand-primary" : "text-brand-graytext"}`}
-                                >
-                                    {link.name}
-                                </a>
-                            )
-                        })}
+                                        >
+                                            {link.name}
+                                        </a>
+                                    )
+                                })}
 
-                        <div onClick={copyEmail} className="cursor-pointer ml-4 hover:opacity-70 transition-opacity text-brand-primary"
-                            aria-label="Contact">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /><rect x="2" y="4" width="20" height="16" rx="2" /></svg>
+                            </div>
+
+                            {/* email icon */}
+                            <div onClick={copyEmail} className="cursor-pointer ml-4 hover:opacity-70 transition-opacity text-brand-primary"
+                                aria-label="Contact">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="m3.5 5.5l7.893 6.036a1 1 0 0 0 1.214 0L20.5 5.5M4 19h16a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Z" /></svg>
+                                {/* <!-- Icon from Flowbite Icons by Themesberg - https://github.com/themesberg/flowbite-icons/blob/main/LICENSE --> */}
+                            </div>
+
+
+                        </div>
+
+                        {/* ham menu icon */}
+                        <div onClick={toggleMenu} className="md:hidden z-50 relative cursor-pointer ml-4 h-[20px] w-[20px] flex flex-col justify-center gap-[8px]">
+                            <span className={`h-0.5 w-full bg-brand-text transition-all duration-300 ease ${isHamOpen ? "rotate-45 translate-y-[5px]" : ""}`} />
+                            <span className={`h-0.5 w-full bg-brand-text transition-all duration-300 ease ${isHamOpen ? "-rotate-45 -translate-y-[5px]" : ""}`} />
                         </div>
 
                     </div>
-
 
 
                 </div>
@@ -109,10 +122,6 @@ export default function NavBar() {
                         <a href="/"><div onClick={toggleMenu}>Home</div></a>
                         <a href="/projects"><div onClick={toggleMenu}>Projects</div></a>
                         <a href="/about"><div onClick={toggleMenu}>About</div></a>
-                        <div onClick={copyEmail} className="text-brand-primary"
-                            aria-label="Contact">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /><rect x="2" y="4" width="20" height="16" rx="2" /></svg>
-                        </div>
                     </div>
                 </div>
 
