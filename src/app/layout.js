@@ -39,7 +39,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${notoTC.variable} ${lato.variable} font-main antialiased selection:bg-brand-secondary selection:text-brand-bg`}
       >
-        <CustomCursor />
+        <CustomCursor className="hidden lg:flex" />
 
 
         <NavBar />
