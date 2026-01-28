@@ -11,6 +11,7 @@ export const useProject = (path) => {
     }
 
     return {
+        explore: projectInfo.explore,
         title: projectInfo.title,
         category: projectInfo.category,
         year: projectInfo.year,

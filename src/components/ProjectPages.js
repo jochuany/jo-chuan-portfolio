@@ -1,6 +1,11 @@
 // 每個專案個別頁面的版型 包含基本資訊 scope of work 詳細照片
 
-export const ProjectPages = ({ title, category, year, tools, introduction, cta, link, details, photos }) => {
+import { projects } from "./AllProjects";
+
+export const ProjectPages = ({ title, category, year, tools, introduction, cta, link, details, photos, explore }) => {
+
+    const exploreProjects = explore ? explore.map((label) => projects.find((p) => p.label === label)).filter(Boolean) : [];
+
     return (
         <>
             <div className="w-full bg-brand-bg py-10 mt-[60px] flex justify-center items-start">
@@ -76,8 +81,8 @@ export const ProjectPages = ({ title, category, year, tools, introduction, cta, 
                                     after:ease-out
                                     md:hover:after:scale-x-0`}>
                                     {cta}
-                                    <span className="inline-block group-hover:translate-x-1 group-hover:-translate-y-1
-                                    transition-all duration-300 ease">&#8599;</span>
+                                    <span className={`inline-block group-hover:translate-x-1 group-hover:-translate-y-1
+                                    transition-all duration-300 ease`}>&#8599;</span>
                                 </a>
                             </div>
 
@@ -119,14 +124,38 @@ export const ProjectPages = ({ title, category, year, tools, introduction, cta, 
                             ))}
                         </div>
 
+                        {/* explore more */}
 
+                        <div className="w-full">
+                            <div className="text-brand-graytext font-bold text-[14px] mb-2">
+                                Explore More Projects...
+                            </div>
+
+                            <ul>
+                                {exploreProjects.map((projects) => (
+                                    <li key={projects.href} className={`mb-2`}>
+                                        <a href={projects.href} className={`relative inline-block group text-brand-primary
+                                        after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px]
+                                        after:w-full after:bg-brand-primary after:scale-x-100 after:origin-right
+                                        after:transition-transform duration-300 ease-out md:hover:after:scale-x-0`}>
+
+                                            <span className="font-bold text-[16px]">{projects.title}</span>
+                                            <span className="font-normal text-[14px]">（{projects.category}）</span>
+                                            <span className="inline-block text-[20px] ml-1 lg:group-hover:translate-x-2 transition-transform duration-300 ease">
+                                                &#8594;
+                                            </span>
+                                        </a>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
 
                     </div>
 
                 </div>
 
 
-            </div>
+            </div >
         </>
     );
 };
