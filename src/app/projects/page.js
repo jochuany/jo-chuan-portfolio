@@ -9,10 +9,10 @@ const filterOrder = [
   "All",
   "UI/UX",
   "Frontend",
+  "Thesis",
   "Motion Graphics",
-  "Games",
   "Visual Design",
-  "Thesis"
+  "Games"
 ];
 
 export default function Projects() {
