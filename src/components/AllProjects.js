@@ -2,6 +2,18 @@
 
 export const projects = [
     {
+        label: "portfolioweb",
+        href: "/projects/portfolioweb",
+        title: "Jo-Chuan's Portfolio",
+        category: "網頁前端",
+        year: "2026",
+        photo: "/images/portfolioweb/portfolioweb-01.png",
+        tools: ["Next.js", "Tailwind CSS", "React Bits", "Figma"],
+        filter: "Frontend",
+        explore: ["report", "chance"],
+        selected: true
+    },
+    {
         label: "thesis",
         href: "/projects/thesis",
         title: "坐在球場第一排：虛擬實境觀賽體驗如何影響運動觀眾的進場觀賽意圖",
