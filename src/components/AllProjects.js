@@ -11,7 +11,6 @@ export const projects = [
         tools: ["Next.js", "Tailwind CSS", "React Bits", "Figma"],
         filter: "Frontend",
         explore: ["report", "chance"],
-        selected: true
     },
     {
         label: "thesis",
