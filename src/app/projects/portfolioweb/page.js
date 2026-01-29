@@ -32,6 +32,7 @@ const content =
   photos: [
     "/images/portfolioweb/portfolioweb-01.png",
     "/images/portfolioweb/portfolioweb-02.png",
+    "/images/portfolioweb/portfolioweb-03.png",
     "/images/portfolioweb/portfolioweb-04.png",
     "/images/portfolioweb/portfolioweb-05.png",
     "/images/portfolioweb/portfolioweb-06.png",
