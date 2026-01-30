@@ -61,7 +61,7 @@ export const ProjectPages = ({ title, category, year, tools, introduction, cta, 
                                 <div className="font-bold text-brand-graytext mb-2 text-[14px]">
                                     {"// "}Link
                                 </div>
-                                <a href={link} target="_blank"
+                                <a href={link} target={`${title === "Jo-Chuan's Portfolio" ? "_self" : "_blank"}`}
                                     className={`text-[16px] text-brand-primary font-semibold transition-all duration-300 ease
                                     relative inline-block group
 
@@ -81,8 +81,9 @@ export const ProjectPages = ({ title, category, year, tools, introduction, cta, 
                                     after:ease-out
                                     md:hover:after:scale-x-0`}>
                                     {cta}
-                                    <span className={`inline-block group-hover:translate-x-1 group-hover:-translate-y-1
-                                    transition-all duration-300 ease`}>&#8599;</span>
+                                    {title !== "Jo-Chuan's Portfolio" &&
+                                        (<span className={`inline-block group-hover:translate-x-1 group-hover:-translate-y-1
+                                        transition-all duration-300 ease`}>&#8599;</span>)}
                                 </a>
                             </div>
 
