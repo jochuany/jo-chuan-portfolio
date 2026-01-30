@@ -35,15 +35,27 @@ export default function Projects() {
             {"// "}All projects
           </div>
 
+          {/* filter */}
           <div className="flex flex-wrap gap-4 mb-6 items-center text-[14px]">
             <div className="font-bold text-brand-graytext">Filter:</div>
             {filters.map((item) => (
               <a
                 key={item}
                 onClick={() => setSelectedFilter(item)}
-                className={`transition-all duration-300 ease cursor-pointer hover:opacity-60
+                className={`relative inline-flex flex-col transition-all duration-300 ease cursor-pointer hover:opacity-60
                   ${selectedFilter === item ? "text-brand-primary font-bold underline underline-offset-2" : "text-brand-graytext"}`}>
-                {item}
+
+                {/* 正常顯示的 filter 文字 */}
+                <span>{item}</span>
+
+                {/* 隱藏的 filter 文字，設為粗體用來撐開寬度，避免行動端字體變粗時版面跳動 */}
+                <span
+                  className="invisible h-0 font-bold overflow-hidden"
+                  aria-hidden="true" // 語音朗讀時會跳過
+                >
+                  {item}
+                </span>
+
               </a>
             ))}
           </div>
