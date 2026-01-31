@@ -11,7 +11,7 @@ export const SkillItem = ({ title, tools }) => {
                         className={`text-[12px] px-2 py-0.5 bg-brand-graybg inset-shadow-sm rounded-full
                             border border-brand-graytext/20 transition-all duration-300 ease lg:group-hover:-translate-y-[2px]
                             lg:group-hover:bg-brand-primaryLight/20 lg:group-hover:text-brand-primary lg:group-hover:border-brand-primaryLight
-                            dark:lg:group-hover:bg-brand-primary/20 dark:lg:group-hover:text-brand-primaryLight dark:lg:hover:border-brand-primaryLight/70`}
+                            dark:lg:group-hover:bg-brand-primary/20 dark:lg:group-hover:text-brand-primaryLight dark:lg:group-hover:border-brand-primaryLight/70`}
                     >
                         {item}
                     </div>))}
