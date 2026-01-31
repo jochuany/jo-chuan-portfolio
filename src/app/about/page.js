@@ -97,7 +97,7 @@ export default function About() {
               <p>我亦擁有數位產品規劃的思維，能執行使用者研究、Flowchart、Wireframe 到 Prototype 的設計流程。跨領域背景使我能擔任研究、設計與開發之間的溝通橋樑，並能以技術實作的角度思考設計的可行性。</p>
             </div>
 
-            <a href="/document/Jo Chuan Yang_resume 2026.pdf" target="_blank"
+            <a href="/document/JoChuanYang_resume.pdf" target="_blank"
               className={`text-[16px] text-brand-primary font-semibold transition-all duration-300 ease
                 relative inline-block group hover:text-brand-text
                 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-brand-primary
