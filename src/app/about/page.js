@@ -86,16 +86,25 @@ export default function About() {
           {/* photo & about */}
           <div className="w-full lg:w-[30%] mb-10 lg:mb-0 lg:sticky lg:top-[100px]">
 
-            <div style={{ backgroundImage: `url(images/myphoto.png)` }} className={`h-[200px] max-w-[200px] rounded-md lg:grayscale-50
+            <div style={{ backgroundImage: `url(images/myphoto.png)` }} className={`h-[200px] max-w-[200px] mb-4 rounded-md lg:grayscale-50
                 bg-contain bg-center bg-no-repeat transition-all duration-500 ease lg:hover:grayscale-0`}></div>
 
 
-            <div className="mt-4 font-semibold mb-6 text-[18px]">楊 若絹<span className="text-[12px]">（ㄐㄩㄢˋ）</span></div>
+            <div className="font-semibold mb-6 text-[18px]">楊 若絹<span className="text-[12px]">（ㄐㄩㄢˋ）</span></div>
 
-            <div className="text-[14px] text-brand-text font-normal leading-7 text-justify">
-              我是一位具備設計、程式與研究背景的跨領域實踐者，擁有製作資訊動畫的經驗，也能進行前端實作；碩士期間的 XR 媒體心理學研究，則賦予我嚴謹的數據分析、邏輯論述與寫作能力。<br /><br />
-              我亦擁有數位產品規劃的思維，能執行使用者研究、Flowchart、Wireframe 到 Prototype 的設計流程。跨領域背景使我能擔任研究、設計與開發之間的溝通橋樑，並能以技術實作的角度思考設計的可行性。
+            <div className="mb-6 text-[14px] text-brand-text font-normal leading-7 text-justify">
+              <p className="mb-3">我是一位具備設計、程式與研究背景的跨領域實踐者，擁有製作資訊動畫的經驗，也能進行前端實作；碩士期間的 XR 媒體心理學研究，則賦予我嚴謹的數據分析、邏輯論述與寫作能力。</p>
+              <p>我亦擁有數位產品規劃的思維，能執行使用者研究、Flowchart、Wireframe 到 Prototype 的設計流程。跨領域背景使我能擔任研究、設計與開發之間的溝通橋樑，並能以技術實作的角度思考設計的可行性。</p>
             </div>
+
+            <a href="/document/Jo Chuan Yang_resume 2026.pdf" target="_blank"
+              className={`text-[16px] text-brand-primary font-semibold transition-all duration-300 ease
+                relative inline-block group hover:text-brand-text
+                after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-brand-primary
+                after:scale-x-100 after:origin-right after:transition-transform after:duration-300 after:ease-out lg:hover:after:scale-x-0`}>
+              Download Resume
+              <span className="ml-1 inline-block group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300 ease">&#8599;</span>
+            </a>
 
           </div>
 
