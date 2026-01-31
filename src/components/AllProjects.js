@@ -87,7 +87,7 @@ export const projects = [
         title: "鏡像之境",
         category: "互動體驗",
         year: "2023",
-        photo: "/images/mirror/mirror-01.png",
+        photo: "/images/mirror/mirror.png",
         tools: ["Unity", "Blender"],
         filter: "Games",
         explore: ["cross", "spike"]

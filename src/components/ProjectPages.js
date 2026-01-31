@@ -48,8 +48,10 @@ export const ProjectPages = ({ title, category, year, tools, introduction, cta, 
                                     {tools.map((item, index) => (
                                         <div
                                             key={index}
-                                            className={`text-[14px] font-medium px-2 py-0.5 bg-brand-graybg inset-shadow-sm rounded-full
-                                            transition-all duration-300 ease md:hover:bg-brand-primaryLight md:hover:text-brand-bg`}
+                                            className={`text-[12px] px-2 py-0.5 bg-brand-graybg inset-shadow-sm rounded-full
+                                                border border-brand-graytext/20 transition-all duration-300 ease lg:hover:-translate-y-[2px]
+                                                lg:hover:bg-brand-primaryLight/20 lg:hover:text-brand-primary lg:hover:border-brand-primaryLight
+                                                dark:lg:hover:bg-brand-primary/20 dark:lg:hover:text-brand-primaryLight dark:lg:hover:border-brand-primaryLight/70`}
                                         >
                                             {item}
                                         </div>
@@ -63,7 +65,7 @@ export const ProjectPages = ({ title, category, year, tools, introduction, cta, 
                                 </div>
                                 <a href={link} target={`${title === "Jo-Chuan's Portfolio" ? "_self" : "_blank"}`}
                                     className={`text-[16px] text-brand-primary font-semibold transition-all duration-300 ease
-                                    relative inline-block group
+                                    relative inline-block group hover:text-brand-text
 
                                     after:content-['']
                                     after:absolute
@@ -106,7 +108,10 @@ export const ProjectPages = ({ title, category, year, tools, introduction, cta, 
                                 </div>
                                 <ul className="list-disc ml-4 leading-8 text-[16px] font-normal">
                                     {details.map((item, index) => (
-                                        <li key={index} className={`mb-4`}><span className={`font-semibold`}>{item.subtitle}</span>{item.description}</li>
+                                        <li key={index} className={`mb-4`}>
+                                            <span className={`font-semibold`}>{item.subtitle}</span>
+                                            {item.description}
+                                        </li>
                                     ))}
                                 </ul>
                             </div>
@@ -115,7 +120,7 @@ export const ProjectPages = ({ title, category, year, tools, introduction, cta, 
                         {/* photos */}
                         <div className="w-full grid gap-8 mb-10">
                             {photos.map((src, index) => (
-                                <div key={index} className="w-full">
+                                <div key={index} className="w-full rounded-md overflow-hidden">
                                     <img
                                         src={src}
                                         alt={`Project Photo ${index + 1}`}
@@ -135,7 +140,7 @@ export const ProjectPages = ({ title, category, year, tools, introduction, cta, 
                             <ul>
                                 {exploreProjects.map((projects) => (
                                     <li key={projects.href} className={`mb-2`}>
-                                        <a href={projects.href} className={`relative inline-block group text-brand-primary
+                                        <a href={projects.href} className={`relative inline-block group text-brand-primary hover:text-brand-text
                                         after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px]
                                         after:w-full after:bg-brand-primary after:scale-x-100 after:origin-right
                                         after:transition-transform duration-300 ease-out md:hover:after:scale-x-0`}>

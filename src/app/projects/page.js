@@ -42,7 +42,7 @@ export default function Projects() {
               <a
                 key={item}
                 onClick={() => setSelectedFilter(item)}
-                className={`relative inline-flex flex-col transition-all duration-300 ease cursor-pointer hover:opacity-60
+                className={`relative inline-flex flex-col transition-all duration-300 ease cursor-pointer hover:text-brand-text
                   ${selectedFilter === item ? "text-brand-primary font-bold underline underline-offset-2" : "text-brand-graytext"}`}>
 
                 {/* 正常顯示的 filter 文字 */}

@@ -52,7 +52,7 @@ export default function RootLayout({ children }) {
 
             <a
               href="mailto:ruochuanyang@email.com"
-              className="font-bold md:hover:text-brand-primary transition-all duration-300 tracking-wide
+              className="font-bold md:hover:text-brand-text transition-all duration-300 tracking-wide
                 relative inline-block
 
                 after:content-['']

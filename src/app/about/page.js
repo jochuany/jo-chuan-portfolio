@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { EduExpItem } from "@/components/EduExpItem";
 import { SkillItem } from "@/components/SkillItem";
 
@@ -87,8 +86,8 @@ export default function About() {
           {/* photo & about */}
           <div className="w-full lg:w-[30%] mb-10 lg:mb-0 lg:sticky lg:top-[100px]">
 
-            <div style={{ backgroundImage: `url(images/myphoto.png)` }} className={`h-[200px] max-w-[200px] md:grayscale-50
-                bg-contain bg-center bg-no-repeat transition-all duration-500 ease md:hover:grayscale-0`}></div>
+            <div style={{ backgroundImage: `url(images/myphoto.png)` }} className={`h-[200px] max-w-[200px] rounded-md lg:grayscale-50
+                bg-contain bg-center bg-no-repeat transition-all duration-500 ease lg:hover:grayscale-0`}></div>
 
 
             <div className="mt-4 font-semibold mb-6 text-[18px]">楊 若絹<span className="text-[12px]">（ㄐㄩㄢˋ）</span></div>
