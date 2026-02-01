@@ -56,8 +56,9 @@ export default function CustomCursor() {
 
     return (
         <motion.div
+            id="custom-cursor"
             ref={ref}
-            className={`fixed top-0 left-0 pointer-events-none opacity-80 z-9999 bg-brand-primary hidden lg:flex`}
+            className={`fixed top-0 left-0 pointer-events-none opacity-80 z-9999 bg-brand-primary`}
             style={{
                 width: 20,
                 height: 20,

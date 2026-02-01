@@ -62,8 +62,19 @@ body {
   @apply font-sans antialiased;
 }
 
-*,
-html,
-body {
-  cursor: none;
+#custom-cursor {
+  display: none;
+}
+
+@media (pointer: fine) {
+  #custom-cursor {
+    display: flex;
+  }
+
+  html,
+  body,
+  a,
+  button {
+    cursor: none;
+  }
 }
