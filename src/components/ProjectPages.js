@@ -83,9 +83,8 @@ export const ProjectPages = ({ title, category, year, tools, introduction, cta, 
                                     after:ease-out
                                     md:hover:after:scale-x-0`}>
                                     {cta}
-                                    {title !== "Jo-Chuan's Portfolio" &&
-                                        (<span className={`inline-block group-hover:translate-x-1 group-hover:-translate-y-1
-                                        transition-all duration-300 ease`}>&#8599;</span>)}
+                                    <span className={`inline-block group-hover:translate-x-1 group-hover:-translate-y-1
+                                        transition-all duration-300 ease`}>&#8599;</span>
                                 </a>
                             </div>
 
