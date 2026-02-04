@@ -17,12 +17,16 @@ const content =
 {
   ...projectInfo,
   introduction: "個人作品集網站，彙整自 2021 年至今的專案作品。從介面設計到 Next.js 前端開發皆為獨立完成，並透過 Vercel 進行部署。整體視覺風格以簡潔、乾淨為主，主色選用藍綠色系，呼應個人沉穩、內斂的特質，且藍、綠色在色彩感受上亦與新科技形象相符，象徵我對新科技與數位媒介的興趣。",
-  cta: "You Are Here! ",
-  link: "",
+  cta: "Design on Figma ",
+  link: "https://www.figma.com/design/E8naC2etfwT8PH26AolYRd/Jo-Chuan-s-Portfolio-Design-System?node-id=0-1&t=MpRq7Ho3MTOssAJR-1",
   details: [
     {
-      subtitle: "網站架構規劃與 UI/UX 設計：",
+      subtitle: "網站架構規劃與 UX 設計：",
       description: "規劃網站架構、導航邏輯與頁面功能。包含在首頁設計精選作品區；固定導航列與電腦版固定側邊欄；在作品列表中規劃篩選功能；在作品內頁底部加上「Explore More」以提升使用者的留存率與瀏覽深度等。"
+    },
+    {
+      subtitle: "介面設計與 Design System：",
+      description: "使用 Figma 設計網站各頁面的介面，並建立 Design System，包含品牌色、字體、元件庫等，以提升設計效率與一致性。"
     },
     {
       subtitle: "Next.js 前端開發：",
