@@ -63,7 +63,7 @@ export const ProjectPages = ({ title, category, year, tools, introduction, cta, 
                                 <div className="font-bold text-brand-graytext mb-2 text-[14px]">
                                     {"// "}Link
                                 </div>
-                                <a href={link} target={`${title === "Jo-Chuan's Portfolio" ? "_self" : "_blank"}`}
+                                <a href={link} target="_blank"
                                     className={`text-[16px] text-brand-primary font-semibold transition-all duration-300 ease
                                     relative inline-block group hover:text-brand-text
 
