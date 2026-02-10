@@ -29,7 +29,7 @@ const content =
       description: "設定球友、球館與場主等主要受眾群，根據不同受眾角色與其主要任務，規劃資訊架構、Flowchart 與 Wireframe，擬定主要產品功能。"
     },
     {
-      subtitle: "LOGO、UI 介面與 Prototytpe：",
+      subtitle: "LOGO、UI 介面與 Prototype：",
       description: "以排球、黃色、藍色為主要形象，使用術語「Chance」同時符合排球運動精神與產品理念，設計出 LOGO、並將視覺風格延續至 UI 介面與 Prototype。"
     },
     {
