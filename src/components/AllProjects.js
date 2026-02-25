@@ -31,7 +31,7 @@ export const projects = [
         category: "產品規劃",
         year: "2025",
         photo: "/images/chance/chance-01.png",
-        tools: ["Figma", "Flowchart", "Wireframing", "Prototyping"],
+        tools: ["Figma", "Flowchart", "Wireframing", "Prototyping", "Notion"],
         filter: "UI/UX",
         explore: ["aha", "thesis"],
         selected: true
