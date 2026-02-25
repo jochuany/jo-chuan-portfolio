@@ -17,8 +17,12 @@ const content =
 {
   ...projectInfo,
   introduction: "以水果為題策劃一社群品牌，主要受眾為政大學生，分享與生活相關的水果小知識。品牌名「指南」為「學校路名」與「介紹」的意義雙關詞。",
-  cta: "View on Instagram ",
-  link: "https://www.instagram.com/zhinanfruit.co/",
+  links: [
+    {
+      cta: "View on Instagram ",
+      link: "https://www.instagram.com/zhinanfruit.co/"
+    }
+  ],
   details: [
     {
       subtitle: "Logo 設計：",

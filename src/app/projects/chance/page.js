@@ -17,8 +17,16 @@ const content =
 {
   ...projectInfo,
   introduction: "社群媒體上的資訊龐雜未分類、訊息格式不統一、且容易受演算法影響，排球球友找尋資訊時可能耗費大把時間。本專案以排球愛好者的需求為核心，旨在整合所有排球人需要的排球資訊，讓場主或比賽主辦方能清楚地上架資訊、球友也能有效率地瀏覽並找到資訊。",
-  cta: "View on Figma ",
-  link: "https://www.figma.com/design/OyWvP0ZWHOMdrA2BjMrbaM/Chance--?node-id=163-2&t=yV1Du5F40LtkdnJB-1",
+  links: [
+    {
+      cta: "View on Figma ",
+      link: "https://www.figma.com/design/OyWvP0ZWHOMdrA2BjMrbaM/Chance--?node-id=163-2&t=yV1Du5F40LtkdnJB-1"
+    },
+    {
+      cta: "View Project Plan on Notion ",
+      link: "https://tropical-feta-309.notion.site/Chance-APP-3109a6e3cb8980758030ea9cf0b554b1"
+    }
+  ],
   details: [
     {
       subtitle: "產品定義與專案目標設定：",

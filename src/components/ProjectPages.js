@@ -2,7 +2,7 @@
 
 import { projects } from "./AllProjects";
 
-export const ProjectPages = ({ title, category, year, tools, introduction, cta, link, details, photos, explore }) => {
+export const ProjectPages = ({ title, category, year, tools, introduction, links, details, photos, explore }) => {
 
     const exploreProjects = explore ? explore.map((label) => projects.find((p) => p.label === label)).filter(Boolean) : [];
 
@@ -63,29 +63,32 @@ export const ProjectPages = ({ title, category, year, tools, introduction, cta, 
                                 <div className="font-bold text-brand-graytext mb-2 text-[14px]">
                                     {"// "}Link
                                 </div>
-                                <a href={link} target="_blank"
-                                    className={`text-[16px] text-brand-primary font-semibold transition-all duration-300 ease
-                                    relative inline-block group hover:text-brand-text
-
-                                    after:content-['']
-                                    after:absolute
-                                    after:left-0
-                                    after:bottom-0
-                                    after:h-[2px]
-                                    after:w-full
-                                    after:bg-brand-primary
+                                <div className={`mb-2 flex flex-col items-start`}>
+                                    {links.map((item, index) => (
+                                        <a key={index} className={`mb-2 text-[16px] text-brand-primary font-semibold transition-all duration-300 ease
+                                            relative inline-block group lg:hover:text-brand-text
+                                    
+                                            after:content-['']
+                                            after:absolute
+                                            after:left-0
+                                            after:bottom-0
+                                            after:h-[2px]
+                                            after:w-full
+                                            after:bg-brand-primary
                 
-                                    after:scale-x-100
-                                    after:origin-right
+                                            after:scale-x-100
+                                            after:origin-right
 
-                                    after:transition-transform
-                                    after:duration-300
-                                    after:ease-out
-                                    md:hover:after:scale-x-0`}>
-                                    {cta}
-                                    <span className={`inline-block group-hover:translate-x-1 group-hover:-translate-y-1
-                                        transition-all duration-300 ease`}>&#8599;</span>
-                                </a>
+                                            after:transition-transform
+                                            after:duration-300
+                                            after:ease-out
+                                            lg:hover:after:scale-x-0`} href={item.link} target="_blank">
+                                            {item.cta}
+                                            <span className={`inline-block lg:group-hover:translate-x-1 lg:group-hover:-translate-y-1
+                                            transition-all duration-300 ease`}>&#8599;</span>
+                                        </a>
+                                    ))}
+                                </div>
                             </div>
 
                         </div>
