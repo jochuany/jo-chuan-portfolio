@@ -55,7 +55,7 @@ const edu = [
     time: "2023/09 - 2025/12",
   },
   {
-    title: "廣告學系 傳播設計組（B.A.）\n數位內容與科技學士學位學程（B.S.）",
+    title: "數位內容與科技學士學位學程（B.S.）\n廣告學系 傳播設計組（B.A.）",
     place: "國立政治大學",
     time: "2018/09 - 2023/06",
   },
@@ -108,8 +108,8 @@ export default function About() {
             <div className="font-semibold mb-6 text-[18px]">楊 若絹<span className="text-[12px]">（ㄐㄩㄢˋ）</span></div>
 
             <div className="mb-6 text-[14px] text-brand-text font-normal leading-7 text-justify">
-              <p className="mb-3">我是一位具備設計、程式與研究背景的跨領域實踐者，擁有製作資訊動畫的經驗，也能進行前端實作；碩士期間的 XR 媒體心理學研究，則賦予我嚴謹的數據分析、邏輯論述與寫作能力。</p>
-              <p>我亦擁有數位產品規劃的思維，能執行使用者研究、Flowchart、Wireframe 到 Prototype 的設計流程。跨領域背景使我能擔任研究、設計與開發之間的溝通橋樑，並能以技術實作的角度思考設計的可行性。</p>
+              <p className="mb-4">設計、開發與研究的跨領域背景。具備從 0 到 1 的專案規劃經驗，能執行使用者研究到原型設計的流程，並運用 Figma 與 Notion 製作包含策略面、結構面的計畫書。</p>
+              <p>憑藉數位敘事能力與前端開發思維，我能從技術實作角度思考設計可行性，並以視覺化的方式來提升溝通效率。參與研究計畫的經驗則使我能快速掌握不同領域的產業邏輯，撰寫嚴謹的研究報告。</p>
             </div>
 
             <a href="/document/JoChuanYang_resume.pdf" target="_blank"

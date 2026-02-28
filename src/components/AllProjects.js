@@ -22,13 +22,12 @@ export const projects = [
         tools: ["Meta Quest 3", "Insta360 X5", "Insta360 Studio", "SPSS"],
         filter: "Thesis",
         explore: ["chance", "report"],
-        selected: true
     },
     {
         label: "chance",
         href: "/projects/chance",
         title: "Chance!!",
-        category: "產品規劃",
+        category: "產品架構與專案規劃",
         year: "2025",
         photo: "/images/chance/chance-01.png",
         tools: ["Figma", "Flowchart", "Wireframing", "Prototyping", "Notion"],
@@ -51,12 +50,13 @@ export const projects = [
         label: "aha",
         href: "/projects/aha",
         title: "A HA~",
-        category: "產品規劃",
+        category: "使用者研究與功能優化",
         year: "2024",
         photo: "/images/aha/aha-01.png",
         tools: ["Figma", "Flowchart", "Wireframing", "Prototyping"],
         filter: "UI/UX",
         explore: ["chance", "report"],
+        selected: true
     },
     {
         label: "period",
@@ -73,7 +73,7 @@ export const projects = [
         label: "report",
         href: "/projects/report",
         title: "薪租翹翹板",
-        category: "專題網站",
+        category: "數據新聞專題網站",
         year: "2023",
         photo: "/images/report/report-01.png",
         tools: ["Web Scraper", "Flourish", "HTML", "CSS", "Empathy Map", "Persona", "User Journey Map"],

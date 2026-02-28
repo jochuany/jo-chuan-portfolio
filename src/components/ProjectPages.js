@@ -121,12 +121,9 @@ export const ProjectPages = ({ title, category, year, tools, introduction, links
                                 {exploreProjects.map((projects) => (
                                     <li key={projects.href} className={`mb-2`}>
                                         <a href={projects.href} className={`relative inline-block group text-brand-primary hover:text-brand-text
-                                        after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px]
-                                        after:w-full after:bg-brand-primary after:scale-x-100 after:origin-right
-                                        after:transition-transform duration-300 ease-out md:hover:after:scale-x-0`}>
-
+                                        link-underline-effect`}>
                                             <span className="font-bold text-[16px]">{projects.title}</span>
-                                            <span className="font-normal text-[14px]">（{projects.category}）</span>
+                                            <span className="font-normal text-[14px]">｜{projects.category}</span>
                                             <span className="inline-block text-[20px] ml-1 lg:group-hover:translate-x-2 transition-transform duration-300 ease">
                                                 &#8594;
                                             </span>
