@@ -15,7 +15,7 @@ export const EduExpItem = ({ title, place, time, description }) => {
             <ul className="list-disc pl-4 font-normal text-[14px] mt-2 text-brand-text
             lg:group-hover:text-brand-primary transition-all duration-300 ease">
                 {description && description.map((item, index) => (
-                    <li key={index}>{item}</li>
+                    <li className="mb-2 text-justify" key={index}>{item}</li>
                 ))}
             </ul>
         </div>

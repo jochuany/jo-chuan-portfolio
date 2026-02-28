@@ -7,14 +7,19 @@ export const metadata = {
 
 const skills = [
   {
+    title: "使用者體驗與介面設計",
+    skillDescription: "可進行使用者研究發掘痛點，並製作清楚的流程圖、線框稿與原型。具備設計心理學與人機互動基礎知識、熟悉傳播理論，助於應用在設計考量與產品策略中。",
+    tools: ["User Research", "Flowchart", "Wireframing", "Mockup", "Prototyping"]
+  },
+  {
+    title: "數位產品與專案規劃",
+    skillDescription: "能使用 Figma、Notion 產出視覺化的專案／產品計畫書，包含策略層與結構層、時程規劃與風險管理等。",
+    tools: ["Figma", "Notion", "Project Planning"]
+  },
+  {
     title: "視覺設計與資訊動畫",
     skillDescription: "可獨立撰寫敘事腳本並規劃分鏡、設計轉場、製作素材，將抽象的議題以視覺化、動態化的方式呈現，使其更具吸引力。",
     tools: ["Adobe Illustrator", "Adobe Photoshop", "Adobe After Effects", "Adobe Audition"]
-  },
-  {
-    title: "使用者體驗與介面設計",
-    skillDescription: "可進行使用者研究發掘痛點，並製作清楚的流程圖、線框稿與原型。具備設計心理學與人機互動基礎知識、熟悉傳播理論，助於應用在設計考量與產品策略中。",
-    tools: ["Figma", "Miro", "User Research", "Flowchart", "Wireframing", "Prototyping"]
   },
   {
     title: "前端網頁開發",
@@ -34,7 +39,7 @@ const skills = [
   {
     title: "攝影與影像後製",
     skillDescription: "能根據不同主題設計影像風格並提出企劃，也能使用影像後製軟體進行修圖與調色。",
-    tools: ["Adobe Lightroom", "Adobe Photoshop"]
+    tools: ["Moodboard", "Adobe Lightroom", "Adobe Photoshop"]
   },
   {
     title: "遊戲開發",
@@ -127,7 +132,7 @@ export default function About() {
                 {"// "}Education
               </div>
 
-              <div className="text-[16px] text-brand-text font-normal leading-8 flex flex-col text-justify">
+              <div className="text-[16px] text-brand-text font-normal leading-7 flex flex-col text-justify">
 
                 {edu.map((item, index) => (
                   <EduExpItem key={index} {...item} />
@@ -144,7 +149,7 @@ export default function About() {
                 {"// "}Experience
               </div>
 
-              <div className="text-[16px] text-brand-text font-normal leading-8 flex flex-col text-justify">
+              <div className="text-[16px] text-brand-text font-normal leading-7 flex flex-col text-justify">
 
                 {exp.map((item, index) => (
                   <EduExpItem key={index} {...item} />
