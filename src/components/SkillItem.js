@@ -9,13 +9,7 @@ export const SkillItem = ({ title, skillDescription, tools }) => {
             lg:group-hover:text-brand-primary/60 transition-all ease duration-300">{skillDescription}</div>
             <div className="flex flex-wrap gap-2 mt-2">
                 {tools.map((item, index) => (
-                    <div
-                        key={index}
-                        className={`text-[12px] px-2 py-0.5 bg-brand-graybg inset-shadow-sm rounded-full
-                            border border-brand-graytext/20 transition-all duration-300 ease
-                            lg:group-hover:bg-brand-primaryLight/20 lg:group-hover:text-brand-primary lg:group-hover:border-brand-primaryLight
-                            dark:lg:group-hover:bg-brand-primary/20 dark:lg:group-hover:text-brand-primaryLight dark:lg:group-hover:border-brand-primaryLight/70`}
-                    >
+                    <div key={index} className={`skill-hover-effect-group`}>
                         {item}
                     </div>))}
             </div>

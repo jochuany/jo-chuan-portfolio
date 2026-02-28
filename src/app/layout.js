@@ -53,24 +53,7 @@ export default function RootLayout({ children }) {
             <a
               href="mailto:ruochuanyang@email.com"
               className="font-bold md:hover:text-brand-text transition-all duration-300 tracking-wide
-                relative inline-block
-
-                after:content-['']
-                after:absolute
-                after:left-0
-                after:bottom-0
-                after:h-[1.5px]
-                after:w-full
-                after:bg-brand-primary
-                
-                after:scale-x-0
-                after:origin-left
-                
-                after:transition-transform
-                after:duration-300
-                after:ease-out
-
-                md:hover:after:scale-x-100"
+                relative inline-block link-underline-effect-nav"
             >
               ruochuanyang@gmail.com
             </a>

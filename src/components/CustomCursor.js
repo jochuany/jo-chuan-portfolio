@@ -67,7 +67,7 @@ export default function CustomCursor() {
                 y,
             }}
             animate={{
-                scale: isHovered ? 2 : 0.75
+                scale: isHovered ? 2.5 : 0.75
             }}
         />
     );

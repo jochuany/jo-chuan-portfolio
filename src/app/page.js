@@ -61,24 +61,7 @@ export default function Home() {
 
             <div className="w-full mt-10 flex justify-end">
               <a href="/projects" className="text-[16px] text-brand-primary font-bold transition-all duration-300 ease
-              relative inline-block hover:text-brand-text group
-
-              after:content-[''] 
-              after:absolute
-              after:left-0
-              after:bottom-0
-              after:h-[2px]
-              after:w-full
-              after:bg-brand-primary
-      
-              after:scale-x-100
-              after:origin-right
-
-              after:transition-transform
-              after:duration-300
-              after:ease-out
-
-              md:hover:after:scale-x-0">
+              relative inline-block hover:text-brand-text group link-underline-effect">
                 <span>View All Projects</span>
                 <span className="inline-block ml-1 transition-all ease duration-300 lg:group-hover:translate-x-2">&#8594;</span>
               </a>

@@ -46,13 +46,7 @@ export const ProjectPages = ({ title, category, year, tools, introduction, links
                                 </div>
                                 <div className="flex flex-wrap gap-2">
                                     {tools.map((item, index) => (
-                                        <div
-                                            key={index}
-                                            className={`text-[12px] px-2 py-0.5 bg-brand-graybg inset-shadow-sm rounded-full
-                                                border border-brand-graytext/20 transition-all duration-300 ease lg:hover:-translate-y-[2px]
-                                                lg:hover:bg-brand-primaryLight/20 lg:hover:text-brand-primary lg:hover:border-brand-primaryLight
-                                                dark:lg:hover:bg-brand-primary/20 dark:lg:hover:text-brand-primaryLight dark:lg:hover:border-brand-primaryLight/70`}
-                                        >
+                                        <div key={index} className={`skill-hover-effect`}>
                                             {item}
                                         </div>
                                     ))}
@@ -66,23 +60,7 @@ export const ProjectPages = ({ title, category, year, tools, introduction, links
                                 <div className={`mb-2 flex flex-col items-start`}>
                                     {links.map((item, index) => (
                                         <a key={index} className={`mb-2 text-[16px] text-brand-primary font-semibold transition-all duration-300 ease
-                                            relative inline-block group lg:hover:text-brand-text
-                                    
-                                            after:content-['']
-                                            after:absolute
-                                            after:left-0
-                                            after:bottom-0
-                                            after:h-[2px]
-                                            after:w-full
-                                            after:bg-brand-primary
-                
-                                            after:scale-x-100
-                                            after:origin-right
-
-                                            after:transition-transform
-                                            after:duration-300
-                                            after:ease-out
-                                            lg:hover:after:scale-x-0`} href={item.link} target="_blank">
+                                            relative inline-block group lg:hover:text-brand-text link-underline-effect`} href={item.link} target="_blank">
                                             {item.cta}
                                             <span className={`inline-block lg:group-hover:translate-x-1 lg:group-hover:-translate-y-1
                                             transition-all duration-300 ease`}>&#8599;</span>

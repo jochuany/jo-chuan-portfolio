@@ -66,24 +66,7 @@ export default function NavBar() {
                                             key={link.href}
                                             href={link.href}
                                             className={`text-[16px] transition-all duration-300 ml-4
-                                        hover:text-brand-text relative inline-block
-                                        
-                                        after:content-['']
-                                        after:absolute
-                                        after:left-0
-                                        after:bottom-0
-                                        after:h-[2px]
-                                        after:w-full
-                                        after:bg-brand-text
-                
-                                        after:scale-x-0
-                                        after:origin-left
-                
-                                        after:transition-transform
-                                        after:duration-300
-                                        after:ease-out
-
-                                        md:hover:after:scale-x-100
+                                        hover:text-brand-text relative inline-block link-underline-effect-nav
 
                                     ${isActive ? "before:content-['•'] before:mr-1 text-brand-primary" : "text-brand-graytext"}`}
                                         >

@@ -71,10 +71,70 @@ body {
     display: flex;
   }
 
-  html,
-  body,
-  a,
-  button {
-    cursor: none;
+  a {
+    cursor: pointer;
+  }
+
+}
+
+@layer components {
+  .link-underline-effect {
+    @apply relative;
+
+    &::after {
+      @apply content-[''] absolute left-0 bottom-0 h-[2px] w-full bg-brand-primary scale-x-100 origin-right transition-transform duration-300 ease-in-out;
+    }
+
+    &:hover::after {
+      @apply scale-x-0;
+    }
+
+    @media (pointer: fine) {
+      &:hover::after {
+        @apply scale-x-0;
+      }
+    }
+  }
+
+  .link-underline-effect-nav {
+    @apply relative;
+
+    &::after {
+      @apply content-[''] absolute left-0 bottom-0 h-[2px] w-full bg-brand-text scale-x-0 origin-left transition-transform duration-300 ease-in-out;
+    }
+
+    &:hover::after {
+      @apply scale-x-100;
+    }
+
+    @media (pointer: fine) {
+      &:hover::after {
+        @apply scale-x-100;
+      }
+    }
+  }
+
+  .skill-hover-effect {
+    @apply text-[12px] px-2 py-0.5 rounded-full border transition-all duration-300 ease-in-out;
+    @apply bg-brand-graybg border-brand-graytext/20 inset-shadow-sm;
+
+    @media (pointer: fine) {
+      &:hover {
+        @apply bg-brand-primaryLight/20 text-brand-primary border-brand-primaryLight -translate-y-[2px];
+        @apply dark:bg-brand-primary/20 dark:text-brand-primaryLight dark:border-brand-primaryLight/70;
+      }
+    }
+  }
+
+  .skill-hover-effect-group {
+    @apply text-[12px] px-2 py-0.5 rounded-full border transition-all duration-300 ease-in-out;
+    @apply bg-brand-graybg border-brand-graytext/20 inset-shadow-sm;
+
+    @media (pointer: fine) {
+      .group:hover & {
+        @apply bg-brand-primaryLight/20 text-brand-primary border-brand-primaryLight;
+        @apply dark:bg-brand-primary/20 dark:text-brand-primaryLight dark:border-brand-primaryLight/70;
+      }
+    }
   }
 }

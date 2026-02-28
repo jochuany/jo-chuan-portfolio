@@ -109,9 +109,7 @@ export default function About() {
 
             <a href="/document/JoChuanYang_resume.pdf" target="_blank"
               className={`text-[16px] text-brand-primary font-semibold transition-all duration-300 ease
-                relative inline-block group hover:text-brand-text
-                after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-brand-primary
-                after:scale-x-100 after:origin-right after:transition-transform after:duration-300 after:ease-out lg:hover:after:scale-x-0`}>
+                relative inline-block group hover:text-brand-text link-underline-effect`}>
               Download Resume
               <span className="ml-1 inline-block group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300 ease">&#8599;</span>
             </a>
