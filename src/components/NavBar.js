@@ -4,6 +4,7 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 
 import Shuffle from "@/components/Shuffle"
+import ThemeToggle from "./ThemeToggle";
 
 export default function NavBar() {
 
@@ -31,25 +32,34 @@ export default function NavBar() {
 
                 <div className="flex w-[90%] md:w-[85%] lg:w-[80%] justify-between items-center">
 
-                    {/* home button */}
-                    <a href="/" className="pt-0.5 flex justify-start items-center text-[16px] text-brand-primary">
-                        <Shuffle
-                            className="text-[16px] transition-all duration-300 cursor-pointer font-black hover:opacity-60"
-                            text="JO CHUAN."
-                            shuffleDirection="right"
-                            duration={0.5}
-                            animationMode="evenodd"
-                            shuffleTimes={1}
-                            ease="power3.out"
-                            stagger={0.03}
-                            threshold={0.1}
-                            triggerOnce={true}
-                            triggerOnHover={true}
-                            respectReducedMotion={true}
-                            loop={true}
-                            loopDelay={2}
-                        />
-                    </a>
+                    <div className="flex">
+                        {/* home button */}
+                        <a href="/" className="pt-0.5 flex justify-start items-center text-[16px] text-brand-primary">
+                            <Shuffle
+                                className="text-[16px] transition-all duration-300 cursor-pointer font-black hover:opacity-60"
+                                text="JO CHUAN."
+                                shuffleDirection="right"
+                                duration={0.5}
+                                animationMode="evenodd"
+                                shuffleTimes={1}
+                                ease="power3.out"
+                                stagger={0.03}
+                                threshold={0.1}
+                                triggerOnce={true}
+                                triggerOnHover={true}
+                                respectReducedMotion={true}
+                                loop={true}
+                                loopDelay={2}
+                            />
+                        </a>
+
+                        {/* email icon */}
+                        <a onClick={copyEmail} className="cursor-pointer ml-4 hover:opacity-70 transition-opacity text-brand-primary"
+                            aria-label="Contact">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm8-7.175q.125 0 .263-.038t.262-.112L19.6 8.25q.2-.125.3-.312t.1-.413q0-.5-.425-.75T18.7 6.8L12 11L5.3 6.8q-.45-.275-.875-.012T4 7.525q0 .25.1.438t.3.287l7.075 4.425q.125.075.263.113t.262.037" /></svg>
+                            {/* Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE */}
+                        </a>
+                    </div>
 
                     {/* right buttons */}
                     <div className="flex">
@@ -77,12 +87,7 @@ export default function NavBar() {
 
                             </div>
 
-                            {/* email icon */}
-                            <a onClick={copyEmail} className="cursor-pointer ml-4 hover:opacity-70 transition-opacity text-brand-primary"
-                                aria-label="Contact">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm8-7.175q.125 0 .263-.038t.262-.112L19.6 8.25q.2-.125.3-.312t.1-.413q0-.5-.425-.75T18.7 6.8L12 11L5.3 6.8q-.45-.275-.875-.012T4 7.525q0 .25.1.438t.3.287l7.075 4.425q.125.075.263.113t.262.037" /></svg>
-                                {/* Icon from Material Symbols by Google - https://github.com/google/material-design-icons/blob/master/LICENSE */}
-                            </a>
+                            <ThemeToggle />
 
 
                         </div>

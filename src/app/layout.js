@@ -25,7 +25,25 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="bg-brand-bg">
+    <html lang="en" className="bg-brand-bg" suppressHydrationWarning>
+      <head><script
+        id="theme-switcher"
+        dangerouslySetInnerHTML={{
+          __html: `
+              (function() {
+                try {
+                  var savedTheme = localStorage.getItem('theme');
+                  var systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                  if (savedTheme === 'dark' || (!savedTheme && systemDark)) {
+                    document.documentElement.classList.add('dark');
+                  } else {
+                    document.documentElement.classList.remove('dark');
+                  }
+                } catch (e) {}
+              })();
+            `,
+        }}
+      /></head>
       <body
         className={`${notoTC.variable} ${lato.variable} font-main antialiased selection:bg-brand-secondary selection:text-brand-bg`}
       >

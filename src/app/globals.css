@@ -40,7 +40,7 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #262626;
     --foreground: #F7F7F5;
@@ -54,12 +54,26 @@
     --color-brand-graytext: #808080;
 
   }
+} */
+
+.dark {
+  --background: #262626;
+  --foreground: #F7F7F5;
+  --color-brand-bg: #262626;
+  --color-brand-text: #F7F7F5;
+  --color-brand-primary: #59A3BC;
+  --color-brand-primaryLight: #8AB1BE;
+  --color-brand-secondary: #F2A36F;
+  --color-brand-secondaryLight: #EDC7AF;
+  --color-brand-graybg: #414141;
+  --color-brand-graytext: #808080;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   @apply font-sans antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 #custom-cursor {
@@ -121,8 +135,13 @@ body {
     @media (pointer: fine) {
       &:hover {
         @apply bg-brand-primaryLight/20 text-brand-primary border-brand-primaryLight -translate-y-[2px];
-        @apply dark:bg-brand-primary/20 dark:text-brand-primaryLight dark:border-brand-primaryLight/70;
       }
+    }
+  }
+
+  @media (pointer: fine) {
+    .dark .skill-hover-effect:hover {
+      @apply bg-brand-primary/20 text-brand-primaryLight border-brand-primaryLight/70;
     }
   }
 
@@ -133,8 +152,13 @@ body {
     @media (pointer: fine) {
       .group:hover & {
         @apply bg-brand-primaryLight/20 text-brand-primary border-brand-primaryLight;
-        @apply dark:bg-brand-primary/20 dark:text-brand-primaryLight dark:border-brand-primaryLight/70;
       }
+    }
+  }
+
+  @media (pointer: fine) {
+    .dark .group:hover .skill-hover-effect-group {
+      @apply bg-brand-primary/20 text-brand-primaryLight border-brand-primaryLight/70;
     }
   }
 }
