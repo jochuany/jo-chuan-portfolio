@@ -21,6 +21,10 @@ const content =
     {
       cta: "Design on Figma ",
       link: "https://www.figma.com/design/E8naC2etfwT8PH26AolYRd/Jo-Chuan-s-Portfolio-Design-System?node-id=0-1&t=MpRq7Ho3MTOssAJR-1"
+    },
+    {
+      cta: "Code on Github",
+      link: "https://github.com/jochuany/jo-chuan-portfolio"
     }
   ],
   details: [
