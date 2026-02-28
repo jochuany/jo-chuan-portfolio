@@ -24,9 +24,9 @@ export default function Home() {
               </div>
 
               <TextType
-                text={["Digital Storytelling", "UI/UX Design", "Frontend Development", "Media Psychology"]}
-                typingSpeed={75}
-                pauseDuration={1500}
+                text={["UI/UX Design", "Project Planning", "Frontend Development", "Digital Storytelling", "Media Psychology"]}
+                typingSpeed={50}
+                pauseDuration={1300}
                 showCursor={true}
                 cursorCharacter="_"
                 cursorBlinkDuration={0.5}
