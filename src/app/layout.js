@@ -4,6 +4,7 @@ import NavBar from "@/components/NavBar";
 import { Noto_Sans_TC } from "next/font/google";
 import { Lato } from "next/font/google";
 import CustomCursor from "@/components/CustomCursor";
+import Footers from "@/components/Footer";
 
 
 const notoTC = Noto_Sans_TC({
@@ -64,25 +65,7 @@ export default function RootLayout({ children }) {
 
         {children}
 
-        <div className="flex justify-center items-center w-screen h-[60px] text-brand-graytext bg-brand-bg">
-
-          <div className="flex flex-col md:flex-row w-[90%] md:w-[85%] lg:w-[80%] justify-center items-center text-[12px] md:text-[14px] font-medium">
-
-            <a
-              href="mailto:ruochuanyang@email.com"
-              className="font-bold md:hover:text-brand-text transition-all duration-300 tracking-wide
-                relative inline-block link-underline-effect-nav"
-            >
-              ruochuanyang@gmail.com
-            </a>
-
-            <div className="flex">
-              <div className="mx-2 hidden md:flex">{" // "}</div>© {new Date().getFullYear()} Jo-Chuan Yang. Built with Next.js
-            </div>
-
-          </div>
-
-        </div>
+        <Footers />
 
       </body>
     </html>
