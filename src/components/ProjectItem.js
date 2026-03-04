@@ -7,7 +7,7 @@ export const ProjectItem = ({ href, title, category, year, photo, tools }) => {
             <div className="flex flex-col justify-between items-start lg:group-hover:-translate-y-1 transition-all duration-300 ease">
                 <div className={`h-[160px] md:h-[180px] lg:h-[200px] w-full mb-2 rounded-md border border-brand-graytext
                 lg:group-hover:border-brand-primary overflow-hidden relative transition-all ease duration-300`}>
-                    <div style={{ backgroundImage: `url(${photo})` }} className={`h-full w-full lg:grayscale
+                    <div style={{ backgroundImage: `url(${photo})` }} className={`h-full w-full lg:grayscale-70
                     bg-cover bg-center bg-no-repeat transition-all duration-500 ease lg:group-hover:scale-110 lg:group-hover:grayscale-0`}></div>
                 </div>
                 <div className={`text-[16px] transition-all duration-300 ease font-bold mb-2
