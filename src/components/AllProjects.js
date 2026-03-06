@@ -15,7 +15,7 @@ export const projects = [
     {
         label: "thesis_vrvolleyball",
         href: "/projects/thesis_vrvolleyball",
-        title: "坐在球場第一排：虛擬實境觀賽體驗如何影響運動觀眾的進場觀賽意圖",
+        title: "虛擬實境對現場觀賽意圖之影響研究",
         category: "碩士論文",
         year: "2025",
         photo: "/images/thesis_vrvolleyball/thesis-01.png",
@@ -49,7 +49,7 @@ export const projects = [
     {
         label: "thesis_newsgame",
         href: "/projects/thesis_newsgame",
-        title: "新聞遊戲化身相似性如何影響利社會意圖——以欣賞感為中介",
+        title: "化身相似性對新聞遊戲效果之影響研究",
         category: "研究小論文",
         year: "2024",
         photo: "/images/thesis_newsgame/newsgame-01.png",
@@ -121,7 +121,7 @@ export const projects = [
         category: "資訊動畫",
         year: "2023",
         photo: "/images/mg_nccu3m/nccu3m-01.png",
-        tools: ["Adobe After Effects"],
+        tools: ["After Effects"],
         filter: "Motion Graphics",
         explore: ["mg_tennis", "mg_boat"]
     },
@@ -132,7 +132,7 @@ export const projects = [
         category: "資訊動畫",
         year: "2022",
         photo: "/images/mg_tennis/tennis-05.png",
-        tools: ["Adobe Illustrator", "Adobe After Effects", "Adobe Audition"],
+        tools: ["Illustrator", "After Effects", "Audition"],
         filter: "Motion Graphics",
         explore: ["mg_boat", "mg_typhoon"]
     },
@@ -143,7 +143,7 @@ export const projects = [
         category: "動畫",
         year: "2022",
         photo: "/images/mg_boat/boat-01.png",
-        tools: ["Adobe Illustrator", "Adobe After Effects"],
+        tools: ["Illustrator", "After Effects"],
         filter: "Motion Graphics",
         explore: ["mg_tennis", "design_fruit"]
     },
@@ -154,7 +154,7 @@ export const projects = [
         category: "Logo 設計",
         year: "2022",
         photo: "/images/design_fruit/fruit-03.png",
-        tools: ["Adobe Illustrator"],
+        tools: ["Illustrator"],
         filter: "Visual Design",
         explore: ["design_vnccu", "mg_tennis"]
     },
@@ -176,7 +176,7 @@ export const projects = [
         category: "主視覺設計",
         year: "2021",
         photo: "/images/design_vnccu/vnccu-01.jpg",
-        tools: ["Adobe Illustrator"],
+        tools: ["Illustrator"],
         filter: "Visual Design",
         explore: ["design_fruit", "mg_boat"]
     },

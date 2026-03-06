@@ -17,6 +17,7 @@ export default function NavBar() {
     const pathname = usePathname();
 
     const navLinks = [
+        { name: "HOME", href: "/" },
         { name: "PROJECTS", href: "/projects" },
         { name: "ABOUT", href: "/about" },
     ];
@@ -82,7 +83,7 @@ export default function NavBar() {
                             {/* pc menu buttons */}
                             <div className="hidden md:flex md:items-center">
 
-                                {navLinks.map((link) => {
+                                {navLinks.slice(1, 3).map((link) => {
                                     const isActive = link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
                                     return (
                                         <a
@@ -120,9 +121,21 @@ export default function NavBar() {
                 <div className={`fixed inset-0 bg-brand-bg z-40 flex w-full h-screen justify-center items-center
                 transition-transform duration-300 ease ${isHamOpen ? "translate-x-0" : "translate-x-full"} lg:hidden`}>
                     <div className="text-[20px] font-bold flex flex-col gap-8 items-center">
-                        <a href="/"><div onClick={toggleMenu}>Home</div></a>
-                        <a href="/projects"><div onClick={toggleMenu}>Projects</div></a>
-                        <a href="/about"><div onClick={toggleMenu}>About</div></a>
+                        {navLinks.map((link) => {
+                            const isActive = link.href === "/" ? pathname === "/" : pathname.startsWith(link.href);
+                            return (
+                                <a
+                                    key={link.href}
+                                    href={link.href}
+                                    onClick={toggleMenu}
+                                    className={`transition-all duration-300 mx-2
+                                                hover:text-brand-text relative inline-block
+                                                ${isActive ? "before:content-['•'] before:mr-1 text-brand-primary" : "text-brand-graytext"}`}
+                                >
+                                    {link.name}
+                                </a>
+                            )
+                        })}
                         <ThemeToggle />
                     </div>
                 </div>

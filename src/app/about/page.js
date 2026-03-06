@@ -1,4 +1,5 @@
-import { EduExpItem } from "@/components/EduExpItem";
+import { EduItem } from "@/components/EduItem";
+import { ExpItem } from "@/components/ExpItem";
 import { SkillItem } from "@/components/SkillItem";
 
 export const metadata = {
@@ -105,7 +106,7 @@ export default function About() {
                 bg-contain bg-center bg-no-repeat transition-all duration-500 ease lg:hover:grayscale-0`}></div>
 
 
-            <div className="font-semibold mb-6 text-[18px]">楊 若絹<span className="text-[12px]">（ㄐㄩㄢˋ）</span></div>
+            <div className="font-semibold mb-6 text-[18px]">楊 若絹<span className="text-[12px]">（ㄐㄩㄢˋ）</span>｜Rogenna Yang</div>
 
             <div className="mb-6 text-[14px] text-brand-text font-normal leading-7 text-justify">
               <p className="mb-4">設計、開發與研究的跨領域背景。具備從 0 到 1 的專案規劃經驗，能執行使用者研究到原型設計的流程，並運用 Figma 與 Notion 製作包含策略面、結構面的計畫書。</p>
@@ -135,7 +136,7 @@ export default function About() {
               <div className="text-[16px] text-brand-text font-normal leading-7 flex flex-col text-justify">
 
                 {edu.map((item, index) => (
-                  <EduExpItem key={index} {...item} />
+                  <EduItem key={index} {...item} />
                 ))}
 
               </div>
@@ -152,7 +153,7 @@ export default function About() {
               <div className="text-[16px] text-brand-text font-normal leading-7 flex flex-col text-justify">
 
                 {exp.map((item, index) => (
-                  <EduExpItem key={index} {...item} />
+                  <ExpItem key={index} {...item} />
                 ))}
 
               </div>

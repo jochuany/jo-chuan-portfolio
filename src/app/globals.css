@@ -6,7 +6,7 @@
   --color-brand-bg: #F7F7F5;
   --color-brand-text: #262626;
   --color-brand-primary: #147095;
-  --color-brand-primaryLight: #97C1D2;
+  --color-brand-primaryLight: #8AB1BE;
   --color-brand-secondary: #DD8954;
   --color-brand-secondaryLight: #EDC7AF;
   --color-brand-graybg: #E8ECEC;
@@ -40,29 +40,13 @@
   }
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #262626;
-    --foreground: #F7F7F5;
-    --color-brand-bg: #262626;
-    --color-brand-text: #F7F7F5;
-    --color-brand-primary: #59A3BC;
-    --color-brand-primaryLight: #8AB1BE;
-    --color-brand-secondary: #F2A36F;
-    --color-brand-secondaryLight: #EDC7AF;
-    --color-brand-graybg: #414141;
-    --color-brand-graytext: #808080;
-
-  }
-} */
-
 .dark {
   --background: #262626;
   --foreground: #F7F7F5;
   --color-brand-bg: #262626;
   --color-brand-text: #F7F7F5;
-  --color-brand-primary: #59A3BC;
-  --color-brand-primaryLight: #8AB1BE;
+  --color-brand-primary: #2B99C5;
+  --color-brand-primaryLight: #82BBCE;
   --color-brand-secondary: #F2A36F;
   --color-brand-secondaryLight: #EDC7AF;
   --color-brand-graybg: #414141;
@@ -130,11 +114,11 @@ body {
 
   .skill-hover-effect {
     @apply text-[12px] px-2 py-0.5 rounded-full border transition-all duration-300 ease-in-out;
-    @apply bg-brand-graybg border-brand-graytext/20 inset-shadow-sm;
+    @apply bg-brand-primaryLight/20 border-brand-graytext/20 inset-shadow-sm;
 
     @media (pointer: fine) {
       &:hover {
-        @apply bg-brand-primaryLight/20 text-brand-primary border-brand-primaryLight -translate-y-[2px];
+        @apply bg-brand-primaryLight/30 text-brand-primary border-brand-primaryLight -translate-y-[2px];
       }
     }
   }
@@ -147,11 +131,11 @@ body {
 
   .skill-hover-effect-group {
     @apply text-[12px] px-2 py-0.5 rounded-full border transition-all duration-300 ease-in-out;
-    @apply bg-brand-graybg border-brand-graytext/20 inset-shadow-sm;
+    @apply bg-brand-primaryLight/20 border-brand-graytext/20 inset-shadow-sm;
 
     @media (pointer: fine) {
       .group:hover & {
-        @apply bg-brand-primaryLight/20 text-brand-primary border-brand-primaryLight;
+        @apply bg-brand-primaryLight/30 text-brand-primary border-brand-primaryLight;
       }
     }
   }
