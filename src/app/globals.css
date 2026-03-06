@@ -6,7 +6,7 @@
   --color-brand-bg: #F7F7F5;
   --color-brand-text: #262626;
   --color-brand-primary: #147095;
-  --color-brand-primaryLight: #8AB1BE;
+  --color-brand-primaryLight: #8AAFBE;
   --color-brand-secondary: #DD8954;
   --color-brand-secondaryLight: #EDC7AF;
   --color-brand-graybg: #E8ECEC;
@@ -45,8 +45,8 @@
   --foreground: #F7F7F5;
   --color-brand-bg: #262626;
   --color-brand-text: #F7F7F5;
-  --color-brand-primary: #2B99C5;
-  --color-brand-primaryLight: #82BBCE;
+  --color-brand-primary: #429EC2;
+  --color-brand-primaryLight: #7BABBD;
   --color-brand-secondary: #F2A36F;
   --color-brand-secondaryLight: #EDC7AF;
   --color-brand-graybg: #414141;
@@ -69,7 +69,8 @@ body {
     display: flex;
   }
 
-  a {
+  a,
+  button {
     cursor: pointer;
   }
 
@@ -80,7 +81,7 @@ body {
     @apply relative;
 
     &::after {
-      @apply content-[''] absolute left-0 bottom-0 h-[2px] w-full bg-brand-primary scale-x-100 origin-right transition-transform duration-300 ease-in-out;
+      @apply content-[''] absolute left-0 bottom-0 h-[2px] w-full rounded-lg bg-brand-primary scale-x-100 origin-right transition-transform duration-300 ease-in-out;
     }
 
     &:hover::after {
@@ -98,7 +99,7 @@ body {
     @apply relative;
 
     &::after {
-      @apply content-[''] absolute left-0 bottom-0 h-[2px] w-full bg-brand-text scale-x-0 origin-left transition-transform duration-300 ease-in-out;
+      @apply content-[''] absolute left-0 bottom-0 h-[2px] w-full rounded-lg bg-brand-text scale-x-0 origin-left transition-transform duration-300 ease-in-out;
     }
 
     &:hover::after {

@@ -14,7 +14,7 @@ export const SkillItem = ({ title, skillDescription, tools }) => {
             ${isOpen ? "bg-brand-primaryLight/20 border border-brand-primaryLight" : "bg-brand-graybg/60 border border-transparent"}
             lg:hover:-translate-y-1 lg:hover:bg-brand-primaryLight/20 transition-all duration-300 ease`}>
 
-            <button className={`flex justify-between items-center text-[16px] font-medium leading-8 cursor-pointer
+            <button className={`flex justify-between items-center text-[16px] font-medium leading-8
              transition-all ease duration-300`} onClick={() => SetIsOpen(!isOpen)}>
                 <div className={`lg:group-hover:text-brand-primary ${isOpen ? "text-brand-primary" : "text-brand-text"}
                 transition-all duration-300 ease`}>

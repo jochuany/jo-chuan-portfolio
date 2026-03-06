@@ -15,7 +15,7 @@ export const ExpItem = ({ title, place, time, description }) => {
             ${isOpen ? "bg-brand-primaryLight/20 border border-brand-primaryLight" : "bg-brand-graybg/60 border border-transparent"}
             lg:hover:-translate-y-1 lg:hover:bg-brand-primaryLight/20`}>
 
-            <button className={`flex justify-between items-center cursor-pointer z-10`}
+            <button className={`flex justify-between items-center z-10`}
                 onClick={() => SetIsOpen(!isOpen)}>
                 <div className="flex flex-col items-start text-start">
                     <div className={`font-medium whitespace-pre-line text-[16px]
