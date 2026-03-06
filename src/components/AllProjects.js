@@ -13,15 +13,15 @@ export const projects = [
         explore: ["report", "chance"],
     },
     {
-        label: "thesis",
-        href: "/projects/thesis",
+        label: "thesis_vrvolleyball",
+        href: "/projects/thesis_vrvolleyball",
         title: "坐在球場第一排：虛擬實境觀賽體驗如何影響運動觀眾的進場觀賽意圖",
         category: "碩士論文",
         year: "2025",
-        photo: "/images/thesis/thesis-01.png",
+        photo: "/images/thesis_vrvolleyball/thesis-01.png",
         tools: ["Meta Quest 3", "Insta360 X5", "Insta360 Studio", "SPSS"],
         filter: "Thesis",
-        explore: ["chance", "report"],
+        explore: ["thesis_newsgame", "report"],
     },
     {
         label: "chance",
@@ -32,7 +32,7 @@ export const projects = [
         photo: "/images/chance/chance-01.png",
         tools: ["Figma", "Flowchart", "Wireframing", "Prototyping", "Notion"],
         filter: "UI/UX",
-        explore: ["aha", "thesis"],
+        explore: ["aha", "thesis_vrvolleyball"],
         selected: true
     },
     {
@@ -45,6 +45,17 @@ export const projects = [
         tools: ["HTML", "TailwindCSS", "Next.js", "React Hooks"],
         filter: "Games",
         explore: ["cross", "period"]
+    },
+    {
+        label: "thesis_newsgame",
+        href: "/projects/thesis_newsgame",
+        title: "新聞遊戲化身相似性如何影響利社會意圖——以欣賞感為中介",
+        category: "研究小論文",
+        year: "2024",
+        photo: "/images/thesis_newsgame/newsgame-01.png",
+        tools: ["Gather Town", "JASP", "SEM"],
+        filter: "Thesis",
+        explore: ["thesis_vrvolleyball", "report"],
     },
     {
         label: "aha",

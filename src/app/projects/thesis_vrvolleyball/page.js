@@ -2,7 +2,7 @@ import Image from "next/image";
 import { ProjectPages } from "@/components/ProjectPages";
 import { useProject } from "@/hooks/useProject";
 
-const projectInfo = useProject("/projects/thesis");
+const projectInfo = useProject("/projects/thesis_vrvolleyball");
 
 if (!projectInfo) return null;
 
@@ -41,13 +41,13 @@ const content =
     }
   ],
   photos: [
-    "/images/thesis/thesis-01.png",
-    "/images/thesis/thesis-02.jpg",
+    "/images/thesis_vrvolleyball/thesis-01.png",
+    "/images/thesis_vrvolleyball/thesis-02.jpg",
   ]
 }
 
 
-export default function Thesis() {
+export default function Thesis_vrvolleyball() {
 
   return (
     <>
