@@ -2,7 +2,7 @@ import Image from "next/image";
 import { ProjectPages } from "@/components/ProjectPages";
 import { useProject } from "@/hooks/useProject";
 
-const projectInfo = useProject("/projects/cross");
+const projectInfo = useProject("/projects/game_cross");
 
 if (!projectInfo) return null;
 
@@ -38,24 +38,24 @@ const content =
     }
   ],
   photos: [
-    "/images/cross/cross-01.png",
-    "/images/cross/cross-02.png",
-    "/images/cross/cross-03.png",
-    "/images/cross/cross-04.png",
-    "/images/cross/cross-05.png",
-    "/images/cross/cross-06.png",
-    "/images/cross/cross-07.png",
-    "/images/cross/cross-08.png",
-    "/images/cross/cross-09.png",
-    "/images/cross/cross-10.png",
-    "/images/cross/cross-11.png",
-    "/images/cross/cross-12.png",
-    "/images/cross/cross-13.png",
-    "/images/cross/cross-14.png"
+    "/images/game_cross/cross-01.png",
+    "/images/game_cross/cross-02.png",
+    "/images/game_cross/cross-03.png",
+    "/images/game_cross/cross-04.png",
+    "/images/game_cross/cross-05.png",
+    "/images/game_cross/cross-06.png",
+    "/images/game_cross/cross-07.png",
+    "/images/game_cross/cross-08.png",
+    "/images/game_cross/cross-09.png",
+    "/images/game_cross/cross-10.png",
+    "/images/game_cross/cross-11.png",
+    "/images/game_cross/cross-12.png",
+    "/images/game_cross/cross-13.png",
+    "/images/game_cross/cross-14.png"
   ]
 }
 
-export default function Cross() {
+export default function game_Cross() {
   return (
     <>
       <ProjectPages {...content} />

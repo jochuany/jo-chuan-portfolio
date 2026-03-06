@@ -2,7 +2,7 @@ import Image from "next/image";
 import { ProjectPages } from "@/components/ProjectPages";
 import { useProject } from "@/hooks/useProject";
 
-const projectInfo = useProject("/projects/typhoon");
+const projectInfo = useProject("/projects/mg_typhoon");
 
 if (!projectInfo) return null;
 
@@ -38,20 +38,20 @@ const content =
     }
   ],
   photos: [
-    "/images/typhoon/typhoon-01.png",
-    "/images/typhoon/typhoon-02.png",
-    "/images/typhoon/typhoon-03.png",
-    "/images/typhoon/typhoon-04.png",
-    "/images/typhoon/typhoon-05.png",
-    "/images/typhoon/typhoon-06.png",
-    "/images/typhoon/typhoon-07.png",
-    "/images/typhoon/typhoon-08.png",
-    "/images/typhoon/typhoon-09.png",
-    "/images/typhoon/typhoon-10.png"
+    "/images/mg_typhoon/typhoon-01.png",
+    "/images/mg_typhoon/typhoon-02.png",
+    "/images/mg_typhoon/typhoon-03.png",
+    "/images/mg_typhoon/typhoon-04.png",
+    "/images/mg_typhoon/typhoon-05.png",
+    "/images/mg_typhoon/typhoon-06.png",
+    "/images/mg_typhoon/typhoon-07.png",
+    "/images/mg_typhoon/typhoon-08.png",
+    "/images/mg_typhoon/typhoon-09.png",
+    "/images/mg_typhoon/typhoon-10.png"
   ]
 }
 
-export default function Typhoon() {
+export default function mg_Typhoon() {
   return (
     <>
       <ProjectPages {...content} />

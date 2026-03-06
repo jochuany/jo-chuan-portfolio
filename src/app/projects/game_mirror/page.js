@@ -2,7 +2,7 @@ import Image from "next/image";
 import { ProjectPages } from "@/components/ProjectPages";
 import { useProject } from "@/hooks/useProject";
 
-const projectInfo = useProject("/projects/mirror");
+const projectInfo = useProject("/projects/game_mirror");
 
 if (!projectInfo) return null;
 
@@ -38,22 +38,22 @@ const content =
     }
   ],
   photos: [
-    "/images/mirror/mirror-01.png",
-    "/images/mirror/mirror-bar.jpg",
-    "/images/mirror/mirror-02.png",
-    "/images/mirror/mirror-03.png",
-    "/images/mirror/mirror-04.png",
-    "/images/mirror/mirror-05.png",
-    "/images/mirror/mirror-06.png",
-    "/images/mirror/mirror-07.png",
-    "/images/mirror/mirror-09.jpg",
-    "/images/mirror/mirror-08.jpg",
-    "/images/mirror/mirror-10.jpg",
-    "/images/mirror/mirror-11.jpg",
+    "/images/game_mirror/mirror-01.png",
+    "/images/game_mirror/mirror-bar.jpg",
+    "/images/game_mirror/mirror-02.png",
+    "/images/game_mirror/mirror-03.png",
+    "/images/game_mirror/mirror-04.png",
+    "/images/game_mirror/mirror-05.png",
+    "/images/game_mirror/mirror-06.png",
+    "/images/game_mirror/mirror-07.png",
+    "/images/game_mirror/mirror-09.jpg",
+    "/images/game_mirror/mirror-08.jpg",
+    "/images/game_mirror/mirror-10.jpg",
+    "/images/game_mirror/mirror-11.jpg",
   ]
 }
 
-export default function Mirror() {
+export default function game_Mirror() {
   return (
     <>
       <ProjectPages {...content} />

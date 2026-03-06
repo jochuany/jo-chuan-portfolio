@@ -2,7 +2,7 @@ import Image from "next/image";
 import { ProjectPages } from "@/components/ProjectPages";
 import { useProject } from "@/hooks/useProject";
 
-const projectInfo = useProject("/projects/tennis");
+const projectInfo = useProject("/projects/mg_tennis");
 
 if (!projectInfo) return null;
 
@@ -38,16 +38,16 @@ const content =
     }
   ],
   photos: [
-    "/images/tennis/tennis-01.png",
-    "/images/tennis/tennis-02.png",
-    "/images/tennis/tennis-03.png",
-    "/images/tennis/tennis-04.png",
-    "/images/tennis/tennis-05.png",
-    "/images/tennis/tennis-06.png"
+    "/images/mg_tennis/tennis-01.png",
+    "/images/mg_tennis/tennis-02.png",
+    "/images/mg_tennis/tennis-03.png",
+    "/images/mg_tennis/tennis-04.png",
+    "/images/mg_tennis/tennis-05.png",
+    "/images/mg_tennis/tennis-06.png"
   ]
 }
 
-export default function Tennis() {
+export default function mg_Tennis() {
   return (
     <>
       <ProjectPages {...content} />

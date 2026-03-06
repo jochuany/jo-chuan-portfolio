@@ -2,7 +2,7 @@ import Image from "next/image";
 import { ProjectPages } from "@/components/ProjectPages";
 import { useProject } from "@/hooks/useProject";
 
-const projectInfo = useProject("/projects/portfolioweb");
+const projectInfo = useProject("/projects/frontend_portfolioweb");
 
 if (!projectInfo) return null;
 
@@ -42,18 +42,18 @@ const content =
     },
   ],
   photos: [
-    "/images/portfolioweb/portfolioweb-01.png",
-    "/images/portfolioweb/portfolioweb-02.png",
-    "/images/portfolioweb/portfolioweb-03.png",
-    "/images/portfolioweb/portfolioweb-04.png",
-    "/images/portfolioweb/portfolioweb-05.png",
-    "/images/portfolioweb/portfolioweb-06.png",
-    "/images/portfolioweb/portfolioweb-07.png",
-    "/images/portfolioweb/portfolioweb-08.png",
+    "/images/frontend_portfolioweb/portfolioweb-01.png",
+    "/images/frontend_portfolioweb/portfolioweb-02.png",
+    "/images/frontend_portfolioweb/portfolioweb-03.png",
+    "/images/frontend_portfolioweb/portfolioweb-04.png",
+    "/images/frontend_portfolioweb/portfolioweb-05.png",
+    "/images/frontend_portfolioweb/portfolioweb-06.png",
+    "/images/frontend_portfolioweb/portfolioweb-07.png",
+    "/images/frontend_portfolioweb/portfolioweb-08.png",
   ]
 }
 
-export default function Portfolioweb() {
+export default function frontend_Portfolioweb() {
   return (
     <>
       <ProjectPages {...content} />

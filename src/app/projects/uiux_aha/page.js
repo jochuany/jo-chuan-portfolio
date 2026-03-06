@@ -2,7 +2,7 @@ import Image from "next/image";
 import { ProjectPages } from "@/components/ProjectPages";
 import { useProject } from "@/hooks/useProject";
 
-const projectInfo = useProject("/projects/aha");
+const projectInfo = useProject("/projects/uiux_aha");
 
 if (!projectInfo) return null;
 
@@ -42,23 +42,23 @@ const content =
     }
   ],
   photos: [
-    "/images/aha/aha-01.png",
-    "/images/aha/aha-02.png",
-    "/images/aha/aha-03.png",
-    "/images/aha/aha-04.png",
-    "/images/aha/aha-05.png",
-    "/images/aha/aha-06.png",
-    "/images/aha/aha-07.png",
-    "/images/aha/aha-08.png",
-    "/images/aha/aha-09.png",
-    "/images/aha/aha-10.png",
-    "/images/aha/aha-11.png",
-    "/images/aha/aha-12.png",
+    "/images/uiux_aha/aha-01.png",
+    "/images/uiux_aha/aha-02.png",
+    "/images/uiux_aha/aha-03.png",
+    "/images/uiux_aha/aha-04.png",
+    "/images/uiux_aha/aha-05.png",
+    "/images/uiux_aha/aha-06.png",
+    "/images/uiux_aha/aha-07.png",
+    "/images/uiux_aha/aha-08.png",
+    "/images/uiux_aha/aha-09.png",
+    "/images/uiux_aha/aha-10.png",
+    "/images/uiux_aha/aha-11.png",
+    "/images/uiux_aha/aha-12.png",
   ]
 }
 
 
-export default function Aha() {
+export default function uiux_Aha() {
 
   return (
     <>

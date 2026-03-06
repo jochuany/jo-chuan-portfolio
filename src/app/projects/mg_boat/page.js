@@ -2,7 +2,7 @@ import Image from "next/image";
 import { ProjectPages } from "@/components/ProjectPages";
 import { useProject } from "@/hooks/useProject";
 
-const projectInfo = useProject("/projects/boat");
+const projectInfo = useProject("/projects/mg_boat");
 
 if (!projectInfo) return null;
 
@@ -34,15 +34,15 @@ const content =
     }
   ],
   photos: [
-    "/images/boat/boat-01.png",
-    "/images/boat/boat-02.png",
-    "/images/boat/boat-03.png",
-    "/images/boat/boat-04.png",
-    "/images/boat/boat-05.png",
+    "/images/mg_boat/boat-01.png",
+    "/images/mg_boat/boat-02.png",
+    "/images/mg_boat/boat-03.png",
+    "/images/mg_boat/boat-04.png",
+    "/images/mg_boat/boat-05.png",
   ]
 }
 
-export default function Boat() {
+export default function mg_Boat() {
   return (
     <>
       <ProjectPages {...content} />

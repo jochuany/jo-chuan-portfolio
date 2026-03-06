@@ -2,7 +2,7 @@ import Image from "next/image";
 import { ProjectPages } from "@/components/ProjectPages";
 import { useProject } from "@/hooks/useProject";
 
-const projectInfo = useProject("/projects/nccu3m");
+const projectInfo = useProject("/projects/mg_nccu3m");
 
 if (!projectInfo) return null;
 
@@ -30,18 +30,18 @@ const content =
     },
   ],
   photos: [
-    "/images/nccu3m/nccu3m-01.png",
-    "/images/nccu3m/nccu3m-02.png",
-    "/images/nccu3m/nccu3m-03.png",
-    "/images/nccu3m/nccu3m-04.png",
-    "/images/nccu3m/nccu3m-05.png",
-    "/images/nccu3m/nccu3m-06.png",
-    "/images/nccu3m/nccu3m-07.png",
-    "/images/nccu3m/nccu3m-08.png",
+    "/images/mg_nccu3m/nccu3m-01.png",
+    "/images/mg_nccu3m/nccu3m-02.png",
+    "/images/mg_nccu3m/nccu3m-03.png",
+    "/images/mg_nccu3m/nccu3m-04.png",
+    "/images/mg_nccu3m/nccu3m-05.png",
+    "/images/mg_nccu3m/nccu3m-06.png",
+    "/images/mg_nccu3m/nccu3m-07.png",
+    "/images/mg_nccu3m/nccu3m-08.png",
   ]
 }
 
-export default function Nccu3m() {
+export default function mg_Nccu3m() {
   return (
     <>
       <ProjectPages {...content} />

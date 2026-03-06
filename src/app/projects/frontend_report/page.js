@@ -2,7 +2,7 @@ import Image from "next/image";
 import { ProjectPages } from "@/components/ProjectPages";
 import { useProject } from "@/hooks/useProject";
 
-const projectInfo = useProject("/projects/report");
+const projectInfo = useProject("/projects/frontend_report");
 
 if (!projectInfo) return null;
 
@@ -42,18 +42,18 @@ const content =
     }
   ],
   photos: [
-    "/images/report/report-01.png",
-    "/images/report/report-02.png",
-    "/images/report/report-03.png",
-    "/images/report/report-04.png",
-    "/images/report/report-05.png",
-    "/images/report/report-06.png",
-    "/images/report/report-07.png",
-    "/images/report/report-08.png"
+    "/images/frontend_report/report-01.png",
+    "/images/frontend_report/report-02.png",
+    "/images/frontend_report/report-03.png",
+    "/images/frontend_report/report-04.png",
+    "/images/frontend_report/report-05.png",
+    "/images/frontend_report/report-06.png",
+    "/images/frontend_report/report-07.png",
+    "/images/frontend_report/report-08.png"
   ]
 }
 
-export default function Report() {
+export default function frontend_Report() {
   return (
     <>
       <ProjectPages {...content} />

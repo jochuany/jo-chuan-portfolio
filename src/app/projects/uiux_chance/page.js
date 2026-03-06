@@ -2,7 +2,7 @@ import Image from "next/image";
 import { ProjectPages } from "@/components/ProjectPages";
 import { useProject } from "@/hooks/useProject";
 
-const projectInfo = useProject("/projects/chance");
+const projectInfo = useProject("/projects/uiux_chance");
 
 if (!projectInfo) return null;
 
@@ -50,23 +50,23 @@ const content =
     }
   ],
   photos: [
-    "/images/chance/chance-01.png",
-    "/images/chance/chance-02.png",
-    "/images/chance/chance-03.png",
-    "/images/chance/chance-04.png",
-    "/images/chance/chance-05.png",
-    "/images/chance/chance-06.png",
-    "/images/chance/chance-07.png",
-    "/images/chance/chance-08.png",
-    "/images/chance/chance-09.png",
-    "/images/chance/chance-10.png",
-    "/images/chance/chance-11.png",
-    "/images/chance/chance-12.png",
-    "/images/chance/chance-13.png"
+    "/images/uiux_chance/chance-01.png",
+    "/images/uiux_chance/chance-02.png",
+    "/images/uiux_chance/chance-03.png",
+    "/images/uiux_chance/chance-04.png",
+    "/images/uiux_chance/chance-05.png",
+    "/images/uiux_chance/chance-06.png",
+    "/images/uiux_chance/chance-07.png",
+    "/images/uiux_chance/chance-08.png",
+    "/images/uiux_chance/chance-09.png",
+    "/images/uiux_chance/chance-10.png",
+    "/images/uiux_chance/chance-11.png",
+    "/images/uiux_chance/chance-12.png",
+    "/images/uiux_chance/chance-13.png"
   ]
 }
 
-export default function Chance() {
+export default function uiux_Chance() {
   return (
     <>
       <ProjectPages {...content} />

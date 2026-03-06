@@ -2,7 +2,7 @@ import Image from "next/image";
 import { ProjectPages } from "@/components/ProjectPages";
 import { useProject } from "@/hooks/useProject";
 
-const projectInfo = useProject("/projects/period");
+const projectInfo = useProject("/projects/frontend_period");
 
 if (!projectInfo) return null;
 
@@ -38,13 +38,13 @@ const content =
     },
   ],
   photos: [
-    "/images/period/period-01.png",
-    "/images/period/period-02.png",
-    "/images/period/period-03.png"
+    "/images/frontend_period/period-01.png",
+    "/images/frontend_period/period-02.png",
+    "/images/frontend_period/period-03.png"
   ]
 }
 
-export default function Period() {
+export default function frontend_Period() {
   return (
     <>
       <ProjectPages {...content} />

@@ -2,7 +2,7 @@ import Image from "next/image";
 import { ProjectPages } from "@/components/ProjectPages";
 import { useProject } from "@/hooks/useProject";
 
-const projectInfo = useProject("/projects/vnccu");
+const projectInfo = useProject("/projects/design_vnccu");
 
 if (!projectInfo) return null;
 
@@ -30,17 +30,17 @@ const content =
     }
   ],
   photos: [
-    "/images/vnccu/vnccu-01.jpg",
-    "/images/vnccu/vnccu-02.jpg",
-    "/images/vnccu/vnccu-03.jpg",
-    "/images/vnccu/vnccu-04.jpg",
-    "/images/vnccu/vnccu-05.jpg",
-    "/images/vnccu/vnccu-06.jpg",
-    "/images/vnccu/vnccu-07.jpg"
+    "/images/design_vnccu/vnccu-01.jpg",
+    "/images/design_vnccu/vnccu-02.jpg",
+    "/images/design_vnccu/vnccu-03.jpg",
+    "/images/design_vnccu/vnccu-04.jpg",
+    "/images/design_vnccu/vnccu-05.jpg",
+    "/images/design_vnccu/vnccu-06.jpg",
+    "/images/design_vnccu/vnccu-07.jpg"
   ]
 }
 
-export default function Vnccu() {
+export default function design_Vnccu() {
   return (
     <>
       <ProjectPages {...content} />

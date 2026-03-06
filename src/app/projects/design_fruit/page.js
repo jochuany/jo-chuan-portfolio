@@ -2,7 +2,7 @@ import Image from "next/image";
 import { ProjectPages } from "@/components/ProjectPages";
 import { useProject } from "@/hooks/useProject";
 
-const projectInfo = useProject("/projects/fruit");
+const projectInfo = useProject("/projects/design_fruit");
 
 if (!projectInfo) return null;
 
@@ -30,14 +30,14 @@ const content =
     },
   ],
   photos: [
-    "/images/fruit/fruit-01.png",
-    "/images/fruit/fruit-02.png",
-    "/images/fruit/fruit-03.png",
-    "/images/fruit/fruit-04.png"
+    "/images/design_fruit/fruit-01.png",
+    "/images/design_fruit/fruit-02.png",
+    "/images/design_fruit/fruit-03.png",
+    "/images/design_fruit/fruit-04.png"
   ]
 }
 
-export default function Fruit() {
+export default function design_Fruit() {
   return (
     <>
       <ProjectPages {...content} />

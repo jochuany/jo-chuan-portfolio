@@ -2,7 +2,7 @@ import Image from "next/image";
 import { ProjectPages } from "@/components/ProjectPages";
 import { useProject } from "@/hooks/useProject";
 
-const projectInfo = useProject("/projects/spike");
+const projectInfo = useProject("/projects/game_spike");
 
 if (!projectInfo) return null;
 
@@ -38,16 +38,16 @@ const content =
     },
   ],
   photos: [
-    "/images/spike/spike-01.png",
-    "/images/spike/spike-02.png",
-    "/images/spike/spike-03.png",
-    "/images/spike/spike-04.png",
-    "/images/spike/spike-05.png",
-    "/images/spike/spike-06.png"
+    "/images/game_spike/spike-01.png",
+    "/images/game_spike/spike-02.png",
+    "/images/game_spike/spike-03.png",
+    "/images/game_spike/spike-04.png",
+    "/images/game_spike/spike-05.png",
+    "/images/game_spike/spike-06.png"
   ]
 }
 
-export default function Spike() {
+export default function game_Spike() {
   return (
     <>
       <ProjectPages {...content} />
