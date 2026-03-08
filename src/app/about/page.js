@@ -4,6 +4,7 @@ import { SkillItem } from "@/components/SkillItem";
 import Stack from "@/components/Stack";
 
 const offworkimages = [
+  "/images/offwork/offwork-05.png",
   "/images/offwork/offwork-04.png",
   "/images/offwork/offwork-03.png",
   "/images/offwork/offwork-02.png",
