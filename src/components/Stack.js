@@ -123,7 +123,7 @@ export default function Stack({
             {stack.map((card, index) => {
                 const total = stack.length;
                 const centerIndex = (total - 1) / 2;
-                const offsetMultiplier = isMobile ? 10 : 100;
+                const offsetMultiplier = isMobile ? 10 : 80;
                 const offsetX = (index - centerIndex) * offsetMultiplier;
                 const startRotate = 8;
                 const endRotate = -10;
