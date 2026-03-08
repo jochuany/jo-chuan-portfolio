@@ -1,6 +1,23 @@
 import { EduItem } from "@/components/EduItem";
 import { ExpItem } from "@/components/ExpItem";
 import { SkillItem } from "@/components/SkillItem";
+import Stack from "@/components/Stack";
+
+const offworkimages = [
+  "/images/offwork/offwork-04.png",
+  "/images/offwork/offwork-03.png",
+  "/images/offwork/offwork-02.png",
+  "/images/offwork/offwork-01.png"
+];
+
+const cardElements = offworkimages.map((src, i) => (
+  <div key={i} className="w-full h-full bg-white shadow-inner">
+    <img
+      src={src}
+      className="w-full h-full object-cover pointer-events-none rounded-sm"
+    />
+  </div>
+));
 
 export const metadata = {
   title: "About | Jo-Chuan's Portfolio"
@@ -173,6 +190,28 @@ export default function About() {
                   <SkillItem key={index} {...item} />
                 ))}
 
+              </div>
+
+            </div>
+
+            {/* off the work */}
+            <div className="mb-10">
+              <div className="flex font-bold mb-6 text-[16px] text-brand-graytext">
+                {"// "}What Keeps Me Moving
+              </div>
+
+              <div className="flex justify-center w-[80%] h-full transition-all duration-300 ease-in-out
+              lg:grayscale-50 lg:hover:scale-105 lg:hover:grayscale-0">
+                <Stack
+                  cards={cardElements}
+                  randomRotation={true}
+                  sensitivity={180}
+                  sendToBackOnClick={true}
+                />
+              </div>
+
+              <div className="text-brand-graytext text-[12px] mt-12">
+                photo credit: Katie Chin/LA Dodgers, Volleyball World, WTA
               </div>
 
             </div>
