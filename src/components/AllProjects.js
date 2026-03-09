@@ -15,7 +15,7 @@ export const projects = [
     {
         label: "thesis_vrvolleyball",
         href: "/projects/thesis_vrvolleyball",
-        title: "虛擬實境對現場觀賽意圖之影響研究",
+        title: "虛擬實境對現場觀賽意圖之影響",
         category: "碩士論文",
         year: "2025",
         photo: "/images/thesis_vrvolleyball/thesis-01.png",
@@ -49,7 +49,7 @@ export const projects = [
     {
         label: "thesis_newsgame",
         href: "/projects/thesis_newsgame",
-        title: "化身相似性對新聞遊戲效果之影響研究",
+        title: "化身相似性對新聞遊戲效果之影響",
         category: "研究小論文",
         year: "2024",
         photo: "/images/thesis_newsgame/newsgame-01.png",
