@@ -219,7 +219,7 @@ export default function About() {
               </div>
 
               <div className="text-brand-graytext text-[12px] mt-12">
-                photo credit: Katie Chin/LA Dodgers, Volleyball World, WTA
+                photo credit: @blank_space_ukin, Katie Chin/LA Dodgers, Volleyball World, WTA
               </div>
 
             </div>
