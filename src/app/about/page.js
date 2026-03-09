@@ -69,14 +69,16 @@ const skills = [
 
 const edu = [
   {
-    title: "傳播碩士學位學程（M.A.）",
+    title: "傳播碩士學位學程 M.A.",
     place: "國立政治大學",
     time: "2023/09 - 2025/12",
+    logo: "/images/about/logo_nccu.png",
   },
   {
-    title: "數位內容與科技學士學位學程（B.S.）\n廣告學系 傳播設計組（B.A.）",
+    title: "數位內容與科技學士學位學程 B.S.\n廣告學系 傳播設計組 B.A.",
     place: "國立政治大學",
     time: "2018/09 - 2023/06",
+    logo: "/images/about/logo_nccu.png",
   },
 ];
 
@@ -91,10 +93,11 @@ const exp = [
       "參與文化科技計畫：協助搜集國內外沉浸文化科技資料，包含各界定義、國內外成功案例等，並提出分類框架、根據產業架構整合臺灣文化科技產業地圖。",
       "參與數位信任計畫：與助理群合作協助 18 位專家訪談資料整理，並進行 50+ 篇數位信任相關文獻探討，深入瞭解其定義及應用領域，並從科技面、人際面與個體差異 3 面向提出提升數位信任之建議，最終整合成果撰寫成研究報告。",
       "曾拍攝與剪輯 360 全景影片，並擁有 XR 頭戴式顯示器之操作經驗。",
-    ]
+    ],
+    logo: "/images/about/logo_nccu.png"
   },
   {
-    title: "實習助理（記者、資訊編輯、節目製作）",
+    title: "實習助理",
     place: "政大之聲廣播電台",
     time: "2019/09 - 2022/06",
     description: [
@@ -102,7 +105,8 @@ const exp = [
       "新聞資訊編輯：每週編輯大台北新聞、國內外重要新聞 5+ 篇，並於整點 Live 播報。指導 2 位見習助理檢討並優化專題稿件。",
       "深度專題產製：每週召開線索會，並合作擬訂專題企劃、採訪、撰寫、過音，完成 10+ 篇 2000 字以上之深度專題報導。",
       "視覺設計協助：合作參與 2 個、獨立製作 1 個活動主視覺設計，含實體海報與線上社群用圖，提升視覺一致性。",
-    ]
+    ],
+    logo: "/images/about/logo_vnccu.png"
   },
 ];
 
@@ -118,13 +122,16 @@ export default function About() {
         <div className="w-[90%] md:w-[85%] lg:w-[80%] flex flex-col justify-between lg:flex-row items-start">
 
           {/* photo & about */}
-          <div className="w-full lg:w-[30%] mb-10 lg:mb-0 lg:sticky lg:top-[100px]">
+          <div className="w-full flex flex-col items-center lg:items-start lg:w-[30%] mb-12 lg:mb-0 lg:sticky lg:top-[100px]">
 
-            <div style={{ backgroundImage: `url(images/myphoto.png)` }} className={`h-[200px] max-w-[200px] mb-4 rounded-md lg:grayscale-50
-                bg-contain bg-center bg-no-repeat transition-all duration-500 ease lg:hover:grayscale-0`}></div>
+            <div style={{ backgroundImage: `url(/images/about/myphoto.png)` }}
+              className={`h-[200px] w-[200px] max-w-[200px] mb-4 rounded-md
+              bg-contain bg-center bg-no-repeat`}></div>
 
 
-            <div className="font-semibold mb-6 text-[18px]">楊 若絹<span className="text-[12px]">（ㄐㄩㄢˋ）</span>｜Rogenna Yang</div>
+            <div className="font-semibold mb-6 text-[18px]">
+              <p>楊 若絹<span className="text-[12px]">（ㄐㄩㄢˋ）</span>｜Rogenna Yang</p>
+            </div>
 
             <div className="mb-6 text-[14px] text-brand-text font-normal leading-7 text-justify">
               <p className="mb-4">設計、開發與研究的跨領域背景。具備從 0 到 1 的專案規劃經驗，能執行使用者研究到原型設計的流程，並運用 Figma 與 Notion 製作包含策略面、結構面的計畫書。</p>

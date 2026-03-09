@@ -5,7 +5,7 @@
 import { useState } from "react";
 
 
-export const ExpItem = ({ title, place, time, description }) => {
+export const ExpItem = ({ title, place, time, description, logo }) => {
 
     const [isOpen, SetIsOpen] = useState(false);
 
@@ -17,16 +17,23 @@ export const ExpItem = ({ title, place, time, description }) => {
 
             <button className={`flex justify-between items-center z-10`}
                 onClick={() => SetIsOpen(!isOpen)}>
-                <div className="flex flex-col items-start text-start">
-                    <div className={`font-medium whitespace-pre-line text-[16px]
+                <div className="flex justify-start items-center">
+                    <div
+                        style={{ backgroundImage: `url(${logo})` }}
+                        className="w-[30px] lg:w-[40px] h-[30px] lg:h-[40px] bg-contain bg-center bg-no-repeat mr-4 shrink-0">
+
+                    </div>
+                    <div className="flex flex-col items-start text-start">
+                        <div className={`font-medium whitespace-pre-line text-[16px]
                     ${isOpen ? "text-brand-primary" : "text-brand-text"}
                     lg:group-hover:text-brand-primary transition-all duration-300 ease`}>
-                        {title}
-                    </div>
-                    <div className={`flex justify-between font-medium text-[14px] 
+                            {title}
+                        </div>
+                        <div className={`flex justify-between font-medium text-[14px] 
                     ${isOpen ? "text-brand-primaryLight" : "text-brand-text/60"}
                     lg:group-hover:text-brand-primaryLight transition-all duration-300 ease`}>
-                        <div>{place}｜{time}</div>
+                            <div>{place}｜{time}</div>
+                        </div>
                     </div>
                 </div>
                 <div className="relative flex h-5 w-5 items-center justify-center">
