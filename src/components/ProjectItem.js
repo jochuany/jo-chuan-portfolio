@@ -3,7 +3,7 @@
 export const ProjectItem = ({ href, title, category, year, photo, tools }) => {
     return (
 
-        <a href={href} className={`transition-all duration-300 ease bg-brand-graybg/60 rounded-md overflow-hidden group
+        <a href={href} className={`transition-all duration-300 ease bg-brand-graybg/70 rounded-md overflow-hidden group lg:hover:shadow-sm
         border border-transparent lg:hover:-translate-y-1 lg:hover:border-brand-primaryLight lg:hover:bg-brand-primaryLight/20`}>
             <div className="flex flex-col justify-between items-start transition-all duration-300 ease">
                 <div className={`h-[160px] md:h-[180px] lg:h-[200px] w-full overflow-hidden

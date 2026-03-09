@@ -10,8 +10,8 @@ export const SkillItem = ({ title, skillDescription, tools }) => {
     const [isOpen, SetIsOpen] = useState(false);
 
     return (
-        <div className={`w-full px-4 py-3 rounded-md flex flex-col mb-4 group
-            ${isOpen ? "bg-brand-primaryLight/20 border border-brand-primaryLight" : "bg-brand-graybg/60 border border-transparent"}
+        <div className={`w-full px-4 py-3 rounded-md flex flex-col mb-4 group lg:hover:shadow-sm
+            ${isOpen ? "bg-brand-primaryLight/20 border border-brand-primaryLight shadow-sm" : "bg-brand-graybg/70 border border-transparent"}
             lg:hover:-translate-y-1 lg:hover:bg-brand-primaryLight/20 transition-all duration-300 ease`}>
 
             <button className={`flex justify-between items-center text-[16px] font-medium leading-8
