@@ -12,14 +12,14 @@ export default function Home() {
 
         <div className="flex flex-col w-[90%] md:w-[85%] lg:w-[80%]">
 
-          <div className="w-full flex flex-col items-center justify-center text-center h-[calc(100vh-60px)] pb-20">
+          <div className="w-full flex flex-col items-center justify-center text-center min-h-[calc(100vh-200px)] pb-10">
 
-            <div className="text-[28px] md:text-[38px] lg:text-[42px] font-medium">
+            <div className="text-[22px] md:text-[32px] lg:text-[36px] font-medium">
               Hello, I'm <span className="text-brand-primary font-bold">Jo-Chuan</span>.
             </div>
 
             <div className="flex flex-col mt-4 justify-start items-center">
-              <div className="text-[16px] md:text-[20px] lg:text-[24px] font-medium mb-2 md:mb-0">
+              <div className="text-[14px] md:text-[18px] lg:text-[22px] font-medium mb-2 md:mb-0">
                 I have experience in
               </div>
 
@@ -30,27 +30,27 @@ export default function Home() {
                 showCursor={true}
                 cursorCharacter="_"
                 cursorBlinkDuration={0.5}
-                className="mt-2 px-4 pt-1 pb-2 rounded-md text-[24px] md:text-[30px] lg:text-[36px]
+                className="mt-2 px-4 pt-1 pb-2 rounded-md text-[22px] md:text-[32px] lg:text-[36px]
                 bg-brand-primary text-brand-bg font-bold overflow-hidden justify-center"
               />
 
             </div>
 
-            <div className="translate-y-[180px] text-brand-graytext">
+            {/* <div className="translate-y-[180px] text-brand-graytext">
               <div className="text-[14px] md:text-[16px]">Explore</div>
               <div className="text-[26px] md:text-[30px] animate-scrolldown">⭣</div>
-            </div>
+            </div> */}
 
           </div>
 
 
-          <div className="flex flex-col w-full h-auto md:h-[calc(100vh-160px)] py-10">
+          <div className="flex flex-col w-full h-auto min-[1025px]:min-h-[calc(100vh-200px)] py-10">
 
             <div className="w-full text-start text-brand-graytext font-bold text-[16px] pb-6">
               {"// "}Selected Projects
             </div>
 
-            <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div className="w-full grid grid-cols-1 min-[1025px]:grid-cols-3 gap-10">
               {selectedProjects.map((project, index) => (
                 <ProjectItem
                   key={index}
